@@ -8,14 +8,13 @@
 
     <modules>  <!-- 包含所有的子module -->
         <module>base</module>
-        <module>base-antora-playbook</module>
-        <module>base-documentation</module>
         <!-- 在修改指定的module名称之后，需要手动设置这里的名称 -->
         <module>child</module>
         <module>parent</module>
         <module>pom-master</module>
         <module>testing</module>
         <module>testing-plus</module>
+        <module>report-documentation</module>
     </modules>
    
     <!-- 发布和打包项目的类型 jar war pom ear maven-plugin

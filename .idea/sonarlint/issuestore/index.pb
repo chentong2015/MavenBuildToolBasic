@@ -53,17 +53,11 @@ Q
 !base/base-maven-archetype/pom.xml,4\b\4b4ea5374deb43a386aea416570e2b913c6d2b46
 \
 ,base/src/main/java/basic/MavenLifecycle.java,8\d\8dc2692a4ff3d300c4ffe7be367787cfe45b805e
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 ~
 Nbase/base-maven-plugin-simple/src/main/java/com/maven/plugin/MavenPlugins.java,9\4\945432c6e96923d507b52eea9f2f53e1482d6602
 ƒ
 Sbase/base-maven-plugin-simple/src/main/java/com/maven/plugin/MyJavaMavenPlugin.java,5\8\587478091c5fa59bf4f01a646adef8e373f4f354
 >
 parent/pom.xml,0\c\0cc644dd1c242220ad7b09063cbd5d141a944409
-B
-pom-master/pom.xml,d\1\d16152422b6062351273ce5ce5af6ad4e5e9c4e5
 M
 pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd
-U
-%base/base-maven-plugin-simple/pom.xml,0\5\058b9549961d1ff2f1f41aae3e51ae9f3b35a010
