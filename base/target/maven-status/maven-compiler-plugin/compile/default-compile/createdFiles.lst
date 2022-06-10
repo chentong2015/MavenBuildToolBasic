@@ -1,0 +1,8 @@
+basic\MavenArchetypes.class
+master\MavenPluginsGoalPhases.class
+basic\MavenBasicInstall.class
+basic\MavenLifecycle.class
+master\MavenPlugins.class
+master\MavenBuildProfiles.class
+basic\MavenDependencies.class
+basic\MavenRepositories.class

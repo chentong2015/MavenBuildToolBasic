@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+     <!-- spring-boot-starter-parent 父级包含了丰富的所依赖的dependency, 以及version版本号
+         如果parent在本地，则relativePath相对路径定位在本地的POM文件上
+         没有写parent就表示是顶级的POM文件
+     <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.4</version>
+        <relativePath/>
+     </parent> -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>parent</groupId>
+    <artifactId>parent</artifactId>
+    <version>v1.0.build-SNAPSHOT</version>
+    <name>parent component</name>
+
+    <!-- 这里parent的打包类型必须是pom -->
+    <packaging>pom</packaging>
+
+    <!-- 构建配置的属性值, 方便更新和替换: 版本号是作为唯一的变量 -->
+    <properties>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
+        <project.version>v1.0.build</project.version>
+        <spring.boot.starter.version>2.6.6</spring.boot.starter.version>
+        <spring-webmvc.version>5.3.4</spring-webmvc.version>
+    </properties>
+
+    <!-- TODO. 依赖管理：centralizing dependency information 集中依赖的信息
+        1. 如果需要在parent module中运行，则需要将<dependencies>置于外部
+        2. 同时管理对于所有的child module的dependency依赖，提供共享的配置
+        3. 在child中只需要提供部分的信息(groupId,artifactId), child module的version版本号会自动的设置 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>2.6.6</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring-webmvc.version}</version>
+               <!-- <type>war</type> 非默认的类型 -->
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+      <!-- parent作为纯的pom, 不做开发，不提供具体的dependency依赖 -->
+    </dependencies>
+
+    <build>
+        <!-- TODO 插件管理: 它旨在配置继承自此的项目构建，它的继承类可以对其重写
+                  在继承child中，只需要提供groupId和artifactId即可
+           configuring plugin information for this particular project build
+           The children have every right to override pluginManagement definitions. -->
+        <pluginManagement>
+            <plugins>
+                <!-- Install the built artifact into the local repository. 安装到本地的仓库 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+
+                <!-- TODO. 定义在构建生成jar包时的参数配置
+                     add the maven-jar-plugin to the build will get the pre-process-classes execution  -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>2.6</version>
+                    <configuration>
+                        <finalName>parent.target.jar</finalName>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>pre-process-classes</id>
+                            <phase>compile</phase>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                            <configuration>
+                                <classifier>pre-process</classifier>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <!-- 构建项目，编译时的版本号 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <target>11</target>
+                    <source>11</source>
+                    <release>11</release>
+                </configuration>
+            </plugin>
+
+            <!-- TODO. Dependency manipulation (copy, unpack) and analysis.
+                    配置在执行maven phase的时候，要达到的goal(要干的事情) -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.1.1</version>
+                <executions>
+                    <execution>
+                        <id>unpack-dependencies</id>
+                        <phase>verify</phase> <!-- 在run maven verify的时候 -->
+                        <goals>
+                            <goal>analyze-only</goal>
+                            <goal>analyze-dep-mgt</goal>
+                        </goals>
+                        <!-- 下面配置在执行的过程中，一些设置的属性  -->
+                        <configuration>
+                            <failOnWarning>true</failOnWarning>
+                            <failBuild>false</failBuild>  <!-- 如果失败了，则不会build -->
+
+                            <!-- TODO. 在build的时候，忽略插件analyze分析出来的两种异常错误
+                                       指定到特定的依赖上面，标明三种信息 -->
+                            <ignoredUnusedDeclaredDependencies>org.slf4j:slf4j-api:jar</ignoredUnusedDeclaredDependencies>
+                            <ignoredUsedUndeclaredDependencies>org.slf4j:slf4j-core:jar</ignoredUsedUndeclaredDependencies>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- 改插件处理IT测试相关的问题 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.13</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

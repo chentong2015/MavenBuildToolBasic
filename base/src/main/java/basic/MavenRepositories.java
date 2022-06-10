@@ -1,0 +1,39 @@
+package basic;
+
+public class MavenRepositories {
+
+    // Local Repository
+    // TODO: Maven会先检查本地仓库是否存储了指定的信息
+    //       如果没有，则会从远程仓库下载，在指定的位置安装 /m2/repository/<groupId>/artifactId>/<version>
+
+    // Dependency Repository 定义远程的仓库，下载指定的SNAPSHOT依赖
+    // TODO: Main Repo主仓库是不允许下载SNAPSHOP，添加新的仓库位置，下载到特殊的一些依赖
+    // <repositories>
+    //   <repository>
+    //     <id>spring-snapshot</id>
+    //     <name>Spring Maven SNAPSHOT Repository</name>
+    //     <url>https://repo.spring.io/ui/native/libs-snapshot</url>
+    //     <snapshots>
+    //       <enabled>true</enabled> 使用该快照的依赖，只是针对SNAPSHOT的发布
+    //     </snapshots>
+    //     <releases>
+    //       <enabled>false</enabled> 不作为发布版本的使用
+    //     </releases>
+    //  </repository>
+    // </repositories>
+
+    // Plugin Repository
+    // <repositories>
+    //   <repository>
+    //     <id>acme corp</id>
+    //     <name>Acme Internal Corporate Repository</name>
+    //     <url>https://acmecrop.com/plugins</url>
+    //     <snapshots>
+    //       <enabled>true</enabled>
+    //     </snapshots>
+    //     <releases>
+    //       <enabled>false</enabled>
+    //     </releases>
+    //  </repository>
+    // </repositories>
+}

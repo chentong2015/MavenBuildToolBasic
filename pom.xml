@@ -1,0 +1,178 @@
+<project>
+   <!-- project标签报错的解决办法：去掉不存在的地址 http://maven.apache.org/POM/4.0.0-->
+
+    <artifactId>MavenBasic</artifactId>  <!-- 项目的名称, 或者module的名称 -->
+    <groupId>com.example.main</groupId>  <!-- 和package包名一致, 和包的结构相同 -->
+    <version>1.0-SNAPSHOT</version>      <!-- 版本号, SNAPSHOT快照, 不要以date结尾 -->
+    <modelVersion>4.0.0</modelVersion>   <!-- Version of POM -->
+
+    <modules>  <!-- 包含所有的子module -->
+        <module>base</module>
+        <module>base-antora-playbook</module>
+        <module>base-documentation</module>
+        <!-- 在修改指定的module名称之后，需要手动设置这里的名称 -->
+        <module>child</module>
+        <module>parent</module>
+        <module>pom-master</module>
+        <module>testing</module>
+        <module>testing-plus</module>
+    </modules>
+   
+    <!-- 发布和打包项目的类型 jar war pom ear maven-plugin
+         TODO: 使用spring boot打包成war包部署到tomcat中的时候
+               需要将tomcat在最后的打包中移除掉，将依赖设置成<scope>provided</scope> -->
+   <packaging>pom</packaging>
+
+   <dependencies>
+     <!-- TODO. <dependency> 对应到本地唯一的位置地址
+          C:\Users\CHEN Tong\.m2\repository\... 本地maven仓库; 构建之后，根据groupId路径定位
+          C:\Users\tchen\.m2\repository\org\apache\commons\commons-lang3\3.8.1 -->
+     <dependency>
+       <groupId>org.apache.commons</groupId> 
+       <artifactId>commons-lang3</artifactId>
+       <version>3.8.1</version>
+     </dependency>
+     <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.0.2</version>
+        <scope>test</scope>
+     </dependency>
+
+     <!-- TODO. 指定移除到dependency中包含的dependency，避免在项目中重复依赖 -->
+     <dependency>
+         <groupId>org.apache.httpcomponents</groupId>
+         <artifactId>httpclient</artifactId>
+         <version>4.5.13</version>
+         <exclusions>
+             <exclusion>
+                 <groupId>commons-logging</groupId>
+                 <artifactId>commons-logging</artifactId>
+             </exclusion>
+         </exclusions>
+     </dependency>
+
+     <!--  TODO. System Dependencies 使用本地的系统依赖
+          下载的指定版本jar版本到本地/lib, 使用本地指定的资源
+      <dependency>
+          <groupId>javax.sql</groupId>
+          <artifactId>jdbc-stdext</artifactId>
+          <version>2.0</version>
+          <scope>system</scope>
+          <systemPath>${java.home}/lib/rt.jar</systemPath>
+      </dependency>  -->
+   </dependencies>
+   
+   <!-- Download the SNAPSHOT dependency form the repository below defined 
+        对于一些SNAPSHOT快捷版本的依赖，从指定添加的repository中进行寻找
+        <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-core</artifactId>
+          <version>6.0.0-SNAPSHOT</version>
+        </dependency> -->
+   <repositories>
+      <repository>
+        <id>spring-snapshot</id>
+        <url>https://repo.spring.io/ui/native/libs-snapshot</url>
+        <snapshots>
+          <enabled>true</enabled>
+        </snapshots>
+        <releases>
+          <enabled>false</enabled>
+        </releases>
+      </repository>
+   </repositories>
+   
+   <!-- Java 10+, add build section plugins -->
+   <build>
+      <!-- Define the final artifact file name, MavenBaicsProject.jar -->
+      <finalName>MavenBaicsProject</finalName>
+         
+      <plugins>
+          <!-- 这里的插件是正对编译时候的插件
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <version>3.8.1</version>
+              <configuration>
+                  <release>${maven.compiler.target}</release>
+                  <target>${maven.compiler.target}</target>
+                  <source>${maven.compiler.source}</source>
+              </configuration>
+          </plugin> -->
+
+         <!-- Bundle the specific Java Version -->
+         <!-- Setting up maven plugins to compile the code with java 11 -->
+         <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-compiler-plugin</artifactId>
+           <version>3.8.0</version>
+           <configuration>
+              <target>11</target>
+              <source>11</source>
+              <release>11</release>
+           </configuration>
+         </plugin>
+         
+         <!-- Define all the includes to package 
+		      需要指定项目的启动class -->
+         <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-jar-plugin</artifactId>
+              <version>3.2.0</version>
+              <configuration>
+                  <!-- 指定要打包的路径和文件 -->
+                  <includes>
+                      <include>**/*.xml</include>
+                   </includes>
+              </configuration>
+          </plugin>
+            
+         <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-source-plugin</artifactId>
+              <version>3.2.1</version>
+              <executions>
+                  <execution>
+                      <goals>
+                          <goal>jar</goal>
+                      </goals>
+                      <phase>install</phase>
+                  </execution>
+              </executions>
+         </plugin> 
+         
+          <!-- 配置指定的Goal -->
+          <plugin>
+              <artifactId>maven-clean-plugin</artifactId>
+              <version>3.1.0</version>
+              <executions>
+                  <execution>
+                      <id>clean</id>
+                      <!-- Goal都会绑定到一个phase -->
+                      <phase>clean</phase>
+                      <goals>
+                          <goal>clean</goal>
+                      </goals>
+                  </execution>
+              </executions>
+          </plugin>
+          
+          <!-- 这里生成的是默认的web Java Doc
+               自动打包生成JavaDoc Web API; 项目参考文档 -->
+         <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-javadoc-plugin</artifactId>
+              <version>3.1.1</version>
+              <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <phase>install</phase>
+                    </execution>
+                </executions>
+           </plugin>
+      </plugins> 
+   </build>
+</project>

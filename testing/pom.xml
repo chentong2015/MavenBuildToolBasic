@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>MavenBasic</artifactId>
+        <groupId>com.example.main</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>Testing</artifactId>
+
+    <!-- TODO. projects can import managed dependencies from other projects.
+               不存在继承关系，而是从别的项目引入依赖 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.pom.master</groupId>
+                <!-- 引入的时候，一定要找到对应的artifactId，相当于作为此pom的上级parent -->
+                <artifactId>bom</artifactId>
+                <version>v1.0.0-SNAPSHOT</version>
+                <type>pom</type>
+                <!-- Dependency Scope 不是通过继承获取依赖，而是直接从别的项目中引入 !!
+                     This scope is only supported on a dependency of type pom in the <dependencyManagement> section -->
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!-- 通过上级parent的<dependencyManagement>配置来找到指定的version -->
+        <dependency>
+            <groupId>com.pom.master</groupId>
+            <artifactId>application</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
