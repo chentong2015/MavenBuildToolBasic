@@ -1,3 +1,28 @@
 使用<profile>配置，在运行maven的时候传递不同的参数
-// https://maven.apache.org/guides/introduction/introduction-to-profiles.html
-// https://mkyong.com/maven/maven-profiles-example/
+https://maven.apache.org/guides/introduction/introduction-to-profiles.html
+https://mkyong.com/maven/maven-profiles-example/
+
+配置profile参数，是否生产测试覆盖率的报告
+ <profiles>
+      <profile>
+          <id>with-coverage</id>
+          <build>
+              <plugins>
+                  <plugin>
+                      <groupId>org.jacoco</groupId>
+                      <artifactId>jacoco-maven-plugin</artifactId>
+                      <version>0.8.2</version>
+                      <executions>
+                          <execution>
+                              <id>report-aggregate</id>
+                              <phase>verify</phase>
+                              <goals>
+                                  <goal>report-aggregate</goal>
+                              </goals>
+                          </execution>
+                      </executions>
+                  </plugin>
+              </plugins>
+          </build>
+      </profile>
+ </profiles>
