@@ -3,11 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>base-maven-core</artifactId>
+        <artifactId>base</artifactId>
         <groupId>com.example.main</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
 
     <artifactId>base-maven-plugin-simple</artifactId>
 
@@ -28,17 +30,18 @@
 
     <build>
         <plugins>
-            <!-- TODO. 自定实现Maven plugin, 配置相关的参数 -->
+            <!-- TODO. 自定实现Maven plugin, 配置相关的参数
             <plugin>
                 <groupId>sample.plugin</groupId>
                 <artifactId>hello-maven-plugin</artifactId>
                 <version>1.0-SNAPSHOT</version>
-                <!-- Defining Parameters Within a Mojo -->
+
+                // Defining Parameters Within a Mojo
                 <configuration>
                     <greeting>Welcome</greeting>
                 </configuration>
 
-                <!-- Attach specific goals to a particular phase of the build lifecycle -->
+                // Attach specific goals to a particular phase of the build lifecycle
                 <executions>
                     <execution>
                         <phase>compile</phase>
@@ -47,14 +50,14 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
 
     <reporting>
         <plugins>
             <!-- 用来生成源代码的参考文档的插件, 在generation的过程中会执行
-                 Generate documentation from source code https://www.doxygen.nl/index.html -->
+                 Generate documentation from source code https://www.doxygen.nl/index.html
             <plugin>
                 <groupId>com.soebes.maven.plugins</groupId>
                 <artifactId>doxygen-maven-plugin</artifactId>
@@ -64,7 +67,7 @@
                     <quiet>false</quiet>
                     <projectName>This is a Test Project (basicReportTest)</projectName>
                 </configuration>
-            </plugin>
+            </plugin> -->
 
             <!-- 插件可以在测试结束之后生成测试覆盖率的报告
                  https://www.eclemma.org/jacoco/trunk/doc/maven.html -->
