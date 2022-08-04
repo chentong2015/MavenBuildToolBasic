@@ -26,11 +26,11 @@
                 <artifactId>wagon-webdav-jackrabbit</artifactId>
                 <version>2.1</version>
             </extension>
-            <extension>
+            <!-- <extension>
                 <groupId>murex.maven.plugins.download.generator</groupId>
                 <artifactId>download-generator-extension</artifactId>
                 <version>1.7.0</version>
-            </extension>
+            </extension> -->
             <extension>
                 <groupId>org.apache.maven.archetype</groupId>
                 <artifactId>archetype-packaging</artifactId>

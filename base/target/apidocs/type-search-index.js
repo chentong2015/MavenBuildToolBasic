@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"basic","l":"MavenArchetypes"},{"p":"basic","l":"MavenBasicInstall"},{"p":"master","l":"MavenBuildProfiles"},{"p":"basic","l":"MavenDependencies"},{"p":"basic","l":"MavenLifecycle"},{"p":"master","l":"MavenPlugins"},{"p":"master","l":"MavenPluginsGoalPhases"},{"p":"basic","l":"MavenRepositories"}]
