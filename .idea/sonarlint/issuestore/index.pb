@@ -31,20 +31,12 @@ Pbase/base-maven-archetype/src/main/java/com/maven/archetype/MavenArchetypes.jav
 Nbase/base-maven-plugin-simple/src/main/java/com/maven/plugin/MavenPlugins.java,9\4\945432c6e96923d507b52eea9f2f53e1482d6602
 ƒ
 Sbase/base-maven-plugin-simple/src/main/java/com/maven/plugin/MyJavaMavenPlugin.java,5\8\587478091c5fa59bf4f01a646adef8e373f4f354
-M
-pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd
 t
 Dreport-documentation/base-freemarker-template/FreeMarkeræ¨¡æ¿å¼•æ“Ž,0\3\033892fde841eb2edcbebd983ad0f6efaf632c43
 
 ]report-documentation/base-freemarker-template/src/main/java/com/freemarker/main/Reporter.java,4\b\4b79af5cff384acaa35dba313f38b812057db598
 ›
 kreport-documentation/base-freemarker-template/src/main/java/com/freemarker/main/BaseFreeMarkerTemplate.java,9\3\939f1d93a815f8b53014d4d21b7022cf1fee001a
->
-parent/pom.xml,0\c\0cc644dd1c242220ad7b09063cbd5d141a944409
-=
-child/pom.xml,7\5\7549128aef84b129beb2a28663f0991dc608236a
-U
-%base/base-maven-plugin-simple/pom.xml,0\5\058b9549961d1ff2f1f41aae3e51ae9f3b35a010
 G
 base/Maven Dependencies,8\1\812e0a0e529cedb104b91813129692da743f428c
 G
@@ -57,8 +49,6 @@ C
 base/Maven Profiles,5\f\5faa03cb928b1f55589defa8e6ffb1f19b4631e8
 ?
 testing/pom.xml,8\9\8903c1b080f05322f79de2ebdfeb8da5fb4b4480
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 B
 pom-master/pom.xml,d\1\d16152422b6062351273ce5ce5af6ad4e5e9c4e5
 Q

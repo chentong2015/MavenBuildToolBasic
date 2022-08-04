@@ -15,6 +15,7 @@
         <module>testing</module>
         <module>testing-plus</module>
         <module>report-documentation</module>
+        <module>base/base-maven-system-property</module>
     </modules>
    
     <!-- 发布和打包项目的类型 jar war pom ear maven-plugin
@@ -98,7 +99,7 @@
                   <target>${maven.compiler.target}</target>
                   <source>${maven.compiler.source}</source>
               </configuration>
-          </plugin> -->
+          </plugin> -->mvn cl
 
          <!-- Bundle the specific Java Version -->
          <!-- Setting up maven plugins to compile the code with java 11 -->

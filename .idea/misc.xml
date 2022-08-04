@@ -13,6 +13,7 @@
       <set>
         <option value="$PROJECT_DIR$/base-archetype-maven/pom.xml" />
         <option value="$PROJECT_DIR$/base-maven-documentation/pom.xml" />
+        <option value="$PROJECT_DIR$/base/base-maven-system-property/pom.xml" />
         <option value="$PROJECT_DIR$/base/base-maven-test/pom.xml" />
       </set>
     </option>

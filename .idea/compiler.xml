@@ -27,6 +27,7 @@
       <module name="antora-doc-playbook" target="11" />
       <module name="base-archetype-maven" target="11" />
       <module name="base-maven-documentation" target="11" />
+      <module name="base-maven-system-property" target="11" />
       <module name="base-maven-test" target="11" />
       <module name="maven-documentation" target="11" />
     </bytecodeTargetLevel>
