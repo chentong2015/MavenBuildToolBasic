@@ -49,9 +49,13 @@ M
 pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd
 G
 pom-master/core/pom.xml,6\0\6094f0976ddb5a552c3d76cc1b1b6a9b79e2cb30
-B
-pom-master/pom.xml,d\1\d16152422b6062351273ce5ce5af6ad4e5e9c4e5
 L
 report-documentation/pom.xml,1\b\1bfddc97f5fe57b5a0ab62e29e935344115dc8dc
 N
 pom-master/application/pom.xml,4\8\48565f6c4f1ddd0a50dd8b6c9002cbf5e326398e
+Q
+!base/base-maven-archetype/pom.xml,4\b\4b4ea5374deb43a386aea416570e2b913c6d2b46
+U
+%base/base-maven-plugin-simple/pom.xml,0\5\058b9549961d1ff2f1f41aae3e51ae9f3b35a010
+<
+base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4

@@ -10,6 +10,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="testing-plus" />
+        <module name="base-maven-plugin-simple" />
+        <module name="base-maven-archetype" />
         <module name="testing" />
         <module name="base-antora-playbook" />
         <module name="base-freemarker-template" />
