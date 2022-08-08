@@ -9,8 +9,7 @@
     <version>v1.0.0-SNAPSHOT</version>
 
     <!-- TODO: 最顶层的pom打包配置，将整个module作为一个pom来处理，其中包含"子moudels"
-         pom is basically a container of submodules
-         each submodule is represented by a subdirectory in the same directory as pom.xml with pom packaging -->
+         pom is basically a container of submodules,jar is for submodule -->
     <packaging>pom</packaging>
     <name>POM : Master</name>
 

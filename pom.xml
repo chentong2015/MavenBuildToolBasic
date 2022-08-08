@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project>
    <!-- project标签报错的解决办法：去掉不存在的地址 http://maven.apache.org/POM/4.0.0-->
 
@@ -15,7 +16,6 @@
         <module>testing</module>
         <module>testing-plus</module>
         <module>report-documentation</module>
-        <module>base/base-maven-system-property</module>
     </modules>
    
     <!-- 发布和打包项目的类型 jar war pom ear maven-plugin
