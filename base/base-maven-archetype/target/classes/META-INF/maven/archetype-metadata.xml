@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+        name="my-service-archetype-descriptor"
+        xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0
+        http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+        xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- The archetype descriptor 基本架构的描述符，该文件的位置必须在当前位置 -->
+    <requiredProperties>
+        <requiredProperty key="version">
+            <defaultValue>1.0-SNAPSHOT</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="service">
+            <validationRegex>^[a-z0-9\-]+$</validationRegex>
+        </requiredProperty>
+        <requiredProperty key="testable">
+            <validationRegex>Y|N</validationRegex>
+        </requiredProperty>
+    </requiredProperties>
+    <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory/>
+            <includes>
+                <include>README.md</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/test/resources</directory>
+            <includes>
+                <include>log4j.xml</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>

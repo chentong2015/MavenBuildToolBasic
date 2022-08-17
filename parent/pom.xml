@@ -117,7 +117,9 @@
                 <executions>
                     <execution>
                         <id>unpack-dependencies</id>
-                        <phase>verify</phase> <!-- 在run maven verify的时候 -->
+                        <!-- 在run maven verify的时候 -->
+                        <phase>verify</phase>
+                        <!-- 配置针对的goals -->
                         <goals>
                             <goal>analyze-only</goal>
                             <goal>analyze-dep-mgt</goal>

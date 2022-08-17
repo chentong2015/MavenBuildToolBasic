@@ -1,0 +1,18 @@
+pom.xml 总外层项目模块
+ - module 1 子模块
+   > 设置父级<parent>关联，确定一致性<artifactId><groupId> !! 引用父级统一管理的依赖
+   > 设置打包的类型<packaging>pom</packaging>
+   > 自定义子模块的<artifactId>，覆盖父级<artifactId>的名称 !!
+
+   - child 1
+     > 设置父级<parent>关联，确定一致性<artifactId><groupId>
+     > 默认打包类型<packaging>jar</packaging>
+
+   - child 2
+     > 设置父级<parent>关联，确定一致性<artifactId><groupId>
+     > 默认打包类型<packaging>jar</packaging>
+
+ - module 2 子模块
+   > 设置<parent>
+   > 设置<packaging>
+   > 设置<artifactId>

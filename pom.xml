@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project>
-   <!-- project标签报错的解决办法：去掉不存在的地址 http://maven.apache.org/POM/4.0.0-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- project标签报错的解决办法：去掉不存在的地址 http://maven.apache.org/POM/4.0.0-->
 
+    <modelVersion>4.0.0</modelVersion>   <!-- Version of POM -->
     <artifactId>MavenBasic</artifactId>  <!-- 项目的名称, 或者module的名称 -->
     <groupId>com.example.main</groupId>  <!-- 和package包名一致, 和包的结构相同 -->
+
     <version>1.0-SNAPSHOT</version>      <!-- 版本号, SNAPSHOT快照, 不要以date结尾 -->
-    <modelVersion>4.0.0</modelVersion>   <!-- Version of POM -->
 
     <modules>  <!-- 包含所有的子module -->
         <module>base</module>
@@ -99,18 +102,18 @@
                   <target>${maven.compiler.target}</target>
                   <source>${maven.compiler.source}</source>
               </configuration>
-          </plugin> -->mvn cl
+          </plugin> -->
 
          <!-- Bundle the specific Java Version -->
-         <!-- Setting up maven plugins to compile the code with java 11 -->
+         <!-- Setting up maven plugins to compile the code with java 15 -->
          <plugin>
            <groupId>org.apache.maven.plugins</groupId>
            <artifactId>maven-compiler-plugin</artifactId>
            <version>3.8.0</version>
            <configuration>
-              <target>11</target>
-              <source>11</source>
-              <release>11</release>
+              <target>15</target>
+              <source>15</source>
+              <release>15</release>
            </configuration>
          </plugin>
          
