@@ -3,9 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-     <!-- spring-boot-starter-parent 父级包含了丰富的所依赖的dependency, 以及version版本号
-         如果parent在本地，则relativePath相对路径定位在本地的POM文件上
-         没有写parent就表示是顶级的POM文件
+     <!-- spring-boot-starter-parent 父级包含丰富的所依赖dependency,以及version版本号
      <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -108,8 +106,7 @@
                 </configuration>
             </plugin>
 
-            <!-- TODO. Dependency manipulation (copy, unpack) and analysis.
-                    配置在执行maven phase的时候，要达到的goal(要干的事情) -->
+            <!-- TODO. Dependency manipulation (copy, unpack) and analysis. -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -119,8 +116,9 @@
                         <id>unpack-dependencies</id>
                         <!-- 在run maven verify的时候 -->
                         <phase>verify</phase>
-                        <!-- 配置针对的goals -->
+                        <!-- 配置针对的goals, 执行maven phase的时候要做的事情 -->
                         <goals>
+                            <!-- analyze-only将会分析出dependency是否符合依赖性的规则 -->
                             <goal>analyze-only</goal>
                             <goal>analyze-dep-mgt</goal>
                         </goals>
