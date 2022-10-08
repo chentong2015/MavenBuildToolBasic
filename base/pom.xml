@@ -15,6 +15,8 @@
     <modules>
         <module>base-maven-archetype</module>
         <module>base-maven-plugin-simple</module>
+        <module>maven-plugin-test</module>
+        <module>report-documentation</module>
     </modules>
 
     <!-- 使用<profile>配置，在运行maven的时候传递不同的参数
@@ -62,7 +64,7 @@
 
     <build>
         <plugins>
-            <!-- 自定义maven plugin 在项目构建的过程中自动化配置文件 -->
+            <!-- 自定义maven plugin, 在项目构建的过程中自动化配置文件
             <plugin>
                  <groupId>ctong.maven.plugins</groupId>
                  <artifactId>maven-production-plugin</artifactId>
@@ -71,7 +73,8 @@
                     <verbose>false</verbose>
                     <destinationFile>${project.file}</destinationFile>
                     <rootLocation>/code/repository</rootLocation>
-                    <!-- dependendySet is use by production:copy-dep goal, and defines which dependencies to copy and where -->
+
+                    // dependendySet is use by production:copy-dep goal, and defines which dependencies to copy and where
                     <dependencySets>
                         <dependencySet>
                             <outputDirectory>base/code/repository</outputDirectory>
@@ -82,7 +85,8 @@
                             </includes>
                         </dependencySet>
                     </dependencySets>
-                     <!-- fileSets are used by production:copy-file goal, and defines a set of files to copy and where -->
+
+                     // fileSets are used by production:copy-file goal, and defines a set of files to copy and where
                      <fileSets>
                          <fileSet>
                              <baseDirectory>target</baseDirectory>
@@ -106,7 +110,7 @@
                         <phase>package</phase>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
 

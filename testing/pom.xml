@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Testing</artifactId>
+    <artifactId>testing</artifactId>
 
     <!-- TODO. projects can import managed dependencies from other projects.
                不存在继承关系, 而是从别的项目直接引入依赖 -->

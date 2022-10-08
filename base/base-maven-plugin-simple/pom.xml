@@ -29,6 +29,13 @@
 
     <build>
         <plugins>
+            <!-- Clean up after the build. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.1.0</version>
+            </plugin>
+
             <!-- TODO. 自定实现Maven plugin, 配置相关的参数
             <plugin>
                 <groupId>sample.plugin</groupId>

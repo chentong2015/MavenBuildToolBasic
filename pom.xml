@@ -7,18 +7,18 @@
     <modelVersion>4.0.0</modelVersion>   <!-- Version of POM -->
     <artifactId>MavenBasic</artifactId>  <!-- 项目的名称, 或者module的名称 -->
     <groupId>com.example.main</groupId>  <!-- 和package包名一致, 和包的结构相同 -->
-
     <version>1.0-SNAPSHOT</version>      <!-- 版本号, SNAPSHOT快照, 不要以date结尾 -->
 
-    <modules>  <!-- 包含所有的子module -->
+    <!-- 包含当前项目/模块下所有child module
+         TODO. 在修改指定的module名称之后，需要手动设置这里的名称-->
+    <modules>
         <module>base</module>
-        <!-- 在修改指定的module名称之后，需要手动设置这里的名称 -->
         <module>child</module>
         <module>parent</module>
         <module>pom-master</module>
         <module>testing</module>
         <module>testing-plus</module>
-        <module>report-documentation</module>
+        <module>testing-sample</module>
     </modules>
    
     <!-- 发布和打包项目的类型 jar war pom ear maven-plugin
@@ -176,6 +176,15 @@
                     </execution>
                 </executions>
            </plugin>
+
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-wrapper-plugin</artifactId>
+              <version>3.1.0</version>
+              <configuration>
+                  <distributionType>script</distributionType>
+              </configuration>
+          </plugin>
       </plugins> 
    </build>
 </project>

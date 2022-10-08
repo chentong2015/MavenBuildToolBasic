@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"com.maven.archetype","c":"MavenArchetypes","l":"MavenArchetypes()","url":"%3Cinit%3E()"}]

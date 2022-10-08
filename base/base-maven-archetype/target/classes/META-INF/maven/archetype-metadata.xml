@@ -6,7 +6,7 @@
         xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <!-- The archetype descriptor 基本架构的描述符，该文件的位置必须在当前位置 -->
+    <!-- The archetype descriptor 基本架构的�??述符，该文件的�?置必须在当�?�?置 -->
     <requiredProperties>
         <requiredProperty key="version">
             <defaultValue>1.0-SNAPSHOT</defaultValue>

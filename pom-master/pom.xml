@@ -12,7 +12,7 @@
          pom is basically a container of submodules,jar is for submodule
          这一层是作为一个完整的项目(提供给别的项目打包依赖)，它的外层不应该再包含别的pom.xml -->
     <packaging>pom</packaging>
-    <name>POM : Master</name>
+    <name>pom-master</name>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

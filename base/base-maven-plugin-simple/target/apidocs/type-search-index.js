@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.maven.plugin","l":"MavenPlugins"},{"p":"com.maven.plugin","l":"MyJavaMavenPlugin"}]

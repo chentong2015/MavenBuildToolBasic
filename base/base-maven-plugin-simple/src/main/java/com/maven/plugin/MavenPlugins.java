@@ -1,7 +1,6 @@
 package com.maven.plugin;
 
-// Maven提供的默认插件
-// https://maven.apache.org/plugins/index.html
+// https://maven.apache.org/plugins/index.html 默认插件全集
 public class MavenPlugins {
 
    // Maven plugins: "Maven" is core framework of a collection of maven plugins
@@ -12,7 +11,6 @@ public class MavenPlugins {
    // 1. <build /> : Build plugins will be executed during the build
    // 2. <reporting />: Reporting plugins will be executed during the site generation (test report)
 
-   // 常见的插件介绍 -----------------------------------------------------------
    // Compiler Plugin
    // 两种Goals：compile(编译main code中源代码) & testCompile(编译test中源代码)
    // 1. Invokes javac
@@ -31,6 +29,4 @@ public class MavenPlugins {
    // Package phase
    // Defaults
    //    customization 可以自定义
-
-
 }

@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"com.maven.plugin","c":"MyJavaMavenPlugin","l":"execute()"},{"p":"com.maven.plugin","c":"MavenPlugins","l":"MavenPlugins()","url":"%3Cinit%3E()"},{"p":"com.maven.plugin","c":"MyJavaMavenPlugin","l":"MyJavaMavenPlugin()","url":"%3Cinit%3E()"}]
