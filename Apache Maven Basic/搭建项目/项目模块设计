@@ -12,12 +12,16 @@ pom.xml 总外层项目模块
      > 设置父级<parent>关联，确定一致性<artifactId><groupId>
      > 默认打包类型<packaging>jar</packaging>
 
+   - child 3
+     > 如果引用child 2作为依赖的dependency
+       在构建child 3时需要先将child 2成功构建
+
  - module 2 子模块
    > 设置<parent>
    > 设置<packaging>
    > 设置<artifactId>
 
-----------------------------------------------------------------------------
+
 bom / parent模块设计
  - 将项目中所有使用到的依赖提取到独立的pom module中，使用<dependencyManagement>统一管理
  - 在module之外的其他项目中import该pom依赖项目，继承统一的版本号

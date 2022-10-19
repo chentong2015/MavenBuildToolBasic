@@ -34,7 +34,7 @@ Phases 阶段
   7. install: install package in local repo
   8. deploy: copy package to remote repo
 
-Goal 双击执行Goal/Execute Maven Goal多个执行
+Goal 双击执行Goal / Execute Maven Goal多个执行
   1. validate: validate the project is correct and info is available
   2. compile: compile the source code
   3. test: test the compiled source code using unit testing framework

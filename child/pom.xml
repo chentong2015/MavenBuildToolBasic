@@ -2,10 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <!-- TODO. 设置相对路径，指定引用的parent pom(全局的配置)
-         1. 如果parent在本地，则relativePath相对路径定位在本地的POM文件上
-         2. 默认使用顶级的pom文件作为parent
-         3. 可以使用同级的pom文件作为相对路径 -->
+          1. 创建子模块时，默认使用顶级的pom文件作为parent
+          2. 如果parent在本地，则相对路径定位在本地的POM文件上, relativePath可以设置到项目外相对路径下的POM文件
+          3. 可以使用同级的pom文件作为相对路径 -->
     <parent>
         <groupId>parent</groupId>
         <artifactId>parent</artifactId>

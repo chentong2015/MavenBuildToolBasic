@@ -37,5 +37,4 @@
             <artifactId>application</artifactId>
         </dependency>
     </dependencies>
-
 </project>
