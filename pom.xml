@@ -5,7 +5,7 @@
     <!-- project标签报错的解决办法：去掉不存在的地址 http://maven.apache.org/POM/4.0.0-->
 
     <modelVersion>4.0.0</modelVersion>   <!-- Version of POM -->
-    <artifactId>MavenBasic</artifactId>  <!-- 项目的名称, 或者module的名称 -->
+    <artifactId>MavenBasic</artifactId>  <!-- 项目名或module的名称: 名称需要保存一致 -->
     <groupId>com.example.main</groupId>  <!-- 和package包名一致, 和包的结构相同 -->
     <version>1.0-SNAPSHOT</version>      <!-- 版本号, SNAPSHOT快照, 不要以date结尾 -->
 
@@ -116,20 +116,6 @@
               <release>15</release>
            </configuration>
          </plugin>
-         
-         <!-- Define all the includes to package 
-		      需要指定项目的启动class -->
-         <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-jar-plugin</artifactId>
-              <version>3.2.0</version>
-              <configuration>
-                  <!-- 指定要打包的路径和文件 -->
-                  <includes>
-                      <include>**/*.xml</include>
-                   </includes>
-              </configuration>
-          </plugin>
             
          <plugin>
               <groupId>org.apache.maven.plugins</groupId>

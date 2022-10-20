@@ -1,6 +1,6 @@
 package com.maven.archetype;
 
-// 使用�?��?自动�?置code
+// 使用变量自动配置code
 #if(${testable} == "Y")import com.maven.EnableTesting;
 #end
 public final class MavenArchitypeApplication {

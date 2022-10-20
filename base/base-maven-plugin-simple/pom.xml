@@ -89,6 +89,14 @@
                     </reportSet>
                 </reportSets>
             </plugin>
+
+            <!-- 改插件可以生成web版的测试报告
+                 generated TEST-*.xml files under ${basedir}/target/surefire-reports -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>3.0.0-M3</version>
+            </plugin>
         </plugins>
     </reporting>
 </project>
