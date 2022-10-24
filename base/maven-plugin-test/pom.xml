@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>maven-sample</artifactId>
+    <artifactId>maven-plugin-test</artifactId>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
@@ -27,34 +27,37 @@
                     <execution>
                         <id>enforce-versions</id>
                         <goals>
+                            <!-- 指定这个插件的什么Goal阶段 -->
                             <goal>enforce</goal>
                         </goals>
-                        <configuration>
-                            <rules>
-                                <!-- will only display a warning but does not fail the build. -->
-                                <bannedPlugins>
-                                    <level>WARN</level>
-                                    <excludes>
-                                        <exclude>org.apache.maven.plugins:maven-verifier-plugin</exclude>
-                                    </excludes>
-                                    <message>Please consider using the maven-invoker-plugin (http://maven.apache.org/plugins/maven-invoker-plugin/)!</message>
-                                </bannedPlugins>
 
-                                <!-- 必须满足匹配的规则: 只有符合约束才能build, install -->
-                                <requireMavenVersion>
-                                    <version>3.6.3</version>
-                                </requireMavenVersion>
-                                <requireJavaVersion>
-                                    <!-- 和Java系统环境中版本一致 -->
-                                    <version>11.0.2</version>
-                                </requireJavaVersion>
-                                <requireOS>
-                                    <family>windows</family>
-                                </requireOS>
-                            </rules>
-                        </configuration>
                     </execution>
                 </executions>
+
+                <!-- 下面的configuration配置规则需要和executions放置在同级 -->
+                <configuration>
+                    <rules>
+                        <!-- will only display a warning but does not fail the build. -->
+                        <bannedPlugins>
+                            <level>WARN</level>
+                            <excludes>
+                                <exclude>org.apache.maven.plugins:maven-verifier-plugin</exclude>
+                            </excludes>
+                            <message>Please consider using the maven-invoker-plugin (http://maven.apache.org/plugins/maven-invoker-plugin/)!</message>
+                        </bannedPlugins>
+
+                        <!-- 必须满足匹配的规则: 只有符合约束才能build, install -->
+                        <requireMavenVersion>
+                            <version>3.6.3</version> <!-- 比这个低的maven版本也可以构建 -->
+                        </requireMavenVersion>
+                        <requireJavaVersion>
+                            <version>12.0.2</version> <!-- 和Java系统环境中版本一致 -->
+                        </requireJavaVersion>
+                        <requireOS>
+                            <family>windows</family>
+                        </requireOS>
+                    </rules>
+                </configuration>
             </plugin>
         </plugins>
     </build>
