@@ -14,7 +14,8 @@
     <artifactId>base</artifactId>
     <modules>
         <module>base-maven-archetype</module>
-        <module>base-maven-plugin-simple</module>
+        <module>maven-plugin-base</module>
+        <module>hello-maven-plugin</module>
         <module>maven-plugin-test</module>
         <module>report-documentation</module>
     </modules>

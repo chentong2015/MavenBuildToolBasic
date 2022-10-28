@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>base-maven-plugin-simple</artifactId>
+    <artifactId>maven-plugin-base</artifactId>
 
     <dependencies>
         <dependency>
@@ -34,6 +34,27 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.1.0</version>
+            </plugin>
+
+            <!-- TODO. 使用自定义的插件，必须使用自定义的groupId -->
+            <plugin>
+                <groupId>maven.sample.plugin</groupId>
+                <artifactId>hello-maven-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <!-- 配置要执行的阶段和goal -->
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>say-hello</goal>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <!-- 提供自定义配置属性的值 -->
+                <configuration>
+                    <username>test</username>
+                </configuration>
             </plugin>
         </plugins>
     </build>

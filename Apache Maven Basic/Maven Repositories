@@ -4,18 +4,20 @@
 
  Dependency Repository 定义远程的仓库，下载指定的SNAPSHOT依赖
  TODO: Main Repo主仓库是不允许下载SNAPSHOP，添加新的仓库位置，下载到特殊的一些依赖
+ 使用该快照的依赖，只是针对SNAPSHOT的发布
+ 不作为发布版本的使用
  <repositories>
    <repository>
      <id>spring-snapshot</id>
      <name>Spring Maven SNAPSHOT Repository</name>
      <url>https://repo.spring.io/ui/native/libs-snapshot</url>
      <snapshots>
-       <enabled>true</enabled> 使用该快照的依赖，只是针对SNAPSHOT的发布
+       <enabled>true</enabled>
      </snapshots>
      <releases>
-       <enabled>false</enabled> 不作为发布版本的使用
+       <enabled>false</enabled>
      </releases>
-  </repository>
+   </repository>
  </repositories>
 
  Plugin Repository
