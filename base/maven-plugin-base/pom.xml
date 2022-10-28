@@ -35,35 +35,16 @@
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.1.0</version>
             </plugin>
-
-            <!-- TODO. 自定实现Maven plugin, 配置相关的参数
-            <plugin>
-                <groupId>sample.plugin</groupId>
-                <artifactId>hello-maven-plugin</artifactId>
-                <version>1.0-SNAPSHOT</version>
-
-                // Defining Parameters Within a Mojo
-                <configuration>
-                    <greeting>Welcome</greeting>
-                </configuration>
-
-                // Attach specific goals to a particular phase of the build lifecycle
-                <executions>
-                    <execution>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>demo-java-plugin</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin> -->
         </plugins>
     </build>
 
+    <!-- TODO. Plugins which generate reports 根据不同的需求，生成报告的一些插件
+         are configured as reports in the POM and run under the site generation lifecycle. -->
     <reporting>
         <plugins>
-            <!-- 用来生成源代码的参考文档的插件, 在generation的过程中会执行
-                 Generate documentation from source code https://www.doxygen.nl/index.html
+            <!-- https://www.doxygen.nl/index.html
+                 Generate documentation from source code
+                 用来生成源代码的参考文档的插件, 在generation的过程中会执行
             <plugin>
                 <groupId>com.soebes.maven.plugins</groupId>
                 <artifactId>doxygen-maven-plugin</artifactId>
@@ -90,7 +71,8 @@
                 </reportSets>
             </plugin>
 
-            <!-- 改插件可以生成web版的测试报告
+            <!-- TODO. https://maven.apache.org/surefire/maven-surefire-report-plugin/usage.html
+                 生成web版的测试报告
                  generated TEST-*.xml files under ${basedir}/target/surefire-reports -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

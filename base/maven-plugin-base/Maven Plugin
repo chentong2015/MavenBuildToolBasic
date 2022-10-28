@@ -1,12 +1,10 @@
-TODO: Maven默认插件全集
- https://maven.apache.org/plugins/index.html
-
+https://maven.apache.org/plugins/index.html
 Maven plugins: "Maven" is core framework of a collection of maven plugins
 1. plugins are almost the real action 插件实际上是要执行的一些action
 2. almost any action to perform on project is implemented as a plugins
 
 TODO. 两种插件: 需要配置基本信息(groupId, artifactId,,,)
-1. <build /> : Build plugins will be executed during the build
+1. <build /> : Build plugins will be executed during the build 在build阶段执行的一些插件
 2. <reporting />: Reporting plugins will be executed during the site generation (test report)
 
 Compiler Plugin
@@ -14,7 +12,3 @@ Compiler Plugin
 1. Invokes javac
 2. Default older JDK1.7, 使用<configuration>指定自定义版本
 3. Source/target: 自定义编译的源和目标
-
-
-TODO. 构建Java自定义的Maven Plugin
-https://maven.apache.org/guides/plugin/guide-java-plugin-development.html
