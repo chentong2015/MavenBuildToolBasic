@@ -6,7 +6,7 @@ import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.Mojo;
 
 @Mojo(name = "report")
-public class ReportGoal  extends AbstractMojo {
+public class ReportGoal extends AbstractMojo {
 
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
