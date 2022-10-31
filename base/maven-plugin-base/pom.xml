@@ -100,6 +100,25 @@
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>3.0.0-M3</version>
             </plugin>
+
+            <!-- TODO. 对于Java 11使用自定义的插件出错 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-plugin-plugin</artifactId>
+                <version>3.6.0</version>
+                <!-- <executions>
+                    <execution>
+                        <id>default-descriptor</id>
+                        <phase>process-classes</phase>
+                    </execution>
+                    <execution>
+                        <id>help-goal</id>
+                        <goals>
+                            <goal>helpmojo</goal>
+                        </goals>
+                    </execution>
+                </executions> -->
+            </plugin>
         </plugins>
     </reporting>
 </project>
