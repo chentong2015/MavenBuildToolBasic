@@ -75,13 +75,7 @@ B
 pom-master/pom.xml,d\1\d16152422b6062351273ce5ce5af6ad4e5e9c4e5
 >
 parent/pom.xml,0\c\0cc644dd1c242220ad7b09063cbd5d141a944409
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-S
-#base/maven-plugin-base/Maven Plugin,b\f\bff9228ee8076860f6c8377825094822db6172e7
 W
 'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
 U
 %Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
-<
-base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4
