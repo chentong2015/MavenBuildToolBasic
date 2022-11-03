@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>base</artifactId>
+        <groupId>com.example.main</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>maven-profiles</artifactId>
+
+    <dependencies>
+        <!-- 优先考虑低版本的测试 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                    <release>11</release>
+                </configuration>
+            </plugin>
+
+            <!-- 在compile编译时，自动显示出所有激活的profiles -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-help-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <id>show-profiles</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>active-profiles</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <!-- TODO. 在指定maven package时排除单元测试直接打包
+              >mvn package -Pskip-tests
+              >mvn clean install -Dmaven.test.skip=true -->
+        <profile>
+            <id>skip-tests</id>
+            <properties>
+                <!-- 设置特定的系统属性 -->
+                <maven.test.skip>true</maven.test.skip>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>integration-tests</id>
+            <!-- 选择在什么条件下激活, 可以通过系统参数
+                 默认激活, 则在maven > profiles下不可再选择 -->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+                <property>
+                    <name>integration</name>
+                    <value>test</value>
+                </property>
+                <jdk>11</jdk>
+                <os>
+                    <name>windows 10</name>
+                    <family>Windows</family>
+                    <arch>amd64</arch>
+                    <version>10.0</version>
+                </os>
+                <file>
+                    <exists>target/test-report.html</exists>
+                    <missing>target/test-done.html</missing>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                   <!-- 使用插件来执行这个profile所要指定的特定操作
+                   <plugin></plugin> -->
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- 自定义profile，能够生成测试覆盖率报告 -->
+        <profile>
+            <id>with-report-coverage</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>jacoco-maven-plugin</artifactId>
+                        <version>0.8.2</version>
+                        <configuration>
+                            <append>true</append>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>report-aggregate</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>report-aggregate</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

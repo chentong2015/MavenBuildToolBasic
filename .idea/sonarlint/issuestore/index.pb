@@ -51,8 +51,6 @@ _
 /pom-master/install/src/main/install/install.xml,0\6\0610d72af34ee86c9094b6b59d4073c49c6be54c
 G
 child/effective-pom.xml,9\8\986d5807be13028dfc0dc1df627822ce92132d31
-M
-pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd
 b
 2Apache Maven Basic/搭建项目/项目模块设计,d\0\d01504dde83b64a0ad7947858b0e2fa335cbac87
 U
@@ -79,3 +77,17 @@ W
 'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
 U
 %Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
+S
+#base/maven-plugin-base/Maven Plugin,b\f\bff9228ee8076860f6c8377825094822db6172e7
+O
+base/hello-maven-plugin/pom.xml,8\a\8af564b4a995ca79490aa60d76be70db40829a77
+x
+Hbase/hello-maven-plugin/src/main/java/maven/sample/plugin/HelloGoal.java,b\6\b6ba4336f24bb8dd9856028e367891f8e9b7eb56
+y
+Ibase/hello-maven-plugin/src/main/java/maven/sample/plugin/ReportGoal.java,d\f\df0fde5e5249d2b0c19e89b4505482934670b2f1
+C
+global-settings.xml,0\5\05d4752e9ba4b0b145d070360acea78b9003ce1e
+<
+settings.xml,1\d\1d784fce58c3719506730fb9749600554125b511
+P
+ Apache Maven Basic/Maven Options,6\a\6a830af07c369e0ae76059b9a6de3dbd72138900

@@ -11,6 +11,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="base-asciidoctor-documentation" />
         <module name="testing-plus" />
+        <module name="maven-profiles" />
         <module name="base-maven-archetype" />
         <module name="testing" />
         <module name="base-antora-playbook" />
@@ -23,6 +24,7 @@
         <module name="install" />
         <module name="maven-documentation" />
         <module name="testing-sample" />
+        <module name="maven-profiles-example" />
         <module name="child" />
         <module name="deployment" />
         <module name="Testing" />

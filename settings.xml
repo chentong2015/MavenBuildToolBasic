@@ -137,12 +137,17 @@
      |
      | This profile example uses the JDK version to trigger activation, and provides a JDK-specific repo.
      -->
+
+        <!-- TODO. 不同profile配置的repositories资源库不同 -->
         <profile>
               <id>default-repositories</id>
+                        <!-- 激活方式: 如果构建时没有设置该属性，则该profile被激活
+                             如果设置，则可以设置使用指定的maven repo local本地仓库
+                             > maven -DuseDevMavenRepo -Dmaven.repo.local=D:\... -->
                         <activation>
-                                 <property>
+                            <property>
                                  <name>!useDevMavenRepo</name>
-                                 </property>
+                            </property>
                         </activation>
                         <repositories>
                                 <repository>
@@ -173,8 +178,11 @@
                         </pluginRepository>
                     </pluginRepositories>
             </profile>
+
             <profile>
               <id>dev-repositories</id>
+                        <!-- 当使用系统属性时，将会激活该dev-repositories profile
+                           mvn -DuseDevMavenRepo help:active-profiles -->
                         <activation>
                                  <property>
                                  <name>useDevMavenRepo</name>

@@ -102,8 +102,9 @@
    
    <!-- Java 10+, add build section plugins -->
    <build>
-      <!-- Define the final artifact file name, MavenBaicsProject.jar -->
-      <finalName>MavenBaicsProject</finalName>
+      <!-- 设置打包构建出来的jar包的名称 => 统一名称
+      Define the final artifact file name, MavenBasicProject.jar -->
+      <finalName>MavenBasicProject</finalName>
          
       <plugins>
           <!-- 这里的插件是正对编译时候的插件

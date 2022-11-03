@@ -1,4 +1,5 @@
-<!-- TODO. 自定义Maven Setting配置文件，配置profile参数 -->
+<!-- TODO. 用户自定义Maven相关的配置
+      https://maven.apache.org/ref/3.8.6/maven-settings/settings.html -->
 <settings>
     <pluginGroups>
         <pluginGroup>murex.maven.plugins</pluginGroup>

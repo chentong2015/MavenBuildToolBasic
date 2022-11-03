@@ -12,107 +12,15 @@
     <packaging>pom</packaging>
 
     <artifactId>base</artifactId>
+    <name>maven base techniques</name>
+
     <modules>
         <module>base-maven-archetype</module>
-        <module>maven-plugin-base</module>
         <module>hello-maven-plugin</module>
+        <module>maven-plugin-base</module>
         <module>maven-plugin-test</module>
+        <module>maven-profiles</module>
+        <module>maven-profiles-example</module>
         <module>report-documentation</module>
     </modules>
-
-    <!-- 使用<profile>配置，在运行maven的时候传递不同的参数
-         https://mkyong.com/maven/maven-profiles-example/
-         https://maven.apache.org/guides/introduction/introduction-to-profiles.html -->
-    <profiles>
-        <profile>
-            <!-- maven界面可以选择指定的profile id -->
-            <id>with-coverage</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.jacoco</groupId>
-                        <artifactId>jacoco-maven-plugin</artifactId>
-                        <version>0.8.2</version>
-                        <configuration>
-                            <append>true</append>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <id>report-aggregate</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>report-aggregate</goal>
-                                </goals>
-                            </execution>
-                            <execution>
-                                <id>agent-for-ut</id>
-                                <goals>
-                                    <goal>prepare-agent</goal>
-                                </goals>
-                            </execution>
-                            <execution>
-                                <id>agent-for-it</id>
-                                <goals>
-                                    <goal>prepare-agent-integration</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
-
-    <build>
-        <plugins>
-            <!-- 自定义maven plugin, 在项目构建的过程中自动化配置文件
-            <plugin>
-                 <groupId>ctong.maven.plugins</groupId>
-                 <artifactId>maven-production-plugin</artifactId>
-                 <inherited>true</inherited>
-                 <configuration>
-                    <verbose>false</verbose>
-                    <destinationFile>${project.file}</destinationFile>
-                    <rootLocation>/code/repository</rootLocation>
-
-                    // dependendySet is use by production:copy-dep goal, and defines which dependencies to copy and where
-                    <dependencySets>
-                        <dependencySet>
-                            <outputDirectory>base/code/repository</outputDirectory>
-                            <scope>runtime</scope>
-                            <includes>
-                                <include>joda-time:joda-time:jar:2.1</include>
-                                <include>org.quartz-scheduler:quartz:jar:2.3.2</include>
-                            </includes>
-                        </dependencySet>
-                    </dependencySets>
-
-                     // fileSets are used by production:copy-file goal, and defines a set of files to copy and where
-                     <fileSets>
-                         <fileSet>
-                             <baseDirectory>target</baseDirectory>
-                             <outputDirectory>base/code/kernel/jar</outputDirectory>
-                             <includes>
-                                 <include>*.jar</include>
-                             </includes>
-                             <excludes>
-                                 <exclude>junit-*.jar</exclude>
-                             </excludes>
-                         </fileSet>
-                     </fileSets>
-                 </configuration>
-                 <executions>
-                    <execution>
-                        <id>copy-files</id>
-                        <inherited>true</inherited>
-                        <goals>
-                            <goal>copy-files</goal>
-                        </goals>
-                        <phase>package</phase>
-                    </execution>
-                </executions>
-            </plugin> -->
-        </plugins>
-    </build>
-
 </project>
