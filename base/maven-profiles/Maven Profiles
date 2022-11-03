@@ -1,7 +1,5 @@
 TODO. Maven Profiles可以在项目构建的时候提供Configuration，为构建提供额外设置
 https://maven.apache.org/guides/introduction/introduction-to-profiles.html
-https://www.baeldung.com/maven-profiles
-https://mkyong.com/maven/maven-profiles-example/
 
 TODO. Profile Scope在三种不同的文件中都能配置
 In Maven 3, we can actually add profiles to any of three locations:
