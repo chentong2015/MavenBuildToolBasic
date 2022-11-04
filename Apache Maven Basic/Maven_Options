@@ -2,10 +2,9 @@ usage: mvn [options] [<goal(s)>] [<phase(s)>]
 
 Maven配置参数Options:
  -h,--help                              Display help information
- -v,--version                           Display version information
- -V,--show-version                      Display version information WITHOUT stopping build
+ -v,--version                           Display version information 在CMD查看maven详细信息
  -e,--errors                            Produce execution error messages 把构建时错误的详细信息显示出来
- -D,--define <arg>                      Define a system property 定义一个系统属性
+ -D,--define <arg>                      Define a system property 定义一个系统属性, 并且设置它的值
  -o,--offline                           Work offline 设置离线工作
  -P,--activate-profiles <arg>           Comma-delimited list of profiles to activate 开启指定的Profile
  -gs,--gilobal-settngs <arg>            Alternate path for the global settings file 使用另一个自定义settings路径
@@ -13,6 +12,7 @@ Maven配置参数Options:
  -T,--threads <arg>                     Thread count, for instance 2.0C 设置构建时的线程数
                                         where C is core multiplied remote repositories
 
+ -V,--show-version                      Display version information WITHOUT stopping build
  -am,--also-make                        If project list is specified, also build projects required by the list
  -amd,--also-make-dependents            If project list is specified, also
                                         build projects that depend on projects on the list

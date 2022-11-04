@@ -7,7 +7,6 @@ In Maven 3, we can actually add profiles to any of three locations:
 2. User-specific profiles go into the user's settings.xml file
 3. Global profiles go into the global settings.xml file
 
+TODO. Enable或者Disable
 Activate multiple profiles: profile1, profile2
-
-Disable profile: use the ‘!' or ‘-‘.
-To disable the active-on-jdk-11 profile: mvn compile -P -active-on-jdk-11
+Disable profile: use the ‘!' or ‘-‘: mvn compile -P -active-on-jdk-11
