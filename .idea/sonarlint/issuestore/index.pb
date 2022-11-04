@@ -81,21 +81,13 @@ C
 global-settings.xml,0\5\05d4752e9ba4b0b145d070360acea78b9003ce1e
 M
 pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd
-<
-base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4
 N
 base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-t
-Dbase/maven-profiles-example/src/main/java/com/example/main/Main.java,6\a\6aeb57e977c782d6aed9d28fe279c2313c7022b8
 <
 settings.xml,1\d\1d784fce58c3719506730fb9749600554125b511
-R
-"base/maven-profiles/Maven Profiles,c\4\c4c92df252eb2ad79056f6347b6d72d325b58a8d
 K
 base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
-w
-Gbase/maven-profiles/src/main/java/com/example/main/MyMavenProfiles.java,e\c\ec8b706e8bb0c07585cd7a2137efa5cc34f1a149
 z
 Jbase/maven-profiles/src/test/java/com/exmple/main/MyMavenProfilesTest.java,a\d\ad1b21d481f12eb75cea8d374f2fcd4d8475c72e

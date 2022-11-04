@@ -18,7 +18,7 @@
     </properties>
 
     <build>
-        <!-- map ${} variable -->
+        <!-- map ${} variable 映射属性文件中配置的变量 -->
         <resources>
             <resource>
                 <directory>src/main/resources</directory>

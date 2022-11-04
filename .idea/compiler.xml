@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/base/base-maven-archetype/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/base/base-maven-archetype-sample/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -23,20 +24,21 @@
         <module name="application" />
         <module name="install" />
         <module name="maven-documentation" />
+        <module name="base-maven-archetype-sample" />
         <module name="testing-sample" />
         <module name="maven-profiles-example" />
         <module name="child" />
         <module name="deployment" />
         <module name="Testing" />
       </profile>
+      <profile name="Annotation profile for ${artifactId}" enabled="true">
+        <sourceOutputDir name="${project.basedir}/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="${project.basedir}/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="antora-doc-playbook" target="11" />
-      <module name="base-archetype-maven" target="11" />
-      <module name="base-maven-documentation" target="11" />
-      <module name="base-maven-system-property" target="11" />
-      <module name="base-maven-test" target="11" />
-      <module name="maven-documentation" target="11" />
+      <module name="archetype-resources" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

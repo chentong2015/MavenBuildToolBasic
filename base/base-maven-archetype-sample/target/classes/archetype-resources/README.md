@@ -1,0 +1,1 @@
+This is a basic maven archetype project
