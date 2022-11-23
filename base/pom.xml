@@ -21,6 +21,7 @@
         <module>maven-plugin-test</module>
         <module>maven-profiles</module>
         <module>maven-profiles-example</module>
+        <module>maven-tasks-download</module>
         <module>report-documentation</module>
     </modules>
 </project>

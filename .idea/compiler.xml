@@ -19,6 +19,7 @@
         <module name="base-freemarker-template" />
         <module name="maven-plugin-test" />
         <module name="hello-maven-plugin" />
+        <module name="maven-tasks-download" />
         <module name="core" />
         <module name="maven-plugin-base" />
         <module name="application" />
@@ -30,11 +31,6 @@
         <module name="child" />
         <module name="deployment" />
         <module name="Testing" />
-      </profile>
-      <profile name="Annotation profile for ${artifactId}" enabled="true">
-        <sourceOutputDir name="${project.basedir}/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="${project.basedir}/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

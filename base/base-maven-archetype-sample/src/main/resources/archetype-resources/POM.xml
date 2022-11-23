@@ -8,6 +8,7 @@
     <groupId>${groupId}</groupId>
     <artifactId>${artifactId}</artifactId>
     <version>${version}</version>
+    <!-- 显式修改默认的值 -->
     <packaging>jar</packaging>
 
 </project>

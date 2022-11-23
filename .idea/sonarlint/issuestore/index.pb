@@ -71,8 +71,6 @@ U
 %Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
 S
 #base/maven-plugin-base/Maven Plugin,b\f\bff9228ee8076860f6c8377825094822db6172e7
-O
-base/hello-maven-plugin/pom.xml,8\a\8af564b4a995ca79490aa60d76be70db40829a77
 x
 Hbase/hello-maven-plugin/src/main/java/maven/sample/plugin/HelloGoal.java,b\6\b6ba4336f24bb8dd9856028e367891f8e9b7eb56
 y
@@ -83,11 +81,21 @@ M
 pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd
 N
 base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 <
 settings.xml,1\d\1d784fce58c3719506730fb9749600554125b511
-K
-base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
 z
 Jbase/maven-profiles/src/test/java/com/exmple/main/MyMavenProfilesTest.java,a\d\ad1b21d481f12eb75cea8d374f2fcd4d8475c72e
+Q
+!base/base-maven-archetype/pom.xml,4\b\4b4ea5374deb43a386aea416570e2b913c6d2b46
+b
+2Apache Maven Basic/搭建项目/项目模块设计,d\0\d01504dde83b64a0ad7947858b0e2fa335cbac87
+T
+$Apache Maven Basic/转成Maven项目,8\4\8410e805bb709c9e0b7c9517efaf5936db214fc5
+f
+6base/maven-profiles-example/dependency-reduced-pom.xml,7\3\73793a0ec339afa5a4f2f9b2ec1ad6ee29a3f0c8
+t
+Dbase/maven-profiles-example/src/main/java/com/example/main/Main.java,6\a\6aeb57e977c782d6aed9d28fe279c2313c7022b8
+P
+ Apache Maven Basic/Maven_Options,3\1\317cf1163f02c4938831d73d903e16b62e275756
+O
+base/hello-maven-plugin/pom.xml,8\a\8af564b4a995ca79490aa60d76be70db40829a77

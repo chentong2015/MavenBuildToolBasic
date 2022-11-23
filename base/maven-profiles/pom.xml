@@ -28,7 +28,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.10.1</version>
-
                 <configuration>
                     <source>11</source>
                     <target>11</target>
@@ -66,10 +65,20 @@
             </properties>
         </profile>
 
+        <!-- TODO. Boolean类型参数的激活方式, 无需设置属性的value -->
+        <profile>
+            <id>boolean-test</id>
+            <activation>
+                <property>
+                    <name>useProfileBool</name>
+                </property>
+            </activation>
+        </profile>
+
+        <!-- TODO. 设置profile被激活的条件, 设置系统参数
+             如果设置默认激活, 则在maven > profiles下不可再选择 -->
         <profile>
             <id>integration-tests</id>
-            <!-- 选择在什么条件下激活, 可以通过系统参数
-                 默认激活, 则在maven > profiles下不可再选择 -->
             <activation>
                 <activeByDefault>true</activeByDefault>
                 <property>
