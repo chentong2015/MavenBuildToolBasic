@@ -1,5 +1,4 @@
-Archetype架构:
-Maven project templating toolkit
+Archetype架构: Maven project templating toolkit
 https://maven.apache.org/archetype/index.html
 https://maven.apache.org/guides/mini/guide-creating-archetypes.html
 
@@ -10,9 +9,16 @@ TODO. 使用maven提供的Archetype项目架构来创建项目
 TODO. 使用自定义的archetype模板生成
 > mvn archetype:generate
   -DgroupId=[your project's group id]
-  -DartifactId=[your project's artifact id]  => 项目或者模块的名称
+  -DartifactId=[your project's artifact id] 项目或者模块的名称
   -DarchetypeGroupId=org.apache.maven.archetypes
   -DarchetypeArtifactId=maven-archetype-archetype
 
-在创建时设置生成模块的三个信息，如果不设置，则需要单独输入设置 !!
-> mvn archetype:generate -DarchetypeGroupId=org.example -DarchetypeArtifactId=base-maven-archetype-sample -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=com.example.main -DartifactId=new-maven-module -Dversion=1.0-SNAPSHOT
+> mvn archetype:generate
+  提供archetype模板信息
+  -DarchetypeGroupId=org.example
+  -DarchetypeArtifactId=base-maven-archetype-sample
+  -DarchetypeVersion=1.0-SNAPSHOT
+  提供创建项目的模板信息，如果没有提供，则在后续创建的时候提供
+  -DgroupId=com.example.main
+  -DartifactId=new-maven-module
+  -Dversion=1.0-SNAPSHOT

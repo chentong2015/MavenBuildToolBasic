@@ -7,7 +7,7 @@ Maven配置参数Options:
  -D,--define <arg>                      Define a system property 定义一个系统属性, 并且设置它的值
  -o,--offline                           Work offline 设置离线工作
  -P,--activate-profiles <arg>           Comma-delimited list of profiles to activate 开启指定的Profile
- -gs,--gilobal-settngs <arg>            Alternate path for the global settings file 使用另一个自定义settings路径
+ -gs,--global-settings <arg>            Alternate path for the global settings file 使用另一个自定义settings路径
  -f,--file <arg>                        Force the use of an alternate POM file (or directory with pom.xml) 使用额外的POM
  -T,--threads <arg>                     Thread count, for instance 2.0C 设置构建时的线程数
                                         where C is core multiplied remote repositories

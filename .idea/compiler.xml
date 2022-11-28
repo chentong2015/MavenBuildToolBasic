@@ -35,6 +35,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="archetype-resources" target="1.5" />
+      <module name="base-maven-plugin-simple" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>

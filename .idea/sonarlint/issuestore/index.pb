@@ -57,8 +57,6 @@ F
 testing/pom.xml,8\9\8903c1b080f05322f79de2ebdfeb8da5fb4b4480
 F
 pom-master/bom/pom.xml,6\d\6de6f81afcbb548b26e5d01a1802196183b1daba
-D
-testing-plus/pom.xml,c\3\c3ebefc4b90dc5a3ea71dd216abad6d478af808c
 =
 child/pom.xml,7\5\7549128aef84b129beb2a28663f0991dc608236a
 B
@@ -85,17 +83,29 @@ N
 settings.xml,1\d\1d784fce58c3719506730fb9749600554125b511
 z
 Jbase/maven-profiles/src/test/java/com/exmple/main/MyMavenProfilesTest.java,a\d\ad1b21d481f12eb75cea8d374f2fcd4d8475c72e
-Q
-!base/base-maven-archetype/pom.xml,4\b\4b4ea5374deb43a386aea416570e2b913c6d2b46
-b
-2Apache Maven Basic/搭建项目/项目模块设计,d\0\d01504dde83b64a0ad7947858b0e2fa335cbac87
-T
-$Apache Maven Basic/转成Maven项目,8\4\8410e805bb709c9e0b7c9517efaf5936db214fc5
 f
 6base/maven-profiles-example/dependency-reduced-pom.xml,7\3\73793a0ec339afa5a4f2f9b2ec1ad6ee29a3f0c8
 t
 Dbase/maven-profiles-example/src/main/java/com/example/main/Main.java,6\a\6aeb57e977c782d6aed9d28fe279c2313c7022b8
-P
- Apache Maven Basic/Maven_Options,3\1\317cf1163f02c4938831d73d903e16b62e275756
 O
 base/hello-maven-plugin/pom.xml,8\a\8af564b4a995ca79490aa60d76be70db40829a77
+S
+#base/maven-profiles-example/pom.xml,d\5\d596c25c3a1d7a94c2b41a8386695ef57fcaaa8d
+Q
+!base/maven-tasks-download/pom.xml,2\a\2af987e251c56a5069677322d38190db6180b913
+w
+Gbase/maven-profiles/src/main/java/com/example/main/MyMavenProfiles.java,e\c\ec8b706e8bb0c07585cd7a2137efa5cc34f1a149
+R
+"base/maven-profiles/Maven Profiles,c\4\c4c92df252eb2ad79056f6347b6d72d325b58a8d
+`
+0base/base-maven-archetype/Maven WebApp Archetype,1\e\1e7361fefe898b9662ba0127d700406b54b64380
+X
+(base/base-maven-archetype-sample/pom.xml,0\9\092ba191fb4893e7f7086f6baab3fc4205809b14
+Z
+*base/base-maven-archetype/Maven Archetypes,1\b\1bdfac04d324ae689cfbdcf6cb35515ea7893256
+T
+$Apache Maven Basic/转成Maven项目,8\4\8410e805bb709c9e0b7c9517efaf5936db214fc5
+P
+ Apache Maven Basic/Maven_Options,3\1\317cf1163f02c4938831d73d903e16b62e275756
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

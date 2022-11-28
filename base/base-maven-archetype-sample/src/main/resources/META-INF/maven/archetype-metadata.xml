@@ -5,9 +5,10 @@
         http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
         xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- name名称必须和artifactId保持一致 -->
 
-    <!-- TODO. 设置要包含的指定的文件Sets集
-          这里设置所有要包含到archetype中的文件 -->
+    <!-- TODO. archetype descriptor 项目原型的描述文件
+          设置所有要包含到archetype中的文件, 指定特定的FileSet文件集 -->
     <fileSets>
         <!-- 添加过滤的同时，可以设置要包含的文件<includes> -->
         <fileSet filtered="true" encoding="UTF-8">
