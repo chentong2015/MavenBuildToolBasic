@@ -186,6 +186,9 @@
                   <distributionType>script</distributionType>
               </configuration>
           </plugin>
+
+          <!-- 生成自动化测试的报告
+               https://github.com/apache/maven-surefire  -->
       </plugins> 
    </build>
 </project>
