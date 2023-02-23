@@ -28,6 +28,7 @@
         <module name="base-maven-archetype-sample" />
         <module name="testing-sample" />
         <module name="maven-profiles-example" />
+        <module name="maven-profiles-master" />
         <module name="child" />
         <module name="deployment" />
         <module name="Testing" />

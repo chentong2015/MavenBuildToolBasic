@@ -80,7 +80,18 @@
                             <include>**/*.xml</include>
                         </includes>
                         <finalName>parent.target.jar</finalName>
+
+                        <!-- TODO. 该插件可以配置项目启动执行的mainClass -->
+                        <archive>
+                            <manifest>
+                                <addClasspath>true</addClasspath>
+                                <mainClass>com.example.MyApplication</mainClass>
+                                <classpathPrefix>dependency-jars/</classpathPrefix>
+                                <useUniqueVersions>false</useUniqueVersions>
+                            </manifest>
+                        </archive>
                     </configuration>
+
                     <executions>
                         <execution>
                             <id>pre-process-classes</id>

@@ -39,8 +39,6 @@ Q
 !base/report-documentation/pom.xml,c\2\c24709cd42bbff406b7f58d8f92b72f200d8bff2
 N
 pom-master/application/pom.xml,4\8\48565f6c4f1ddd0a50dd8b6c9002cbf5e326398e
-J
-pom-master/install/pom.xml,8\3\83dd10bc3d41639f5bace4be6947bfee8a30abe3
 _
 /pom-master/install/src/main/install/install.xml,0\6\0610d72af34ee86c9094b6b59d4073c49c6be54c
 G
@@ -69,24 +67,10 @@ x
 Hbase/hello-maven-plugin/src/main/java/maven/sample/plugin/HelloGoal.java,b\6\b6ba4336f24bb8dd9856028e367891f8e9b7eb56
 y
 Ibase/hello-maven-plugin/src/main/java/maven/sample/plugin/ReportGoal.java,d\f\df0fde5e5249d2b0c19e89b4505482934670b2f1
-C
-global-settings.xml,0\5\05d4752e9ba4b0b145d070360acea78b9003ce1e
-<
-settings.xml,1\d\1d784fce58c3719506730fb9749600554125b511
-z
-Jbase/maven-profiles/src/test/java/com/exmple/main/MyMavenProfilesTest.java,a\d\ad1b21d481f12eb75cea8d374f2fcd4d8475c72e
 f
 6base/maven-profiles-example/dependency-reduced-pom.xml,7\3\73793a0ec339afa5a4f2f9b2ec1ad6ee29a3f0c8
-t
-Dbase/maven-profiles-example/src/main/java/com/example/main/Main.java,6\a\6aeb57e977c782d6aed9d28fe279c2313c7022b8
-S
-#base/maven-profiles-example/pom.xml,d\5\d596c25c3a1d7a94c2b41a8386695ef57fcaaa8d
-Q
-!base/maven-tasks-download/pom.xml,2\a\2af987e251c56a5069677322d38190db6180b913
 w
 Gbase/maven-profiles/src/main/java/com/example/main/MyMavenProfiles.java,e\c\ec8b706e8bb0c07585cd7a2137efa5cc34f1a149
-R
-"base/maven-profiles/Maven Profiles,c\4\c4c92df252eb2ad79056f6347b6d72d325b58a8d
 `
 0base/base-maven-archetype/Maven WebApp Archetype,1\e\1e7361fefe898b9662ba0127d700406b54b64380
 X
@@ -95,19 +79,23 @@ Z
 *base/base-maven-archetype/Maven Archetypes,1\b\1bdfac04d324ae689cfbdcf6cb35515ea7893256
 P
  Apache Maven Basic/Maven_Options,3\1\317cf1163f02c4938831d73d903e16b62e275756
-K
-base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
 D
 testing-plus/pom.xml,c\3\c3ebefc4b90dc5a3ea71dd216abad6d478af808c
-Q
-!base/base-maven-archetype/pom.xml,4\b\4b4ea5374deb43a386aea416570e2b913c6d2b46
 b
 2Apache Maven Basic/搭建项目/项目模块设计,d\0\d01504dde83b64a0ad7947858b0e2fa335cbac87
 N
 base/maven-plugin-test/pom.xml,b\0\b036116ab8ac83205d454e0099de9d89ef91f2e8
-<
-base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4
 N
 base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
 T
 $Apache Maven Basic/转成Maven项目,8\4\8410e805bb709c9e0b7c9517efaf5936db214fc5
+O
+base/hello-maven-plugin/pom.xml,8\a\8af564b4a995ca79490aa60d76be70db40829a77
+P
+ Apache Maven Master/settings.xml,a\f\afb9ec25874a4f69d3f90b593939f93e113b97f3
+W
+'Apache Maven Master/global-settings.xml,c\8\c8e2b982f4bfcf93b9744274f7bbd0cc4286c19c
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+M
+pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd

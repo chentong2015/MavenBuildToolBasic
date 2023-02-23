@@ -11,7 +11,8 @@ public class Main {
     // cmd>java -cp MavenBasicProject.jar com.example.main.Main
     public static void main(String[] args) throws IOException {
         Properties properties = new Properties();
-        try (InputStream inputStream = Main.class.getClassLoader().getResourceAsStream("database.properties")) {
+        ClassLoader classLoader = Main.class.getClassLoader();
+        try (InputStream inputStream = classLoader.getResourceAsStream("database.properties")) {
             properties.load(inputStream);
         }
         properties.forEach((key, value) -> System.out.println(key + ": " + value));
