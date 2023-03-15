@@ -162,15 +162,6 @@
                 </reportSets>
             </plugin>
 
-            <!-- TODO. https://maven.apache.org/surefire/maven-surefire-report-plugin/usage.html
-                 生成web版的测试报告
-                 generated TEST-*.xml files under ${basedir}/target/surefire-reports -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>3.0.0-M3</version>
-            </plugin>
-
             <!-- TODO. 对于Java 11使用自定义的插件出错 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

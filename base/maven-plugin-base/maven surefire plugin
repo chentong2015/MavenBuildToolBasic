@@ -1,0 +1,18 @@
+https://maven.apache.org/surefire/maven-surefire-plugin/
+https://maven.apache.org/surefire/maven-surefire-plugin/examples/junit-platform.html
+
+TODO. surefire插件在test phase阶段执行单元测试，生成测试报告文件
+      当同时存在JUnit4和JUnit5的单元测试时，Plugin可能选择不同的Provider，导致J4测试不执行 !!
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.0.0</version>
+    [... configuration or goals and executions ...]
+</plugin>
+
+生成web版的测试报告 under ${basedir}/target/surefire-reports
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-report-plugin</artifactId>
+    <version>3.0.0-M3</version>
+</plugin>
