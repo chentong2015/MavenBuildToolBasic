@@ -119,20 +119,23 @@
               </configuration>
           </plugin> -->
 
-         <!-- Bundle the specific Java Version -->
-         <!-- Setting up maven plugins to compile the code with java 15 -->
-         <plugin>
-           <groupId>org.apache.maven.plugins</groupId>
-           <artifactId>maven-compiler-plugin</artifactId>
-           <version>3.8.0</version>
-           <configuration>
-              <target>15</target>
-              <source>15</source>
-              <release>15</release>
-           </configuration>
-         </plugin>
+          <!-- Bundle the specific Java Version -->
+          <!-- Setting up maven plugins to compile the code with java 15 -->
+          <!-- TODO. 在编译阶段可能会出现编译错误，可以设置compiler插件的编码格式
+            unmappable character (0x81) for encoding windows-1252-->
+          <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-compiler-plugin</artifactId>
+             <version>3.8.0</version>
+             <configuration>
+                 <target>15</target>
+                 <source>15</source>
+                 <release>15</release>
+                 <encoding>UTF-8</encoding>
+             </configuration>
+          </plugin>
             
-         <plugin>
+          <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-source-plugin</artifactId>
               <version>3.2.1</version>
@@ -144,7 +147,7 @@
                       <phase>install</phase>
                   </execution>
               </executions>
-         </plugin> 
+          </plugin>
          
           <!-- 配置指定的Goal -->
           <plugin>

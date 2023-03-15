@@ -109,7 +109,13 @@ U
 %Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
 G
 pom-master/core/pom.xml,6\0\6094f0976ddb5a552c3d76cc1b1b6a9b79e2cb30
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 ?
 testing/pom.xml,8\9\8903c1b080f05322f79de2ebdfeb8da5fb4b4480
+S
+#base/maven-plugin-base/maven plugin,c\5\c5114fc7c2f2aae8c4c669971d07606aec3d813a
+N
+base/maven-plugin-test/pom.xml,b\0\b036116ab8ac83205d454e0099de9d89ef91f2e8
+N
+base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
+G
+child/effective-pom.xml,9\8\986d5807be13028dfc0dc1df627822ce92132d31
