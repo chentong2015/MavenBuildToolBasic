@@ -39,16 +39,10 @@ Q
 !base/report-documentation/pom.xml,c\2\c24709cd42bbff406b7f58d8f92b72f200d8bff2
 _
 /pom-master/install/src/main/install/install.xml,0\6\0610d72af34ee86c9094b6b59d4073c49c6be54c
-U
-%Apache Maven Basic/Maven Repositories,9\7\97c3d9e579fb372220c0635532c2894f14c87259
 F
 testing-sample/pom.xml,0\9\09234b35e8d2962794028feb22841a4dad5fce99
 =
 child/pom.xml,7\5\7549128aef84b129beb2a28663f0991dc608236a
-B
-pom-master/pom.xml,d\1\d16152422b6062351273ce5ce5af6ad4e5e9c4e5
-W
-'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
 x
 Hbase/hello-maven-plugin/src/main/java/maven/sample/plugin/HelloGoal.java,b\6\b6ba4336f24bb8dd9856028e367891f8e9b7eb56
 y
@@ -63,14 +57,8 @@ X
 (base/base-maven-archetype-sample/pom.xml,0\9\092ba191fb4893e7f7086f6baab3fc4205809b14
 Z
 *base/base-maven-archetype/Maven Archetypes,1\b\1bdfac04d324ae689cfbdcf6cb35515ea7893256
-P
- Apache Maven Basic/Maven_Options,3\1\317cf1163f02c4938831d73d903e16b62e275756
 D
 testing-plus/pom.xml,c\3\c3ebefc4b90dc5a3ea71dd216abad6d478af808c
-b
-2Apache Maven Basic/搭建项目/项目模块设计,d\0\d01504dde83b64a0ad7947858b0e2fa335cbac87
-T
-$Apache Maven Basic/转成Maven项目,8\4\8410e805bb709c9e0b7c9517efaf5936db214fc5
 O
 base/hello-maven-plugin/pom.xml,8\a\8af564b4a995ca79490aa60d76be70db40829a77
 P
@@ -87,34 +75,22 @@ z
 Jbase/maven-profiles/src/test/java/com/exmple/main/MyMavenProfilesTest.java,a\d\ad1b21d481f12eb75cea8d374f2fcd4d8475c72e
 Q
 !base/maven-tasks-download/pom.xml,2\a\2af987e251c56a5069677322d38190db6180b913
-<
-base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4
 t
 Dbase/maven-profiles-example/src/main/java/com/example/main/Main.java,6\a\6aeb57e977c782d6aed9d28fe279c2313c7022b8
 S
 #base/maven-profiles-example/pom.xml,d\5\d596c25c3a1d7a94c2b41a8386695ef57fcaaa8d
->
-parent/pom.xml,0\c\0cc644dd1c242220ad7b09063cbd5d141a944409
 R
 "base/maven-profiles-master/pom.xml,2\d\2df2b39dbbdac828045d36cc0aa1e2e75dfed5fd
-F
-pom-master/bom/pom.xml,6\d\6de6f81afcbb548b26e5d01a1802196183b1daba
 M
 pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd
 N
 pom-master/application/pom.xml,4\8\48565f6c4f1ddd0a50dd8b6c9002cbf5e326398e
 J
 pom-master/install/pom.xml,8\3\83dd10bc3d41639f5bace4be6947bfee8a30abe3
-U
-%Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
 G
 pom-master/core/pom.xml,6\0\6094f0976ddb5a552c3d76cc1b1b6a9b79e2cb30
 ?
 testing/pom.xml,8\9\8903c1b080f05322f79de2ebdfeb8da5fb4b4480
-S
-#base/maven-plugin-base/maven plugin,c\5\c5114fc7c2f2aae8c4c669971d07606aec3d813a
-N
-base/maven-plugin-test/pom.xml,b\0\b036116ab8ac83205d454e0099de9d89ef91f2e8
 N
 base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
 G

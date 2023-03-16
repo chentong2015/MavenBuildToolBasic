@@ -1,5 +1,0 @@
-POM: Project Object Model
-
-选择项目或者模块(必须包含pom.xml文件)，以Maven项目导入
-Convert "Project" to Maven Project
-Convert any java project with pom.xml to Maven Project

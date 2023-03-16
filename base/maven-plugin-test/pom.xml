@@ -19,6 +19,7 @@
 
     <build>
         <plugins>
+            <!-- TODO. 匹配条件约束的满足 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>

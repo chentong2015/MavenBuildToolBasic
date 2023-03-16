@@ -1,4 +1,5 @@
-https://mvnrepository.com/ 搜索并添加<dependency>刷新maven projects
+https://mvnrepository.com/
+https://central.sonatype.com/  Maven Central Repository
 https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html
 
 Versions: The release number of artifact
@@ -10,31 +11,31 @@ Versions: The release number of artifact
     MyApp-1.0-RELEASE.jar
     MyApp-1.0-Final.jar
 
-Types:
-  Package Types: jar war pom ear maven-plugin
-Default jar
-Dependency POM
-
 Transitive Dependencies:
 1. 如果出现冲突，会选择最新的版本
 2. 下载一个依赖的时候，所有相关的传递的依赖都将被下载
 
-Scopes:
-1. compile: 默认，不需要显示标注
-     It means all the resources are available everywhere inside of application
-2. provided:
-     The artifact is available throughout the entire build cycle
-     在构建的时候可以不打包指定的依赖
-3. runtime:
-     不需要测试，不需要编译，不需要打包，需要运行
-     It's needed for execution 运行的时候动态加载
-4. test:
-     在生产代码中是不可见的依赖
-     For the test compilation and execution phase
-     it does nothing for compiling; packaging; not included in final artifact
-     JUnit or TestNG jars
-5. System:
-     never use it
-6. import:
-     Dependency Management deals with sharing resources across multiple POMs
-     用于"依赖管理"处理共享资源，一般在<dependencyManagement>中设置
+Maven dependency scopes:
+   compile 在编译阶段提供，测试中可以使用(默认作用域)
+      Available on the classpath of the project in all build tasks.
+      TODO. 该Scope具有传递性依赖，Module B可以使用module a中此scope的依赖
+
+   runtime 在运行阶段提供的依赖
+      The dependencies with this scope are required at runtime. 运行的时候动态加载
+      Don't need them for the compilation of the project code，present in the runtime and test classpath
+
+   test 只在测试阶段提供
+      Not required at standard runtime of the application but is used only for test purposes.
+      it does nothing for compiling; packaging; not included in final artifact
+      TODO: Test dependencies aren't transitive and are only present for test and execution classpath.
+
+   provided
+      Dependencies that should be provided at runtime by JDK or a container.
+      For web app deployed in some container where already provides some libraries itself.
+
+   Import: 只作用在pom类型的dependency上
+
+   System: deprecated.
+
+TODO. module B找不到自定义的模块A ?
+module A必须要build之后才能被引用(找到)，特别在修改A的依赖之后需要构建，B构建时才能获取更新

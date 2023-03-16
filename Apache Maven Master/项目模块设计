@@ -1,3 +1,9 @@
+POM: Project Object Model
+
+选择项目或者模块(必须包含pom.xml文件)，以Maven项目导入
+Convert "Project" to Maven Project
+Convert any java project with pom.xml to Maven Project
+
 pom.xml 总外层项目模块
  - module 1 子模块
    > 设置父级<parent>关联，确定一致性<artifactId><groupId> !! 引用父级统一管理的依赖
@@ -20,7 +26,6 @@ pom.xml 总外层项目模块
    > 设置<parent>
    > 设置<packaging>
    > 设置<artifactId>
-
 
 bom / parent模块设计
  - 将项目中所有使用到的依赖提取到独立的pom module中，使用<dependencyManagement>统一管理
