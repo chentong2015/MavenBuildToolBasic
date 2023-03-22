@@ -1,10 +1,15 @@
-Maven Project Lifecycle 双击之后可以运行
+在构建项目时，空Class文件不会造成影响，不影响构建
 1. Maven clean:
    Download and set up project
    Clean up the project
 
 2. Maven compile: compile source code to .class files
-   > java Main
+   -run Maven using the -X switch to enable full debug logging. 开启详细堆栈日志, 提供项目构建的详细信息
+      Apache Maven 3.6.3 (cecedd343...)
+      Maven home: C:\Maven\maven-3.6.3-takari-smart-builder-pandora
+      Java version: 11.0.2-BellSoft, vendor: BellSoft, runtime: C:\jdk-11.0.2
+      Default locale: en_US, platform encoding: Cp1252
+      OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
 3. Maven package:
    Download all plugins
@@ -13,16 +18,16 @@ Maven Project Lifecycle 双击之后可以运行
 
 4. Maven install:
    Download all dependencies
-   Firstly, run the package command, then install in local repository
+   Run the package command, then install in local repository
    Home directory C:\Users\tchen\.m2\repository\com
 
-5. Maven deploy
-   Run install command and deploys it to a corporate or remote repository
+5. Maven deploy:
+   Run install command
+   Deploys it to a corporate or remote repository
 
-6. Maven Test
-   > maven clean test 运行maven项目所有测试
+6. Maven Test:
+   > maven clean test
 
-TODO. 每一个Goal代表插件的能力: Each Goal represents a capability of that plugin
 Phases 阶段
   1. validate: validate project and structure
   2. compile: compile any source in the project
@@ -34,6 +39,7 @@ Phases 阶段
   7. install: install package in local repo
   8. deploy: copy package to remote repo
 
+TODO. 每个Goal代表插件某个能力 Each Goal represents a capability of that plugin
 Goal 双击执行Goal / Execute Maven Goal多个执行
   1. validate: validate the project is correct and info is available
   2. compile: compile the source code

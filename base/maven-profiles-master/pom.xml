@@ -29,6 +29,7 @@
             </activation>
             <build>
                 <plugins>
+
                     <!-- /dependency-jars -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -49,7 +50,6 @@
                         </executions>
                     </plugin>
 
-                    <!--  -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-resources-plugin</artifactId>

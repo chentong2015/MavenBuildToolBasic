@@ -69,7 +69,7 @@
                 </plugin>
 
                 <!-- TODO. 定义在构建生成jar包时的参数配置
-                     add the maven-jar-plugin to the build will get the pre-process-classes execution -->
+                     Add maven-jar-plugin to the build will get the pre-process-classes execution -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
@@ -79,6 +79,7 @@
                         <includes>
                             <include>**/*.xml</include>
                         </includes>
+                        <!-- 定义生成jar包的名称 -->
                         <finalName>parent.target.jar</finalName>
 
                         <!-- TODO. 该插件可以配置项目启动执行的mainClass -->
@@ -129,7 +130,7 @@
                 <executions>
                     <execution>
                         <id>unpack-dependencies</id>
-                        <!-- 在run maven verify的时候 -->
+                        <!-- 在run maven verify的时候, verify在install之前 -->
                         <phase>verify</phase>
                         <!-- 配置针对的goals, 执行maven phase的时候要做的事情 -->
                         <goals>

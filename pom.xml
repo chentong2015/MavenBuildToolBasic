@@ -122,7 +122,7 @@
           <!-- Bundle the specific Java Version -->
           <!-- Setting up maven plugins to compile the code with java 15 -->
           <!-- TODO. 在编译阶段可能会出现编译错误，可以设置compiler插件的编码格式
-            unmappable character (0x81) for encoding windows-1252-->
+               unmappable character (0x81) for encoding windows-1252-->
           <plugin>
              <groupId>org.apache.maven.plugins</groupId>
              <artifactId>maven-compiler-plugin</artifactId>
@@ -165,8 +165,7 @@
               </executions>
           </plugin>
           
-          <!-- 这里生成的是默认的web Java Doc
-               自动打包生成JavaDoc Web API; 项目参考文档 -->
+          <!-- 自动打包生成JavaDoc Web API; 项目参考文档 -->
          <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-javadoc-plugin</artifactId>
@@ -189,9 +188,6 @@
                   <distributionType>script</distributionType>
               </configuration>
           </plugin>
-
-          <!-- 生成自动化测试的报告
-               https://github.com/apache/maven-surefire  -->
       </plugins> 
    </build>
 </project>

@@ -59,12 +59,6 @@ Z
 *base/base-maven-archetype/Maven Archetypes,1\b\1bdfac04d324ae689cfbdcf6cb35515ea7893256
 D
 testing-plus/pom.xml,c\3\c3ebefc4b90dc5a3ea71dd216abad6d478af808c
-O
-base/hello-maven-plugin/pom.xml,8\a\8af564b4a995ca79490aa60d76be70db40829a77
-P
- Apache Maven Master/settings.xml,a\f\afb9ec25874a4f69d3f90b593939f93e113b97f3
-W
-'Apache Maven Master/global-settings.xml,c\8\c8e2b982f4bfcf93b9744274f7bbd0cc4286c19c
 Q
 !base/base-maven-archetype/pom.xml,4\b\4b4ea5374deb43a386aea416570e2b913c6d2b46
 K
@@ -79,8 +73,6 @@ t
 Dbase/maven-profiles-example/src/main/java/com/example/main/Main.java,6\a\6aeb57e977c782d6aed9d28fe279c2313c7022b8
 S
 #base/maven-profiles-example/pom.xml,d\5\d596c25c3a1d7a94c2b41a8386695ef57fcaaa8d
-R
-"base/maven-profiles-master/pom.xml,2\d\2df2b39dbbdac828045d36cc0aa1e2e75dfed5fd
 M
 pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd
 N
@@ -89,9 +81,19 @@ J
 pom-master/install/pom.xml,8\3\83dd10bc3d41639f5bace4be6947bfee8a30abe3
 G
 pom-master/core/pom.xml,6\0\6094f0976ddb5a552c3d76cc1b1b6a9b79e2cb30
-?
-testing/pom.xml,8\9\8903c1b080f05322f79de2ebdfeb8da5fb4b4480
-N
-base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
 G
 child/effective-pom.xml,9\8\986d5807be13028dfc0dc1df627822ce92132d31
+P
+ Apache Maven Basic/Maven_Options,3\1\317cf1163f02c4938831d73d903e16b62e275756
+U
+%Apache Maven Basic/Maven Repositories,9\7\97c3d9e579fb372220c0635532c2894f14c87259
+U
+%Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
+S
+#base/maven-plugin-base/maven plugin,c\5\c5114fc7c2f2aae8c4c669971d07606aec3d813a
+F
+pom-master/bom/pom.xml,6\d\6de6f81afcbb548b26e5d01a1802196183b1daba
+B
+pom-master/pom.xml,d\1\d16152422b6062351273ce5ce5af6ad4e5e9c4e5
+N
+base/maven-plugin-test/pom.xml,b\0\b036116ab8ac83205d454e0099de9d89ef91f2e8
