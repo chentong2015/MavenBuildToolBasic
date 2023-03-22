@@ -1,4 +1,6 @@
+
 通过maven-jar-plugin插件可以将当前项目编译好的测试打包到jar中
+
 在使用该项目的其他项目中可以重用当前的测试
 https://maven.apache.org/guides/mini/guide-attached-tests.html
 
