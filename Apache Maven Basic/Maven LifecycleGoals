@@ -34,8 +34,7 @@ Phases 阶段
   3. test: test the complied code
   4. package: package the code in the specified package type
   5. integration-test: deploy and run integration test
-  6. verify: run checks to verify integrity
-            verify在install和deploy之前运行
+  6. verify: run checks to verify integrity 在install和deploy之前运行
   7. install: install package in local repo
   8. deploy: copy package to remote repo
 
