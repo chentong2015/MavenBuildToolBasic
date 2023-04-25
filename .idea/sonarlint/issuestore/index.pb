@@ -11,8 +11,6 @@ f
 Testing/pom.xml,c\e\cef842c0a7c206f7a6670d5d4c3c5c3cf76e7ac6
 {
 Kpom-master/deployment/src/non-packaged-resources/non-packaged-resources.txt,f\2\f2faed11a7dc549e44bf4c167ddc82b7b0875dbc
-f
-6pom-master/install/src/main/install/install-setups.xml,1\8\18a93a5c9194d5a88482a3c775102c375a24b6e6
 y
 Ibase/report-documentation/base-freemarker-template/FreeMarker模板引擎,b\1\b1ac18907dbd5c75c059f396a0690e2bf199ad4c
 u
@@ -37,8 +35,6 @@ p
 @base/report-documentation/base-asciidoctor-documentation/pom.xml,c\c\cce13d7458e8f172b406b23705ab61ee674b490f
 Q
 !base/report-documentation/pom.xml,c\2\c24709cd42bbff406b7f58d8f92b72f200d8bff2
-_
-/pom-master/install/src/main/install/install.xml,0\6\0610d72af34ee86c9094b6b59d4073c49c6be54c
 x
 Hbase/hello-maven-plugin/src/main/java/maven/sample/plugin/HelloGoal.java,b\6\b6ba4336f24bb8dd9856028e367891f8e9b7eb56
 y
@@ -63,8 +59,6 @@ M
 pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd
 N
 pom-master/application/pom.xml,4\8\48565f6c4f1ddd0a50dd8b6c9002cbf5e326398e
-J
-pom-master/install/pom.xml,8\3\83dd10bc3d41639f5bace4be6947bfee8a30abe3
 G
 pom-master/core/pom.xml,6\0\6094f0976ddb5a552c3d76cc1b1b6a9b79e2cb30
 P
@@ -89,8 +83,6 @@ Q
 testing/pom.xml,8\9\8903c1b080f05322f79de2ebdfeb8da5fb4b4480
 F
 testing-sample/pom.xml,0\9\09234b35e8d2962794028feb22841a4dad5fce99
-<
-base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4
 S
 #base/maven-profiles-example/pom.xml,d\5\d596c25c3a1d7a94c2b41a8386695ef57fcaaa8d
 N
@@ -105,3 +97,23 @@ K
 base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
 >
 parent/pom.xml,0\c\0cc644dd1c242220ad7b09063cbd5d141a944409
+B
+pom-master/pom.xml,d\1\d16152422b6062351273ce5ce5af6ad4e5e9c4e5
+F
+pom-master/bom/pom.xml,6\d\6de6f81afcbb548b26e5d01a1802196183b1daba
+N
+base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
+G
+child/effective-pom.xml,9\8\986d5807be13028dfc0dc1df627822ce92132d31
+=
+child/pom.xml,7\5\7549128aef84b129beb2a28663f0991dc608236a
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+W
+'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
+U
+%Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
+U
+%Apache Maven Basic/Maven Repositories,9\7\97c3d9e579fb372220c0635532c2894f14c87259
+<
+base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4

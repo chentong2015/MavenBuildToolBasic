@@ -50,7 +50,7 @@
             </plugin>
 
             <!-- TODO. Apache Maven Assembly Plugin 整个项目装配的插件
-                       一个自动装配的插件 https://maven.apache.org/plugins/maven-assembly-plugin/assembly.html
+                   自动装配的插件 https://maven.apache.org/plugins/maven-assembly-plugin/assembly.html
                  combine project output into a single distributable archive that also
                  contains dependencies, modules, site documentation, and other files -->
             <plugin>

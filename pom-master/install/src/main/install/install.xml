@@ -1,11 +1,11 @@
-<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.1.1"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.1.1
+          http://maven.apache.org/xsd/assembly-2.1.1.xsd">
     <id>package</id>
     <includeBaseDirectory>false</includeBaseDirectory>
 
-    <!-- TODO. 通过maven-assembly-plugin插件，将指定的文件进行集成和打包
-               最终以指定的格式输出到指定的路径下面 -->
+    <!-- 通过maven-assembly-plugin插件, 将指定文件集成打包, 以指定的格式输出到指定的路径下面 -->
     <fileSets>
         <fileSet>
             <!-- 指定的文件源目录 -->
