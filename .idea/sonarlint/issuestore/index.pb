@@ -67,12 +67,8 @@ S
 #base/maven-plugin-base/maven plugin,c\5\c5114fc7c2f2aae8c4c669971d07606aec3d813a
 f
 6testing/src/main/java/com/pom/testing/MainTesting.java,6\5\654ac5535fa00c426d1df647679a749d652f4160
-\
-,base/maven-plugin-base/maven surefire plugin,8\e\8e8c7f712edac2c0fe7e7f3fd9ecc8b1fc9340db
 R
 "base/maven-profiles-master/pom.xml,2\d\2df2b39dbbdac828045d36cc0aa1e2e75dfed5fd
-G
-parent/maven jar plugin,d\1\d1da062c70d9f9f6960daaf198e61cf56af1a146
 V
 &Apache Maven Master/项目模块升级,7\5\7556c3d160926a7da3fe61804e773d5b1be89f1e
 V
@@ -95,8 +91,6 @@ X
 (base/base-maven-archetype-sample/pom.xml,0\9\092ba191fb4893e7f7086f6baab3fc4205809b14
 K
 base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
->
-parent/pom.xml,0\c\0cc644dd1c242220ad7b09063cbd5d141a944409
 B
 pom-master/pom.xml,d\1\d16152422b6062351273ce5ce5af6ad4e5e9c4e5
 F
@@ -117,3 +111,5 @@ U
 %Apache Maven Basic/Maven Repositories,9\7\97c3d9e579fb372220c0635532c2894f14c87259
 <
 base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4
+>
+parent/pom.xml,0\c\0cc644dd1c242220ad7b09063cbd5d141a944409
