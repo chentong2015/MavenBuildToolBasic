@@ -17,23 +17,13 @@
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
 
+    <!-- maven-enforcer-plugin可以验证项目构建所必须满足的条件 -->
     <build>
         <plugins>
-            <!-- TODO. 匹配条件约束的满足 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <version>3.1.0</version>
-                <executions>
-                    <execution>
-                        <id>enforce-versions</id>
-                        <goals>
-                            <!-- 指定这个插件的什么Goal阶段 -->
-                            <goal>enforce</goal>
-                        </goals>
-
-                    </execution>
-                </executions>
 
                 <!-- 下面的configuration配置规则需要和executions放置在同级 -->
                 <configuration>
@@ -59,6 +49,35 @@
                         </requireOS>
                     </rules>
                 </configuration>
+
+                <executions>
+                    <execution>
+                        <id>enforce-versions</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <!-- 指定这个插件的什么Goal阶段 -->
+                            <goal>enforce</goal>
+                        </goals>
+
+                        <!-- TODO. 禁止在某模块中使用某些依赖，通过enforcer插件来实现 !!
+                         https://maven.apache.org/enforcer/enforcer-rules/bannedDependencies.html -->
+                        <configuration>
+                            <rules>
+                                <bannedDependencies>
+                                    <excludes>
+                                        <exclude>org.apache.maven</exclude>
+                                        <exclude>org.apache.maven:badArtifact</exclude>
+                                        <exclude>*:badArtifact</exclude>
+                                    </excludes>
+                                    <includes>
+                                        <!-- only 1.0 of badArtifact is allowed -->
+                                        <include>org.apache.maven:badArtifact:1.0</include>
+                                    </includes>
+                                </bannedDependencies>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

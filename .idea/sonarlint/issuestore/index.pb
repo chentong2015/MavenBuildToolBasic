@@ -31,8 +31,6 @@ Z
 *.settings/org.eclipse.core.resources.prefs,8\5\85aef4dd7ac54949c4d8a1fc9fb5fbe3e5867303
 {
 Kbase/report-documentation/base-asciidoctor-documentation/Asciidoctor Plugin,3\0\30795a9598b153d29fe5421a43fa8ff6a0eda2a3
-p
-@base/report-documentation/base-asciidoctor-documentation/pom.xml,c\c\cce13d7458e8f172b406b23705ab61ee674b490f
 Q
 !base/report-documentation/pom.xml,c\2\c24709cd42bbff406b7f58d8f92b72f200d8bff2
 x
@@ -47,69 +45,77 @@ Gbase/maven-profiles/src/main/java/com/example/main/MyMavenProfiles.java,e\c\ec
 0base/base-maven-archetype/Maven WebApp Archetype,1\e\1e7361fefe898b9662ba0127d700406b54b64380
 Z
 *base/base-maven-archetype/Maven Archetypes,1\b\1bdfac04d324ae689cfbdcf6cb35515ea7893256
-D
-testing-plus/pom.xml,c\3\c3ebefc4b90dc5a3ea71dd216abad6d478af808c
-R
-"base/maven-profiles/Maven Profiles,c\4\c4c92df252eb2ad79056f6347b6d72d325b58a8d
 z
 Jbase/maven-profiles/src/test/java/com/exmple/main/MyMavenProfilesTest.java,a\d\ad1b21d481f12eb75cea8d374f2fcd4d8475c72e
 t
 Dbase/maven-profiles-example/src/main/java/com/example/main/Main.java,6\a\6aeb57e977c782d6aed9d28fe279c2313c7022b8
-M
-pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd
-N
-pom-master/application/pom.xml,4\8\48565f6c4f1ddd0a50dd8b6c9002cbf5e326398e
-G
-pom-master/core/pom.xml,6\0\6094f0976ddb5a552c3d76cc1b1b6a9b79e2cb30
 P
  Apache Maven Basic/Maven_Options,3\1\317cf1163f02c4938831d73d903e16b62e275756
-S
-#base/maven-plugin-base/maven plugin,c\5\c5114fc7c2f2aae8c4c669971d07606aec3d813a
 f
 6testing/src/main/java/com/pom/testing/MainTesting.java,6\5\654ac5535fa00c426d1df647679a749d652f4160
-R
-"base/maven-profiles-master/pom.xml,2\d\2df2b39dbbdac828045d36cc0aa1e2e75dfed5fd
 V
 &Apache Maven Master/项目模块升级,7\5\7556c3d160926a7da3fe61804e773d5b1be89f1e
 V
 &Apache Maven Master/项目模块设计,1\e\1e48f7f7f0649ee90305d919439d39ec31708249
 Q
 !base/maven-tasks-download/pom.xml,2\a\2af987e251c56a5069677322d38190db6180b913
-?
-testing/pom.xml,8\9\8903c1b080f05322f79de2ebdfeb8da5fb4b4480
-F
-testing-sample/pom.xml,0\9\09234b35e8d2962794028feb22841a4dad5fce99
 S
 #base/maven-profiles-example/pom.xml,d\5\d596c25c3a1d7a94c2b41a8386695ef57fcaaa8d
-N
-base/maven-plugin-test/pom.xml,b\0\b036116ab8ac83205d454e0099de9d89ef91f2e8
 Q
 !base/base-maven-archetype/pom.xml,4\b\4b4ea5374deb43a386aea416570e2b913c6d2b46
 O
 base/hello-maven-plugin/pom.xml,8\a\8af564b4a995ca79490aa60d76be70db40829a77
-X
-(base/base-maven-archetype-sample/pom.xml,0\9\092ba191fb4893e7f7086f6baab3fc4205809b14
-K
-base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
-B
-pom-master/pom.xml,d\1\d16152422b6062351273ce5ce5af6ad4e5e9c4e5
+U
+%Apache Maven Basic/Maven Repositories,9\7\97c3d9e579fb372220c0635532c2894f14c87259
+?
+testing/pom.xml,8\9\8903c1b080f05322f79de2ebdfeb8da5fb4b4480
+p
+@base/report-documentation/base-asciidoctor-documentation/pom.xml,c\c\cce13d7458e8f172b406b23705ab61ee674b490f
+\
+,base/maven-plugin-base/maven surefire plugin,8\e\8e8c7f712edac2c0fe7e7f3fd9ecc8b1fc9340db
+W
+'base/maven-plugin-base/maven jar plugin,2\d\2d8d777e6bd0b9a376bc2a63d2ccd6fa2acdc05a
+S
+#base/maven-plugin-base/maven plugin,c\5\c5114fc7c2f2aae8c4c669971d07606aec3d813a
+W
+'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
 F
 pom-master/bom/pom.xml,6\d\6de6f81afcbb548b26e5d01a1802196183b1daba
+B
+pom-master/pom.xml,d\1\d16152422b6062351273ce5ce5af6ad4e5e9c4e5
+D
+testing-plus/pom.xml,c\3\c3ebefc4b90dc5a3ea71dd216abad6d478af808c
+<
+base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4
 N
-base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
+pom-master/application/pom.xml,4\8\48565f6c4f1ddd0a50dd8b6c9002cbf5e326398e
+G
+pom-master/core/pom.xml,6\0\6094f0976ddb5a552c3d76cc1b1b6a9b79e2cb30
 G
 child/effective-pom.xml,9\8\986d5807be13028dfc0dc1df627822ce92132d31
 =
 child/pom.xml,7\5\7549128aef84b129beb2a28663f0991dc608236a
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-W
-'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
+M
+pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd
 U
 %Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
-U
-%Apache Maven Basic/Maven Repositories,9\7\97c3d9e579fb372220c0635532c2894f14c87259
-<
-base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4
+R
+"base/maven-profiles-master/pom.xml,2\d\2df2b39dbbdac828045d36cc0aa1e2e75dfed5fd
+K
+base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
 >
 parent/pom.xml,0\c\0cc644dd1c242220ad7b09063cbd5d141a944409
+R
+"base/maven-profiles/Maven Profiles,c\4\c4c92df252eb2ad79056f6347b6d72d325b58a8d
+J
+pom-master/install/pom.xml,8\3\83dd10bc3d41639f5bace4be6947bfee8a30abe3
+_
+/pom-master/install/src/main/install/install.xml,0\6\0610d72af34ee86c9094b6b59d4073c49c6be54c
+f
+6pom-master/install/src/main/install/install-setups.xml,1\8\18a93a5c9194d5a88482a3c775102c375a24b6e6
+[
++base/maven-plugin-base/maven javadoc plugin,7\7\770a0f7d916910851575ce9dd88a13dd2bdf1095
+N
+base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
+N
+base/maven-plugin-test/pom.xml,b\0\b036116ab8ac83205d454e0099de9d89ef91f2e8
