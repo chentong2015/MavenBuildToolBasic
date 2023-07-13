@@ -103,8 +103,6 @@ R
 "base/maven-profiles-master/pom.xml,2\d\2df2b39dbbdac828045d36cc0aa1e2e75dfed5fd
 K
 base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
->
-parent/pom.xml,0\c\0cc644dd1c242220ad7b09063cbd5d141a944409
 R
 "base/maven-profiles/Maven Profiles,c\4\c4c92df252eb2ad79056f6347b6d72d325b58a8d
 J
@@ -119,3 +117,7 @@ N
 base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
 N
 base/maven-plugin-test/pom.xml,b\0\b036116ab8ac83205d454e0099de9d89ef91f2e8
+p
+@testing-sample/src/main/java/com/example/testing/MainSample.java,9\1\91b0af11d14595497ea13925ea82ee98b78fe161
+F
+testing-sample/pom.xml,0\9\09234b35e8d2962794028feb22841a4dad5fce99

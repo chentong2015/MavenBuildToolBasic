@@ -10,25 +10,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="base-asciidoctor-documentation" />
-        <module name="testing-plus" />
-        <module name="maven-profiles" />
-        <module name="base-maven-archetype" />
-        <module name="testing" />
-        <module name="base-antora-playbook" />
-        <module name="base-freemarker-template" />
-        <module name="maven-plugin-test" />
-        <module name="hello-maven-plugin" />
-        <module name="maven-tasks-download" />
         <module name="core" />
-        <module name="maven-plugin-base" />
         <module name="application" />
         <module name="install" />
         <module name="maven-documentation" />
         <module name="base-maven-archetype-sample" />
-        <module name="testing-sample" />
-        <module name="maven-profiles-example" />
-        <module name="maven-profiles-master" />
+        <module name="hello-maven-plugin" />
         <module name="child" />
         <module name="deployment" />
         <module name="Testing" />
@@ -38,5 +25,24 @@
       <module name="archetype-resources" target="1.5" />
       <module name="base-maven-plugin-simple" target="15" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="base" options="" />
+      <module name="base-antora-playbook" options="-proc:none -parameters" />
+      <module name="base-asciidoctor-documentation" options="-proc:none -parameters" />
+      <module name="base-freemarker-template" options="-proc:none -parameters" />
+      <module name="base-maven-archetype" options="-proc:none -parameters" />
+      <module name="maven-plugin-base" options="-proc:none -parameters" />
+      <module name="maven-plugin-test" options="-proc:none -parameters" />
+      <module name="maven-profiles" options="-proc:none -parameters" />
+      <module name="maven-profiles-example" options="-proc:none -parameters" />
+      <module name="maven-profiles-master" options="-proc:none -parameters" />
+      <module name="maven-tasks-download" options="-proc:none -parameters" />
+      <module name="testing" options="-proc:none -parameters" />
+      <module name="testing-automation" options="-proc:none -parameters" />
+      <module name="testing-plus" options="-proc:none -parameters" />
+      <module name="testing-sample" options="-proc:none -parameters" />
+    </option>
   </component>
 </project>
