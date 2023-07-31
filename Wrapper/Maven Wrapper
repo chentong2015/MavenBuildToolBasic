@@ -1,13 +1,10 @@
-将Maven构建工具包装到项目中，使得即使在没有Maven的环境下，也可以直接使用maven来构建项目
+将Maven构建工具包装到项目中，使得即使在没有Maven的环境下也可以构建项目
 
-<!-- Maven Wrapper 包装器插件 -->
-<plugin>
-    <groupId>io.takari.maven.plugins</groupId>
-    <artifactId>provisio-maven-plugin</artifactId>
-    <version>0.1.56</version>
-    <extensions>true</extensions>
-</plugin>
+https://maven.apache.org/wrapper/maven-wrapper-plugin/wrapper-mojo.html
+ <groupId>org.apache.maven.plugins</groupId>
+ <artifactId>maven-wrapper-plugin</artifactId>
+ <version>3.1.0</version>
 
-project > mvn -N io.takari:maven:wrapper
+project > mvn wrapper:wrapper
 Linux   > ./mvnw clean package
 Windows > mvnw.cmd clean package

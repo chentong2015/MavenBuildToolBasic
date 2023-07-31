@@ -121,8 +121,6 @@ p
 @testing-sample/src/main/java/com/example/testing/MainSample.java,9\1\91b0af11d14595497ea13925ea82ee98b78fe161
 F
 testing-sample/pom.xml,0\9\09234b35e8d2962794028feb22841a4dad5fce99
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 S
 #testing-automation/Mvn Test Plugins,3\4\34ba869561a8607590d97d453dc5578c18ac5776
 >
@@ -133,3 +131,5 @@ X
 (base/base-maven-archetype-sample/pom.xml,0\9\092ba191fb4893e7f7086f6baab3fc4205809b14
 J
 testing-automation/pom.xml,a\4\a4e0021c84213c7fe7f5d2e846c1536c948137ae
+U
+%testing-automation/Mvn Test 自动化,5\d\5dc49e4db9193dbc51d82688849601c5d4346afb
