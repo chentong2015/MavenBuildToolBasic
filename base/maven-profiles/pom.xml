@@ -131,7 +131,20 @@
             </build>
         </profile>
 
-        <!-- 配置Profile激活时所添加使用的dependencies -->
+        <!-- 同时激活多个Profile: -Prun-testframework,run-positions-int -->
+        <profile>
+            <id>run-testframework</id>
+            <properties>
+                <testframework.skip>false</testframework.skip>
+            </properties>
+        </profile>
+        <profile>
+        	<id>run-positions-int</id>
+        	<properties>
+        		<skipPositionsIntegration>false</skipPositionsIntegration>
+        	</properties>
+        </profile>
+
         <profile>
             <id>useDevMavenRepo</id>
             <activation>
@@ -142,6 +155,8 @@
             <properties>
             	<skipCompile>false</skipCompile>
             </properties>
+
+            <!-- 配置Profile激活时所添加使用的dependencies -->
             <dependencies>
             	<dependency>
             		<groupId>org.postgresql</groupId>
@@ -156,6 +171,28 @@
             		<scope>test</scope>
             	</dependency>
             </dependencies>
+
+            <!-- 配置在激活profile时从指定的Repo下载依赖 -->
+            <repositories>
+                <repository>
+                    <id>mx-artifacts</id>
+                    <name>mx-artifacts</name>
+                    <url>http://nexus-dev/nexus/content/groups/mx-artifacts/</url>
+                    <layout>default</layout>
+                    <releases>
+                        <updatePolicy>always</updatePolicy>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>mx-artifacts-plugin</id>
+                    <url>http://nexus-dev/nexus/content/groups/mx-artifacts/</url>
+                    <releases>
+                        <updatePolicy>always</updatePolicy>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
         </profile>
     </profiles>
 </project>

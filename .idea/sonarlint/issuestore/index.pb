@@ -37,8 +37,6 @@ x
 Hbase/hello-maven-plugin/src/main/java/maven/sample/plugin/HelloGoal.java,b\6\b6ba4336f24bb8dd9856028e367891f8e9b7eb56
 y
 Ibase/hello-maven-plugin/src/main/java/maven/sample/plugin/ReportGoal.java,d\f\df0fde5e5249d2b0c19e89b4505482934670b2f1
-f
-6base/maven-profiles-example/dependency-reduced-pom.xml,7\3\73793a0ec339afa5a4f2f9b2ec1ad6ee29a3f0c8
 w
 Gbase/maven-profiles/src/main/java/com/example/main/MyMavenProfiles.java,e\c\ec8b706e8bb0c07585cd7a2137efa5cc34f1a149
 `
@@ -49,14 +47,6 @@ z
 Jbase/maven-profiles/src/test/java/com/exmple/main/MyMavenProfilesTest.java,a\d\ad1b21d481f12eb75cea8d374f2fcd4d8475c72e
 t
 Dbase/maven-profiles-example/src/main/java/com/example/main/Main.java,6\a\6aeb57e977c782d6aed9d28fe279c2313c7022b8
-P
- Apache Maven Basic/Maven_Options,3\1\317cf1163f02c4938831d73d903e16b62e275756
-f
-6testing/src/main/java/com/pom/testing/MainTesting.java,6\5\654ac5535fa00c426d1df647679a749d652f4160
-V
-&Apache Maven Master/项目模块升级,7\5\7556c3d160926a7da3fe61804e773d5b1be89f1e
-V
-&Apache Maven Master/项目模块设计,1\e\1e48f7f7f0649ee90305d919439d39ec31708249
 Q
 !base/maven-tasks-download/pom.xml,2\a\2af987e251c56a5069677322d38190db6180b913
 S
@@ -77,16 +67,12 @@ W
 'base/maven-plugin-base/maven jar plugin,2\d\2d8d777e6bd0b9a376bc2a63d2ccd6fa2acdc05a
 S
 #base/maven-plugin-base/maven plugin,c\5\c5114fc7c2f2aae8c4c669971d07606aec3d813a
-W
-'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
 F
 pom-master/bom/pom.xml,6\d\6de6f81afcbb548b26e5d01a1802196183b1daba
 B
 pom-master/pom.xml,d\1\d16152422b6062351273ce5ce5af6ad4e5e9c4e5
 D
 testing-plus/pom.xml,c\3\c3ebefc4b90dc5a3ea71dd216abad6d478af808c
-<
-base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4
 N
 pom-master/application/pom.xml,4\8\48565f6c4f1ddd0a50dd8b6c9002cbf5e326398e
 G
@@ -97,12 +83,8 @@ G
 child/pom.xml,7\5\7549128aef84b129beb2a28663f0991dc608236a
 M
 pom-master/deployment/pom.xml,e\9\e96c21fffe3507cfb178c5abc41cc97573edd5dd
-U
-%Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
 R
 "base/maven-profiles-master/pom.xml,2\d\2df2b39dbbdac828045d36cc0aa1e2e75dfed5fd
-K
-base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
 R
 "base/maven-profiles/Maven Profiles,c\4\c4c92df252eb2ad79056f6347b6d72d325b58a8d
 J
@@ -114,22 +96,24 @@ f
 [
 +base/maven-plugin-base/maven javadoc plugin,7\7\770a0f7d916910851575ce9dd88a13dd2bdf1095
 N
-base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
-N
 base/maven-plugin-test/pom.xml,b\0\b036116ab8ac83205d454e0099de9d89ef91f2e8
 p
 @testing-sample/src/main/java/com/example/testing/MainSample.java,9\1\91b0af11d14595497ea13925ea82ee98b78fe161
 F
 testing-sample/pom.xml,0\9\09234b35e8d2962794028feb22841a4dad5fce99
-S
-#testing-automation/Mvn Test Plugins,3\4\34ba869561a8607590d97d453dc5578c18ac5776
 >
 parent/pom.xml,0\c\0cc644dd1c242220ad7b09063cbd5d141a944409
-m
-=testing-automation/src/test/java/test/SystemPropertyTest.java,a\4\a488435d3e16875c09cc0a59ab3e691227b74741
-X
-(base/base-maven-archetype-sample/pom.xml,0\9\092ba191fb4893e7f7086f6baab3fc4205809b14
 J
 testing-automation/pom.xml,a\4\a4e0021c84213c7fe7f5d2e846c1536c948137ae
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+V
+&Apache Maven Master/项目模块升级,7\5\7556c3d160926a7da3fe61804e773d5b1be89f1e
+V
+&Apache Maven Master/项目模块设计,1\e\1e48f7f7f0649ee90305d919439d39ec31708249
+f
+6testing/src/main/java/com/pom/testing/MainTesting.java,6\5\654ac5535fa00c426d1df647679a749d652f4160
 U
-%testing-automation/Mvn Test 自动化,5\d\5dc49e4db9193dbc51d82688849601c5d4346afb
+%Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
+m
+=testing-automation/src/test/java/test/SystemPropertyTest.java,a\4\a488435d3e16875c09cc0a59ab3e691227b74741
