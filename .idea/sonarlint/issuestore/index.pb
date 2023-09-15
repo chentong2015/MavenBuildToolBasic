@@ -51,8 +51,6 @@ Q
 !base/maven-tasks-download/pom.xml,2\a\2af987e251c56a5069677322d38190db6180b913
 S
 #base/maven-profiles-example/pom.xml,d\5\d596c25c3a1d7a94c2b41a8386695ef57fcaaa8d
-Q
-!base/base-maven-archetype/pom.xml,4\b\4b4ea5374deb43a386aea416570e2b913c6d2b46
 O
 base/hello-maven-plugin/pom.xml,8\a\8af564b4a995ca79490aa60d76be70db40829a77
 U
@@ -105,8 +103,6 @@ F
 parent/pom.xml,0\c\0cc644dd1c242220ad7b09063cbd5d141a944409
 J
 testing-automation/pom.xml,a\4\a4e0021c84213c7fe7f5d2e846c1536c948137ae
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 V
 &Apache Maven Master/项目模块升级,7\5\7556c3d160926a7da3fe61804e773d5b1be89f1e
 V
@@ -117,3 +113,19 @@ U
 %Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
 m
 =testing-automation/src/test/java/test/SystemPropertyTest.java,a\4\a488435d3e16875c09cc0a59ab3e691227b74741
+S
+#testing-automation/Mvn Test Plugins,3\4\34ba869561a8607590d97d453dc5578c18ac5776
+U
+%testing-automation/Mvn Test 自动化,5\d\5dc49e4db9193dbc51d82688849601c5d4346afb
+E
+Wrapper/Maven Wrapper,b\2\b28225cfdfebcaf65087f1ed0445402368695803
+Q
+!Apache Maven Basic/Config Options,8\a\8abfd9a9346d2409b90a5458a0f69ff9a23307d2
+f
+6base/maven-profiles-example/dependency-reduced-pom.xml,7\3\73793a0ec339afa5a4f2f9b2ec1ad6ee29a3f0c8
+N
+base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
+W
+'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
+K
+base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76

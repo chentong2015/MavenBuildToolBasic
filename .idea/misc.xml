@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/base/hello-maven-plugin/pom.xml" />
         <option value="$PROJECT_DIR$/base/maven-profiles/pom.xml" />
         <option value="$PROJECT_DIR$/base/base-maven-archetype-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/repo-nexus-deploy/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

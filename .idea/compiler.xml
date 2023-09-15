@@ -16,6 +16,7 @@
         <module name="maven-documentation" />
         <module name="base-maven-archetype-sample" />
         <module name="hello-maven-plugin" />
+        <module name="repo-nexus-deploy" />
         <module name="child" />
         <module name="deployment" />
         <module name="Testing" />
@@ -39,6 +40,7 @@
       <module name="maven-profiles-example" options="-proc:none -parameters" />
       <module name="maven-profiles-master" options="-proc:none -parameters" />
       <module name="maven-tasks-download" options="-proc:none -parameters" />
+      <module name="repo-nexus-deploy" options="" />
       <module name="testing" options="-proc:none -parameters" />
       <module name="testing-automation" options="-proc:none -parameters" />
       <module name="testing-plus" options="-proc:none -parameters" />

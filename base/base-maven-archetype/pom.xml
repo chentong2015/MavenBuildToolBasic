@@ -22,16 +22,16 @@
         <pluginManagement>
             <plugins>
                 <!-- TODO. create a Maven project from an existing template called an archetype
-                      该插件在生成指定的archetype项目模板的时候，提供maven的配置文件 -->
+                      该插件在生成指定的archetype项目模板的时候，提供maven的配置文件
                 <plugin>
                     <artifactId>maven-archetype-plugin</artifactId>
                     <version>3.0.1</version>
                     <configuration>
                         <settingsFile>${project.basedir}/settings.xml</settingsFile>
                         <ignoreEOLStyle>true</ignoreEOLStyle>
-                        <!-- <skip>${skipTests}</skip> -->
+                        <skip>${skipTests}</skip>
                     </configuration>
-                </plugin>
+                </plugin> -->
             </plugins>
         </pluginManagement>
 

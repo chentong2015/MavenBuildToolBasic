@@ -12,6 +12,11 @@
       <option name="url" value="https://repo.maven.apache.org/maven2" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="dev-public-repository" />
+      <option name="name" value="Nexus maven public" />
+      <option name="url" value="http://localhost:8081/repository/maven-public" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="mx-artifacts" />
       <option name="name" value="mx-artifacts" />
       <option name="url" value="http://nexus-dev/nexus/content/groups/mx-artifacts/" />
