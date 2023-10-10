@@ -1,22 +1,6 @@
 
-y
-Ibase/report-documentation/base-freemarker-template/FreeMarker模板引擎,b\1\b1ac18907dbd5c75c059f396a0690e2bf199ad4c
-u
-Ebase/report-documentation/base-freemarker-template/report/report.html,d\4\d414885ebaf6e152616529f27e560aa5ae1641e8
-�
-pbase/report-documentation/base-freemarker-template/src/main/java/com/freemarker/main/BaseFreeMarkerTemplate.java,c\7\c702238d8df21a99ae059ad32a5fb981a7d2ea5e
-�
-Ubase/report-documentation/base-asciidoctor-documentation/src/main/asciidoc/antora.yml,a\3\a31b2b4c1d7be8cedf7f89b0b3c55062b876054a
-�
-[base/report-documentation/base-asciidoctor-documentation/src/main/asciidoc/modules/nav.adoc,6\c\6cbcdf9839a60bfecf7abe4ad551783264497178
-�
-Ubase/report-documentation/base-asciidoctor-documentation/src/main/asciidoc/index.adoc,0\7\078f960638c31ab466344fe01ca50984c52d733e
-h
-8base/report-documentation/base-antora-playbook/README.md,9\e\9e1c50f284579b12ff90398de9386ca95e513d72
 Z
 *.settings/org.eclipse.core.resources.prefs,8\5\85aef4dd7ac54949c4d8a1fc9fb5fbe3e5867303
-{
-Kbase/report-documentation/base-asciidoctor-documentation/Asciidoctor Plugin,3\0\30795a9598b153d29fe5421a43fa8ff6a0eda2a3
 w
 Gbase/maven-profiles/src/main/java/com/example/main/MyMavenProfiles.java,e\c\ec8b706e8bb0c07585cd7a2137efa5cc34f1a149
 `
@@ -59,3 +43,85 @@ R
 "pom-architect/project/core/pom.xml,e\7\e77b76ede53a0ebbfa76b2ec7f4f625d10ff68b5
 X
 (pom-architect/project/deployment/pom.xml,3\f\3fa4172d9d066f10cb59a8a74dfcb978c77cd047
+U
+%pom-architect/project/install/pom.xml,7\b\7b79b888413b11756214326bd4433737ef2b0ca0
+Y
+)pom-architect/project/application/pom.xml,e\3\e3f79d079866ea87598bd66eac7f8c0cbe6bcec4
+Q
+!pom-architect/project/bom/pom.xml,1\2\1253a0afa6edc7c0dd73df441b1ed40003d9e8a0
+f
+6base/maven-plugin-base/plugins/maven dependency plugin,3\2\328801fcc61077821ffa9d07231b106092c14ca0
+V
+&pom-testing/testing-automation/pom.xml,8\6\868ba377eb5b3690659eedbd9527ef957ff8de7c
+Q
+!base/base-maven-archetype/pom.xml,4\b\4b4ea5374deb43a386aea416570e2b913c6d2b46
+X
+(base/base-maven-archetype-sample/pom.xml,0\9\092ba191fb4893e7f7086f6baab3fc4205809b14
+C
+pom-testing/pom.xml,7\d\7d201bbb98825bc4c1783ba8be35d311172a8011
+|
+Lbase/maven-plugin-test/src/main/java/com/plugin/main/DemoCompilerPlugin.java,0\e\0e40030f85eea0e50b0bd07ccc949cb5182ea0f1
+c
+3base/maven-plugin-base/plugins/maven javadoc plugin,3\5\35f6debe803e99444b99d47a57df0c05604edc47
+N
+base/maven-plugin-test/pom.xml,b\0\b036116ab8ac83205d454e0099de9d89ef91f2e8
+_
+/base/maven-plugin-base/reporting/doxygen plugin,5\0\504a0f3b3c41bbc27825b9682753c15cdeb57674
+x
+Hbase/hello-maven-plugin/src/main/java/maven/sample/plugin/HelloGoal.java,b\6\b6ba4336f24bb8dd9856028e367891f8e9b7eb56
+y
+Ibase/hello-maven-plugin/src/main/java/maven/sample/plugin/ReportGoal.java,d\f\df0fde5e5249d2b0c19e89b4505482934670b2f1
+O
+base/hello-maven-plugin/pom.xml,8\a\8af564b4a995ca79490aa60d76be70db40829a77
+S
+#base/maven-plugin-base/maven plugin,c\5\c5114fc7c2f2aae8c4c669971d07606aec3d813a
+^
+.base/maven-plugin-base/plugins/自定义插件,3\f\3f3fab9285995a3caa6322fd03c1a845d8d1300f
+S
+#repo-nexus-deploy/Nexus远程仓库,a\0\a01b8fecbf94c23d45a199aa8ee6f1cca5edb037
+I
+repo-nexus-deploy/pom.xml,9\e\9eadc5c5f769b49c7694dd8a51242b804e451d99
+N
+base/maven-plugin-base/pom.xml,e\2\e2af782edde7bc1c2b6a17cb4ebd63f2b99d8527
+a
+1report-documentation/base-antora-playbook/pom.xml,b\7\b74989caf05589fc6c86d79f2efe25888b4c5e39
+k
+;report-documentation/base-asciidoctor-documentation/pom.xml,e\f\ef819fc09c07bddf7a986a9601a3436e1238f40e
+Q
+!base/maven-tasks-download/pom.xml,2\a\2af987e251c56a5069677322d38190db6180b913
+L
+report-documentation/pom.xml,1\b\1bfddc97f5fe57b5a0ab62e29e935344115dc8dc
+e
+5report-documentation/base-freemarker-template/pom.xml,6\7\67fdb4c3fe2c4b3a4a2c71407fe2dce61f74decc
+<
+base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4
+d
+4base/maven-plugin-base/plugins/maven compiler plugin,5\d\5d6f24a37c2810ada04e0609576c84e36e752a2b
+W
+'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
+^
+.base/maven-plugin-base/reporting/jacoco plugin,5\5\55a85f00cc655f6eebbb435392bda126f6d430d8
+K
+pom-architect/child/pom.xml,9\2\929ab062db0d8f0049229cb1d869b53f0cded6cd
+E
+pom-architect/pom.xml,5\d\5ddd517b8803bd175e3381a11a89d809691bae5e
+M
+pom-architect/project/pom.xml,a\0\a04b93c994dd1c21b314e4e587669b3286caa385
+Q
+!pom-architect/test-import/pom.xml,6\f\6ffbe14c0f986e2b43dfe7f4a0a8e97861269418
+M
+pom-architect/POM模块架构,b\a\ba819c8cae5a276e1375635ac78fe9c9da678556
+Q
+!pom-testing/Maven 测试自动化,e\0\e0f1f8ea6ef8b0e603312ec715f4dc9b49bfeb71
+Q
+!pom-testing/maven surefire plugin,a\8\a8c1fcb037eac1cd78cecbb1286fa60659949704
+Q
+!pom-testing/maven failsafe plugin,1\0\10822ef9645fd35f20dd234c265a269313b1d696
+L
+pom-architect/parent/pom.xml,b\8\b83295df9e285ed718a66a9c6cf321f7f5bb0c4f
+_
+/base/maven-plugin-base/plugins/maven jar plugin,4\8\48f3b457d915b25950d04bc6b56532fd4833ece3
+J
+pom-testing/maven test jar,a\0\a02f5bce8893cb2223d8ddc37307e7b9dcc718f1
+K
+base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
