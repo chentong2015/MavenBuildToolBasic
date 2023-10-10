@@ -194,5 +194,18 @@
                 </pluginRepository>
             </pluginRepositories>
         </profile>
+
+        <!-- 指定相应的模块生成Doc文档 -->
+        <profile>
+            <id>withDoc</id>
+            <activation>
+                <property>
+                    <name>!skipDoc</name>
+                </property>
+            </activation>
+            <modules>
+                <module>../maven-profiles-example</module>
+            </modules>
+        </profile>
     </profiles>
 </project>

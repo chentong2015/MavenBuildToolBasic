@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/base-maven-documentation/pom.xml" />
         <option value="$PROJECT_DIR$/base/base-maven-system-property/pom.xml" />
         <option value="$PROJECT_DIR$/base/base-maven-test/pom.xml" />
+        <option value="$PROJECT_DIR$/test/pom.xml" />
         <option value="$PROJECT_DIR$/testing-plus/pom.xml" />
         <option value="$PROJECT_DIR$/testing-sample/pom.xml" />
       </set>

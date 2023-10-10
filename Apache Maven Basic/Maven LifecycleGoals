@@ -14,7 +14,7 @@
 
 3. Maven verify:
    run checks to verify integrity
-   > mvn verify 用来验证集成测试的结果 !!
+   > mvn verify 用来验证集成测试是否能够通过
    > mvn verify -Prun-int failsafe:integration-test
 
 4. Maven install:

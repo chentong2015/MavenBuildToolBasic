@@ -14,7 +14,6 @@
         <module name="maven-tasks-download" />
         <module name="maven-plugin-base" />
         <module name="maven-profiles-master" />
-        <module name="testing-import" />
         <module name="repo-nexus-deploy" />
         <module name="deployment" />
         <module name="Testing" />
@@ -25,6 +24,7 @@
         <module name="base-freemarker-template" />
         <module name="maven-plugin-test" />
         <module name="hello-maven-plugin" />
+        <module name="testQ" />
         <module name="core" />
         <module name="testing-automation" />
         <module name="application" />
@@ -33,14 +33,17 @@
         <module name="base-maven-archetype-sample" />
         <module name="maven-profiles-example" />
         <module name="testing-sample" />
+        <module name="test-import" />
         <module name="child" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="archetype-resources" target="1.5" />
       <module name="base-maven-plugin-simple" target="15" />
+      <module name="test-new" target="15" />
       <module name="testing-plus" target="1.5" />
       <module name="testing-sample" target="15" />
+      <module name="testQ" target="15" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -57,8 +60,8 @@
       <module name="maven-profiles-master" options="" />
       <module name="maven-tasks-download" options="" />
       <module name="repo-nexus-deploy" options="" />
+      <module name="test-import" options="" />
       <module name="testing-automation" options="" />
-      <module name="testing-import" options="" />
       <module name="testing-plus" options="" />
       <module name="testing-sample" options="" />
     </option>

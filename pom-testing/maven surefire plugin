@@ -1,6 +1,10 @@
 https://maven.apache.org/surefire/maven-surefire-plugin/
 https://maven.apache.org/surefire/maven-surefire-plugin/examples/junit-platform.html
 
+插件可以提供系统属性变量，可在maven自动化测试中设置系统参数的值
+https://maven.apache.org/surefire/maven-surefire-plugin/examples/system-properties.html
+http://www.javabyexamples.com/set-system-property-for-tests
+
 TODO. surefire插件在test phase阶段执行单元测试，生成测试报告文件
 1. 当同时存在JUnit4和JUnit5的单元测试时，Plugin可能选择不同的Provider
 2. <version>3.0.0</version>版本会抛出异常
@@ -8,6 +12,9 @@ TODO. surefire插件在test phase阶段执行单元测试，生成测试报告�
 3. -DfailIfNoTests=false 设置在没有测试运行的时候不抛出异常
 4. 可以配置在test phase阶段移除指定的测试，不生成到报告中
 
+
+# surefire插件能够在项目生命周期的测试阶段执行单元测试
+# During the test phase of build lifecycle to execute the unit tests
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-surefire-plugin</artifactId>

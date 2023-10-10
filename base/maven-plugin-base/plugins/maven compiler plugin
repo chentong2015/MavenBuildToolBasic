@@ -1,6 +1,8 @@
 TODO. <encoding>UTF-8</encoding>解决了两个问题
 1. 解决项目中使用特殊字符进行编码的问题
-2. 解决编译时出现的如下报错: unmappable character (0x81) for encoding windows-1252
+2. 解决编译时出现的如下报错:
+   "unmappable character (0x81) for encoding windows-1252
+    unmappable character (0x8D) for encoding windows-1252"
    问题重现: 将使用Java B版本构建的代码复制到Java A版本创建的项目中，导致A版本的项目无法编译打包
    如何解决: 首先clean A版本的项目，然后添加如下插件并设置encoding格式以及执行的编译版本
 

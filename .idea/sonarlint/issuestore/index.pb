@@ -45,10 +45,6 @@ Q
 !Apache Maven Basic/Config Options,8\a\8abfd9a9346d2409b90a5458a0f69ff9a23307d2
 f
 6base/maven-profiles-example/dependency-reduced-pom.xml,7\3\73793a0ec339afa5a4f2f9b2ec1ad6ee29a3f0c8
-W
-'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
-K
-base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
 g
 7repo-nexus-deploy/src/main/java/repo/LiquibaseDemo.java,c\7\c79ad450a078873ead1eb09e7fec21784f0c18f7
 _
