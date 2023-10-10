@@ -1,5 +1,0 @@
-# 列举所有Test测试相关的插件
-
-改插件可以提供系统属性变量，可在maven自动化测试中设置系统参数的值
-https://maven.apache.org/surefire/maven-surefire-plugin/examples/system-properties.html
-http://www.javabyexamples.com/set-system-property-for-tests

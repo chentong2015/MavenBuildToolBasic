@@ -11,17 +11,16 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
 
-    <artifactId>base</artifactId>
-    <name>maven base techniques</name>
+    <artifactId>report-documentaion</artifactId>
+
+    <properties>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
+    </properties>
 
     <modules>
-        <module>base-maven-archetype</module>
-        <module>hello-maven-plugin</module>
-        <module>maven-plugin-base</module>
-        <module>maven-plugin-test</module>
-        <module>maven-profiles</module>
-        <module>maven-profiles-example</module>
-        <module>maven-profiles-master</module>
-        <module>maven-tasks-download</module>
+        <module>base-antora-playbook</module>
+        <module>base-asciidoctor-documentation</module>
+        <module>base-freemarker-template</module>
     </modules>
 </project>

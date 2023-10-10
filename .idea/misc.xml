@@ -11,6 +11,11 @@
         <option value="$PROJECT_DIR$/base/maven-profiles/pom.xml" />
         <option value="$PROJECT_DIR$/base/base-maven-archetype-sample/pom.xml" />
         <option value="$PROJECT_DIR$/repo-nexus-deploy/pom.xml" />
+        <option value="$PROJECT_DIR$/pom-architect/project/pom.xml" />
+        <option value="$PROJECT_DIR$/pom-architect/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/pom-testing/testing-automation/pom.xml" />
+        <option value="$PROJECT_DIR$/pom-testing/testing-import/pom.xml" />
+        <option value="$PROJECT_DIR$/pom-architect/child/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -19,6 +24,8 @@
         <option value="$PROJECT_DIR$/base-maven-documentation/pom.xml" />
         <option value="$PROJECT_DIR$/base/base-maven-system-property/pom.xml" />
         <option value="$PROJECT_DIR$/base/base-maven-test/pom.xml" />
+        <option value="$PROJECT_DIR$/testing-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/testing-sample/pom.xml" />
       </set>
     </option>
   </component>

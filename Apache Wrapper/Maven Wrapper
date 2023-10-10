@@ -1,0 +1,18 @@
+将Maven构建工具包装到项目中，使得即使在没有Maven的环境下也可以构建项目
+project > mvn wrapper:wrapper
+Linux   > ./mvnw clean package
+Windows > mvnw.cmd clean package
+
+https://maven.apache.org/wrapper/maven-wrapper-plugin/wrapper-mojo.html
+
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-wrapper-plugin</artifactId>
+  <version>3.1.0</version>
+
+  <!-- 设置发布的类型，默认是bin类型，Script表示只输出 mvnw scripts -->
+  <configuration>
+     <distributionType>script</distributionType>
+  </configuration>
+</plugin>
+

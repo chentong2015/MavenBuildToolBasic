@@ -4,11 +4,8 @@ Maven plugins: "Maven" is core framework of a collection of maven plugins
 2. almost any action to perform on project is implemented as a plugins
 
 TODO. 两种插件: 需要配置基本信息(groupId, artifactId,,,)
-1. <build /> : Build plugins will be executed during the build 在build阶段执行的一些插件
-2. <reporting />: Reporting plugins will be executed during the site generation (test report)
-
-Compiler Plugin
-两种Goals：compile(编译main code中源代码) & testCompile(编译test中源代码)
-1. Invokes javac
-2. Default older JDK1.7, 使用<configuration>指定自定义版本
-3. Source/target: 自定义编译的源和目标
+1. <build />
+   Build plugins will be executed during the build 在build阶段执行的一些插件
+2. <reporting />
+   Reporting plugins will be executed during the site generation (test report)
+   Plugins which generate reports 根据不同的需求，生成报告的一些插件

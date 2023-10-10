@@ -29,13 +29,6 @@
 
     <build>
         <plugins>
-            <!-- Clean up after the build. -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>3.1.0</version>
-            </plugin>
-
             <!-- TODO. 使用自定义的插件，必须使用自定义的groupId -->
             <plugin>
                 <groupId>maven.sample.plugin</groupId>
@@ -77,109 +70,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <!-- TODO. 使用自定义的复杂插件，完成依赖的设置和引入
-            <plugin>
-                 <groupId>ctong.maven.plugins</groupId>
-                 <artifactId>maven-production-plugin</artifactId>
-                 <inherited>true</inherited>
-                 <configuration>
-                    <verbose>false</verbose>
-                    <destinationFile>${project.file}</destinationFile>
-                    <rootLocation>/code/repository</rootLocation>
-
-                    // dependendySet is use by production:copy-dep goal,
-                    // and defines which dependencies to copy and where
-                    <dependencySets>
-                        <dependencySet>
-                            <outputDirectory>base/code/repository</outputDirectory>
-                            <scope>runtime</scope>
-                            <includes>
-                                <include>joda-time:joda-time:jar:2.1</include>
-                                <include>org.quartz-scheduler:quartz:jar:2.3.2</include>
-                            </includes>
-                        </dependencySet>
-                    </dependencySets>
-
-                     // fileSets are used by production:copy-file goal, and defines a set of files to copy and where
-                     <fileSets>
-                         <fileSet>
-                             <baseDirectory>target</baseDirectory>
-                             <outputDirectory>base/code/kernel/jar</outputDirectory>
-                             <includes>
-                                 <include>*.jar</include>
-                             </includes>
-                             <excludes>
-                                 <exclude>junit-*.jar</exclude>
-                             </excludes>
-                         </fileSet>
-                     </fileSets>
-                 </configuration>
-                 <executions>
-                    <execution>
-                        <id>copy-files</id>
-                        <inherited>true</inherited>
-                        <goals>
-                            <goal>copy-files</goal>
-                        </goals>
-                        <phase>package</phase>
-                    </execution>
-                </executions>
-            </plugin> -->
         </plugins>
     </build>
-
-    <!-- TODO. Plugins which generate reports 根据不同的需求，生成报告的一些插件
-         are configured as reports in the POM and run under the site generation lifecycle. -->
-    <reporting>
-        <plugins>
-            <!-- https://www.doxygen.nl/index.html
-                 Generate documentation from source code
-                 用来生成源代码的参考文档的插件, 在generation的过程中会执行
-            <plugin>
-                <groupId>com.soebes.maven.plugins</groupId>
-                <artifactId>doxygen-maven-plugin</artifactId>
-                <version>1.1.0</version>
-                <configuration>
-                    <haveDot>false</haveDot>
-                    <quiet>false</quiet>
-                    <projectName>This is a Test Project (basicReportTest)</projectName>
-                </configuration>
-            </plugin> -->
-
-            <!-- 插件可以在测试结束之后生成测试覆盖率的报告
-                 https://www.eclemma.org/jacoco/trunk/doc/maven.html -->
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <!-- select non-aggregate reports -->
-                            <report>report</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-
-            <!-- TODO. 对于Java 11使用自定义的插件出错 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-plugin-plugin</artifactId>
-                <version>3.6.0</version>
-                <!-- <executions>
-                    <execution>
-                        <id>default-descriptor</id>
-                        <phase>process-classes</phase>
-                    </execution>
-                    <execution>
-                        <id>help-goal</id>
-                        <goals>
-                            <goal>helpmojo</goal>
-                        </goals>
-                    </execution>
-                </executions> -->
-            </plugin>
-        </plugins>
-    </reporting>
 </project>

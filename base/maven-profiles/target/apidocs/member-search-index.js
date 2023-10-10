@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"com.example.main","c":"MyMavenProfiles","l":"getProfilesInfo()"},{"p":"com.example.main","c":"MyMavenProfiles","l":"MyMavenProfiles()","url":"%3Cinit%3E()"}]
