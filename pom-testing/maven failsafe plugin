@@ -24,9 +24,9 @@
 </plugin>
 
 
-# Verify验证是否能够执行一个插件的goal --------------------------------------
->cd component//integration-tests/
->mvn verify -Prun-positions-int failsafe:integration-test
+# Verify验证是否能够执行一个插件的goal
+> cd component/***/integration-tests/
+> mvn verify -Prun-positions-int failsafe:integration-test
 
 <plugin>
     <groupId>ctong.middleware.service</groupId>

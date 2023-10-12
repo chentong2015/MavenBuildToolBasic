@@ -1,5 +1,15 @@
-在构建项目时，空Class文件不会造成影响，不影响构建
-1. Maven compile: compile source code to .class files
+TODO. Each Goal represents a capability of that plugin
+每个Goal代表插件某个能力, 通过在执行某个Goal时，它会运行所有它前面的Goal !!
+1. validate: validate the project is correct and info is available
+2. compile: compile the source code
+3. test: test the compiled source code using unit testing framework
+4. package: package code in distributable format (jar, war)
+5. verify: run any checks on the results of integration tests to ensure quality criteria are met
+6. install: install the package to local repository for use in other projects locally 需要编译好Compile Goal
+7. deploy: copy package to remote repository for sharing
+
+mvn compile:
+   compile source code to .class files
    -run Maven using the -X switch to enable full debug logging. 开启详细堆栈日志, 提供项目构建的详细信息
       Apache Maven 3.6.3 (cecedd343...)
       Maven home: C:\Maven\maven-3.6.3-takari-smart-builder-pandora
@@ -7,30 +17,28 @@
       Default locale: en_US, platform encoding: Cp1252
       OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
-2. Maven package:
+mvn test:
+   test the compiled source code using a suitable unit testing framework
+   (tests should not require the code be packaged or deployed)
+   通过单元测试框架来验证项目的单元测试，不需要项目能够打包
+   需要使用Surefire plugin插件来自动执行
+
+mvn package:
    Download all plugins
    Run compile, run unit test and package that up
    > java -jar MainBasic-1.0.0-SNAPSHOT.jar 构建项目的jar文件，需要所有的测试通过
 
-3. Maven verify:
-   run checks to verify integrity
-   > mvn verify 用来验证集成测试是否能够通过
+mvn verify:
+   在成功完成项目的packaging打包之后，通过verify来验证项目中的集成测试结果
+   需要使用failsafe插件来验证集成测试，插件提供<goal>integration-test</goal>
+   During the verify phase some additional checks can be done
    > mvn verify -Prun-int failsafe:integration-test
 
-4. Maven install:
+mvn install:
    Download all dependencies
    Run the package command, then install in local repository
    Home directory C:\Users\tchen\.m2\repository\com
 
-5. Maven deploy:
+mvn deploy:
    Deploys it to a corporate or remote repository
 
-TODO. 每个Goal代表插件某个能力 Each Goal represents a capability of that plugin
-Goal 双击执行Goal / Execute Maven Goal多个执行
-  1. validate: validate the project is correct and info is available
-  2. compile: compile the source code
-  3. test: test the compiled source code using unit testing framework
-  4. package: package code in distributable format (jar, war)
-  5. verify: run any checks on the results of integration tests
-  6. install: install the package to local repository for use in other projects locally 需要编译好Compile Goal
-  7. deploy: copy package to remote repository for sharing

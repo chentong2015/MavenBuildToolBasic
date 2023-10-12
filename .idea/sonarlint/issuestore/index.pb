@@ -13,8 +13,6 @@ t
 Dbase/maven-profiles-example/src/main/java/com/example/main/Main.java,6\a\6aeb57e977c782d6aed9d28fe279c2313c7022b8
 S
 #base/maven-profiles-example/pom.xml,d\5\d596c25c3a1d7a94c2b41a8386695ef57fcaaa8d
-U
-%Apache Maven Basic/Maven Repositories,9\7\97c3d9e579fb372220c0635532c2894f14c87259
 R
 "base/maven-profiles-master/pom.xml,2\d\2df2b39dbbdac828045d36cc0aa1e2e75dfed5fd
 R
@@ -23,10 +21,6 @@ V
 &Apache Maven Master/项目模块升级,7\5\7556c3d160926a7da3fe61804e773d5b1be89f1e
 V
 &Apache Maven Master/项目模块设计,1\e\1e48f7f7f0649ee90305d919439d39ec31708249
-U
-%Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
-Q
-!Apache Maven Basic/Config Options,8\a\8abfd9a9346d2409b90a5458a0f69ff9a23307d2
 f
 6base/maven-profiles-example/dependency-reduced-pom.xml,7\3\73793a0ec339afa5a4f2f9b2ec1ad6ee29a3f0c8
 g
@@ -97,8 +91,6 @@ e
 base/pom.xml,6\9\6938ebfea762ce0c7ba0c2da2004eb53baa6e9a4
 d
 4base/maven-plugin-base/plugins/maven compiler plugin,5\d\5d6f24a37c2810ada04e0609576c84e36e752a2b
-W
-'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
 ^
 .base/maven-plugin-base/reporting/jacoco plugin,5\5\55a85f00cc655f6eebbb435392bda126f6d430d8
 K
@@ -111,12 +103,6 @@ Q
 !pom-architect/test-import/pom.xml,6\f\6ffbe14c0f986e2b43dfe7f4a0a8e97861269418
 M
 pom-architect/POM模块架构,b\a\ba819c8cae5a276e1375635ac78fe9c9da678556
-Q
-!pom-testing/Maven 测试自动化,e\0\e0f1f8ea6ef8b0e603312ec715f4dc9b49bfeb71
-Q
-!pom-testing/maven surefire plugin,a\8\a8c1fcb037eac1cd78cecbb1286fa60659949704
-Q
-!pom-testing/maven failsafe plugin,1\0\10822ef9645fd35f20dd234c265a269313b1d696
 L
 pom-architect/parent/pom.xml,b\8\b83295df9e285ed718a66a9c6cf321f7f5bb0c4f
 _
@@ -125,3 +111,7 @@ J
 pom-testing/maven test jar,a\0\a02f5bce8893cb2223d8ddc37307e7b9dcc718f1
 K
 base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+m
+=Apache Maven Master/Read Arfifact failed/获取Artifact失败,d\3\d3cd6f0713aeca0512ec72ef757342c33d04d1ac

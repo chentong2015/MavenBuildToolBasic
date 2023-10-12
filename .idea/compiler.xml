@@ -43,7 +43,6 @@
       <module name="test-new" target="15" />
       <module name="testing-plus" target="1.5" />
       <module name="testing-sample" target="15" />
-      <module name="testQ" target="15" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
