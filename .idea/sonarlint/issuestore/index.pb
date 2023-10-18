@@ -45,8 +45,6 @@ Q
 !pom-architect/project/bom/pom.xml,1\2\1253a0afa6edc7c0dd73df441b1ed40003d9e8a0
 f
 6base/maven-plugin-base/plugins/maven dependency plugin,3\2\328801fcc61077821ffa9d07231b106092c14ca0
-V
-&pom-testing/testing-automation/pom.xml,8\6\868ba377eb5b3690659eedbd9527ef957ff8de7c
 Q
 !base/base-maven-archetype/pom.xml,4\b\4b4ea5374deb43a386aea416570e2b913c6d2b46
 X
@@ -107,11 +105,17 @@ L
 pom-architect/parent/pom.xml,b\8\b83295df9e285ed718a66a9c6cf321f7f5bb0c4f
 _
 /base/maven-plugin-base/plugins/maven jar plugin,4\8\48f3b457d915b25950d04bc6b56532fd4833ece3
-J
-pom-testing/maven test jar,a\0\a02f5bce8893cb2223d8ddc37307e7b9dcc718f1
 K
 base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 m
 =Apache Maven Master/Read Arfifact failed/获取Artifact失败,d\3\d3cd6f0713aeca0512ec72ef757342c33d04d1ac
+U
+%Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
+Q
+!Apache Maven Basic/Config Options,8\a\8abfd9a9346d2409b90a5458a0f69ff9a23307d2
+U
+%Apache Maven Basic/Maven Repositories,9\7\97c3d9e579fb372220c0635532c2894f14c87259
+Q
+!pom-testing/maven failsafe plugin,1\0\10822ef9645fd35f20dd234c265a269313b1d696

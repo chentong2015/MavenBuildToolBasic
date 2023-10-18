@@ -24,7 +24,6 @@
         <module name="base-freemarker-template" />
         <module name="maven-plugin-test" />
         <module name="hello-maven-plugin" />
-        <module name="testQ" />
         <module name="core" />
         <module name="testing-automation" />
         <module name="application" />
@@ -43,6 +42,7 @@
       <module name="test-new" target="15" />
       <module name="testing-plus" target="1.5" />
       <module name="testing-sample" target="15" />
+      <module name="testQ" target="15" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

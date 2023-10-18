@@ -1,3 +1,6 @@
+TODO. surefire插件能够在项目生命周期的测试阶段执行单元测试
+During the test phase of build lifecycle to execute the unit tests
+
 https://maven.apache.org/surefire/maven-surefire-plugin/
 https://maven.apache.org/surefire/maven-surefire-plugin/examples/junit-platform.html
 
@@ -5,16 +8,8 @@ https://maven.apache.org/surefire/maven-surefire-plugin/examples/junit-platform.
 https://maven.apache.org/surefire/maven-surefire-plugin/examples/system-properties.html
 http://www.javabyexamples.com/set-system-property-for-tests
 
-TODO. surefire插件在test phase阶段执行单元测试，生成测试报告文件
-1. 当同时存在JUnit4和JUnit5的单元测试时，Plugin可能选择不同的Provider
-2. <version>3.0.0</version>版本会抛出异常
-   Failure to find org.apache.maven.surefire:surefire-junit-platform:jar:3.0.0
-3. -DfailIfNoTests=false 设置在没有测试运行的时候不抛出异常
-4. 可以配置在test phase阶段移除指定的测试，不生成到报告中
+> mvn -DfailIfNoTests=false 设置在没有测试运行的时候不抛出异常
 
-
-# surefire插件能够在项目生命周期的测试阶段执行单元测试
-# During the test phase of build lifecycle to execute the unit tests
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-surefire-plugin</artifactId>
@@ -26,18 +21,45 @@ TODO. surefire插件在test phase阶段执行单元测试，生成测试报告�
             <goals>
                 <goal>test</goal>
             </goals>
+
             <configuration>
                 <excludes>
-                    <exclude>**/NoTest.java</exclude>
+                    <exclude>**/NoTest.java</exclude> 选择移除某些指定的测试
                 </excludes>
             </configuration>
         </execution>
     </executions>
 </plugin>
 
-生成web版的测试报告 under ${basedir}/target/surefire-reports
+JUnit HTML Reports 生成web版的测试报告
+${basedir}/target/surefire-reports
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-surefire-report-plugin</artifactId>
     <version>3.0.0-M3</version>
 </plugin>
+
+
+<build>
+	<plugins>
+		<plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-surefire-plugin</artifactId>
+           <version>2.22.0</version>
+
+           <dependencies>
+               <dependency>
+                   <groupId>org.junit.platform</groupId>
+                   <artifactId>junit-platform-surefire-provider</artifactId>
+                   <version>1.2.0</version>
+               </dependency>
+           </dependencies>
+
+           <configuration>
+           	<additionalClasspathElements>
+           		<additionalClasspathElement>src/test/java/</additionalClasspathElement>
+           	</additionalClasspathElements>
+           </configuration>
+       </plugin>
+	</plugins>
+</build>
