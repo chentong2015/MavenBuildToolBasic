@@ -87,3 +87,45 @@ Q
 !pom-testing/maven surefire plugin,a\8\a8c1fcb037eac1cd78cecbb1286fa60659949704
 y
 Ipom-testing/testing-automation/src/test/java/test/SystemPropertyTest.java,1\4\14add1f5beb0d5f408408ad823ee0a1f22a582b6
+Z
+*base/base-maven-archetype/Maven Archetypes,1\b\1bdfac04d324ae689cfbdcf6cb35515ea7893256
+V
+&pom-testing/testing-automation/pom.xml,8\6\868ba377eb5b3690659eedbd9527ef957ff8de7c
+Q
+!pom-architect/POM模块设计.txt,3\5\35925307c3869d97314ad58637302009917b8eab
+m
+=Apache Maven Master/Read Arfifact failed/获取Artifact失败,d\3\d3cd6f0713aeca0512ec72ef757342c33d04d1ac
+_
+/repo-nexus-deploy/checksum/checksum下载问题,1\2\121c2572027eb154d874e4b5144b180a3e6dcf0f
+T
+$pom-architect/项目模块升级.txt,b\d\bdaca63152fccd4be0cd6513f018a8169b858a0e
+Q
+!pom-architect/test-import/pom.xml,6\f\6ffbe14c0f986e2b43dfe7f4a0a8e97861269418
+R
+"pom-architect/project/core/pom.xml,e\7\e77b76ede53a0ebbfa76b2ec7f4f625d10ff68b5
+X
+(pom-architect/project/deployment/pom.xml,3\f\3fa4172d9d066f10cb59a8a74dfcb978c77cd047
+U
+%pom-architect/project/install/pom.xml,7\b\7b79b888413b11756214326bd4433737ef2b0ca0
+Y
+)pom-architect/project/application/pom.xml,e\3\e3f79d079866ea87598bd66eac7f8c0cbe6bcec4
+Q
+!pom-architect/project/bom/pom.xml,1\2\1253a0afa6edc7c0dd73df441b1ed40003d9e8a0
+L
+pom-architect/parent/pom.xml,b\8\b83295df9e285ed718a66a9c6cf321f7f5bb0c4f
+S
+#repo-nexus-deploy/Nexus远程仓库,a\0\a01b8fecbf94c23d45a199aa8ee6f1cca5edb037
+K
+pom-architect/child/pom.xml,9\2\929ab062db0d8f0049229cb1d869b53f0cded6cd
+Q
+!base/base-maven-archetype/pom.xml,4\b\4b4ea5374deb43a386aea416570e2b913c6d2b46
+X
+(base/base-maven-archetype-sample/pom.xml,0\9\092ba191fb4893e7f7086f6baab3fc4205809b14
+U
+%Apache Maven Basic/Maven Repositories,9\7\97c3d9e579fb372220c0635532c2894f14c87259
+Q
+!Apache Maven Basic/Config Options,8\a\8abfd9a9346d2409b90a5458a0f69ff9a23307d2
+U
+%Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
+W
+'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
