@@ -5,8 +5,6 @@ w
 Gbase/maven-profiles/src/main/java/com/example/main/MyMavenProfiles.java,e\c\ec8b706e8bb0c07585cd7a2137efa5cc34f1a149
 `
 0base/base-maven-archetype/Maven WebApp Archetype,1\e\1e7361fefe898b9662ba0127d700406b54b64380
-Z
-*base/base-maven-archetype/Maven Archetypes,1\b\1bdfac04d324ae689cfbdcf6cb35515ea7893256
 z
 Jbase/maven-profiles/src/test/java/com/exmple/main/MyMavenProfilesTest.java,a\d\ad1b21d481f12eb75cea8d374f2fcd4d8475c72e
 t
@@ -17,38 +15,18 @@ R
 "base/maven-profiles-master/pom.xml,2\d\2df2b39dbbdac828045d36cc0aa1e2e75dfed5fd
 R
 "base/maven-profiles/Maven Profiles,c\4\c4c92df252eb2ad79056f6347b6d72d325b58a8d
-V
-&Apache Maven Master/项目模块升级,7\5\7556c3d160926a7da3fe61804e773d5b1be89f1e
-V
-&Apache Maven Master/项目模块设计,1\e\1e48f7f7f0649ee90305d919439d39ec31708249
 f
 6base/maven-profiles-example/dependency-reduced-pom.xml,7\3\73793a0ec339afa5a4f2f9b2ec1ad6ee29a3f0c8
 g
 7repo-nexus-deploy/src/main/java/repo/LiquibaseDemo.java,c\7\c79ad450a078873ead1eb09e7fec21784f0c18f7
-_
-/repo-nexus-deploy/checksum/checksum下载问题,1\2\121c2572027eb154d874e4b5144b180a3e6dcf0f
 L
 Apache Wrapper/Maven Wrapper,1\3\13874468e7f7a199c9c1b26178e948c453028dbe
 o
 ?pom-architect/child/src/main/java/com/child/main/MainChild.java,4\6\46b757578286265c92cde6899ad33e66f2864634
 U
 %pom-architect/child/effective-pom.xml,e\c\ec5b7e85293b63370069646c0b6703d75663c5a5
-R
-"pom-architect/project/core/pom.xml,e\7\e77b76ede53a0ebbfa76b2ec7f4f625d10ff68b5
-X
-(pom-architect/project/deployment/pom.xml,3\f\3fa4172d9d066f10cb59a8a74dfcb978c77cd047
-U
-%pom-architect/project/install/pom.xml,7\b\7b79b888413b11756214326bd4433737ef2b0ca0
-Y
-)pom-architect/project/application/pom.xml,e\3\e3f79d079866ea87598bd66eac7f8c0cbe6bcec4
-Q
-!pom-architect/project/bom/pom.xml,1\2\1253a0afa6edc7c0dd73df441b1ed40003d9e8a0
 f
 6base/maven-plugin-base/plugins/maven dependency plugin,3\2\328801fcc61077821ffa9d07231b106092c14ca0
-Q
-!base/base-maven-archetype/pom.xml,4\b\4b4ea5374deb43a386aea416570e2b913c6d2b46
-X
-(base/base-maven-archetype-sample/pom.xml,0\9\092ba191fb4893e7f7086f6baab3fc4205809b14
 C
 pom-testing/pom.xml,7\d\7d201bbb98825bc4c1783ba8be35d311172a8011
 |
@@ -69,8 +47,6 @@ S
 #base/maven-plugin-base/maven plugin,c\5\c5114fc7c2f2aae8c4c669971d07606aec3d813a
 ^
 .base/maven-plugin-base/plugins/自定义插件,3\f\3f3fab9285995a3caa6322fd03c1a845d8d1300f
-S
-#repo-nexus-deploy/Nexus远程仓库,a\0\a01b8fecbf94c23d45a199aa8ee6f1cca5edb037
 I
 repo-nexus-deploy/pom.xml,9\e\9eadc5c5f769b49c7694dd8a51242b804e451d99
 N
@@ -91,31 +67,23 @@ d
 4base/maven-plugin-base/plugins/maven compiler plugin,5\d\5d6f24a37c2810ada04e0609576c84e36e752a2b
 ^
 .base/maven-plugin-base/reporting/jacoco plugin,5\5\55a85f00cc655f6eebbb435392bda126f6d430d8
-K
-pom-architect/child/pom.xml,9\2\929ab062db0d8f0049229cb1d869b53f0cded6cd
 E
 pom-architect/pom.xml,5\d\5ddd517b8803bd175e3381a11a89d809691bae5e
 M
 pom-architect/project/pom.xml,a\0\a04b93c994dd1c21b314e4e587669b3286caa385
-Q
-!pom-architect/test-import/pom.xml,6\f\6ffbe14c0f986e2b43dfe7f4a0a8e97861269418
-M
-pom-architect/POM模块架构,b\a\ba819c8cae5a276e1375635ac78fe9c9da678556
-L
-pom-architect/parent/pom.xml,b\8\b83295df9e285ed718a66a9c6cf321f7f5bb0c4f
 _
 /base/maven-plugin-base/plugins/maven jar plugin,4\8\48f3b457d915b25950d04bc6b56532fd4833ece3
 K
 base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-m
-=Apache Maven Master/Read Arfifact failed/获取Artifact失败,d\3\d3cd6f0713aeca0512ec72ef757342c33d04d1ac
-U
-%Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
-Q
-!Apache Maven Basic/Config Options,8\a\8abfd9a9346d2409b90a5458a0f69ff9a23307d2
-U
-%Apache Maven Basic/Maven Repositories,9\7\97c3d9e579fb372220c0635532c2894f14c87259
 Q
 !pom-testing/maven failsafe plugin,1\0\10822ef9645fd35f20dd234c265a269313b1d696
+J
+pom-testing/maven test jar,a\0\a02f5bce8893cb2223d8ddc37307e7b9dcc718f1
+K
+pom-testing/测试自动化,d\c\dcb6d9b0d967d343f04bd0705f4fc9b7dadd3f3b
+Q
+!pom-testing/maven surefire plugin,a\8\a8c1fcb037eac1cd78cecbb1286fa60659949704
+y
+Ipom-testing/testing-automation/src/test/java/test/SystemPropertyTest.java,1\4\14add1f5beb0d5f408408ad823ee0a1f22a582b6

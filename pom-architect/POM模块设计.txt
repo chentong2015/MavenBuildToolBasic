@@ -1,8 +1,8 @@
-POM: Project Object Model
-
-选择项目或者模块(必须包含pom.xml文件)，以Maven项目导入
-Convert "Project" to Maven Project
-Convert any java project with pom.xml to Maven Project
+TODO. 模块的更新发布问题
+1. 父子结构关系中的父模块更新
+2. 被import使用的模块更新
+被依赖的模块在更新之后，都需要重新构建到Repository，才能被其它模块所使用
+其它的模块需要在清理项目之后，reload项目之后在进行构建，从而获取最新的版本
 
 pom.xml 总外层项目模块
  - module 1 子模块
@@ -13,11 +13,9 @@ pom.xml 总外层项目模块
    - child 1
      > 设置父级<parent>关联，确定一致性<artifactId><groupId>
      > 默认打包类型<packaging>jar</packaging>
-
    - child 2
      > 设置父级<parent>关联，确定一致性<artifactId><groupId>
      > 默认打包类型<packaging>jar</packaging>
-
    - child 3
      > 如果引用child 2作为依赖的dependency
        在构建child 3时需要先将child 2成功构建

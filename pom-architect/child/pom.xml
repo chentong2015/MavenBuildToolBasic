@@ -29,13 +29,14 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <!-- 这里的版本号，从parent的dependencyManagement中确定 -->
+            <!-- 版本号从parent dependencyManagement中确定 -->
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <!-- <type>war</type>  This is not a jar dependency, so we must specify type. -->
+            <!-- <type>war</type>
+            This is not a jar dependency, so we must specify type. -->
         </dependency>
     </dependencies>
 

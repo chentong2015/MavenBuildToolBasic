@@ -10,20 +10,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="base-maven-archetype" />
-        <module name="maven-tasks-download" />
-        <module name="maven-plugin-base" />
-        <module name="maven-profiles-master" />
-        <module name="repo-nexus-deploy" />
-        <module name="deployment" />
-        <module name="Testing" />
         <module name="base-asciidoctor-documentation" />
         <module name="pom-architect" />
         <module name="maven-profiles" />
+        <module name="base-maven-archetype" />
         <module name="base-antora-playbook" />
         <module name="base-freemarker-template" />
         <module name="maven-plugin-test" />
+        <module name="maven-tasks-download" />
         <module name="hello-maven-plugin" />
+        <module name="maven-plugin-base" />
         <module name="core" />
         <module name="testing-automation" />
         <module name="application" />
@@ -32,7 +28,11 @@
         <module name="base-maven-archetype-sample" />
         <module name="maven-profiles-example" />
         <module name="testing-sample" />
+        <module name="maven-profiles-master" />
         <module name="test-import" />
+        <module name="repo-nexus-deploy" />
+        <module name="deployment" />
+        <module name="Testing" />
         <module name="child" />
       </profile>
     </annotationProcessing>
