@@ -19,8 +19,6 @@ f
 6base/maven-profiles-example/dependency-reduced-pom.xml,7\3\73793a0ec339afa5a4f2f9b2ec1ad6ee29a3f0c8
 g
 7repo-nexus-deploy/src/main/java/repo/LiquibaseDemo.java,c\7\c79ad450a078873ead1eb09e7fec21784f0c18f7
-L
-Apache Wrapper/Maven Wrapper,1\3\13874468e7f7a199c9c1b26178e948c453028dbe
 o
 ?pom-architect/child/src/main/java/com/child/main/MainChild.java,4\6\46b757578286265c92cde6899ad33e66f2864634
 U
@@ -41,8 +39,6 @@ x
 Hbase/hello-maven-plugin/src/main/java/maven/sample/plugin/HelloGoal.java,b\6\b6ba4336f24bb8dd9856028e367891f8e9b7eb56
 y
 Ibase/hello-maven-plugin/src/main/java/maven/sample/plugin/ReportGoal.java,d\f\df0fde5e5249d2b0c19e89b4505482934670b2f1
-O
-base/hello-maven-plugin/pom.xml,8\a\8af564b4a995ca79490aa60d76be70db40829a77
 S
 #base/maven-plugin-base/maven plugin,c\5\c5114fc7c2f2aae8c4c669971d07606aec3d813a
 ^
@@ -75,8 +71,6 @@ _
 /base/maven-plugin-base/plugins/maven jar plugin,4\8\48f3b457d915b25950d04bc6b56532fd4833ece3
 K
 base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 Q
 !pom-testing/maven failsafe plugin,1\0\10822ef9645fd35f20dd234c265a269313b1d696
 J
@@ -99,20 +93,12 @@ _
 /repo-nexus-deploy/checksum/checksum下载问题,1\2\121c2572027eb154d874e4b5144b180a3e6dcf0f
 T
 $pom-architect/项目模块升级.txt,b\d\bdaca63152fccd4be0cd6513f018a8169b858a0e
-Q
-!pom-architect/test-import/pom.xml,6\f\6ffbe14c0f986e2b43dfe7f4a0a8e97861269418
 R
 "pom-architect/project/core/pom.xml,e\7\e77b76ede53a0ebbfa76b2ec7f4f625d10ff68b5
-X
-(pom-architect/project/deployment/pom.xml,3\f\3fa4172d9d066f10cb59a8a74dfcb978c77cd047
 U
 %pom-architect/project/install/pom.xml,7\b\7b79b888413b11756214326bd4433737ef2b0ca0
-Y
-)pom-architect/project/application/pom.xml,e\3\e3f79d079866ea87598bd66eac7f8c0cbe6bcec4
 Q
 !pom-architect/project/bom/pom.xml,1\2\1253a0afa6edc7c0dd73df441b1ed40003d9e8a0
-L
-pom-architect/parent/pom.xml,b\8\b83295df9e285ed718a66a9c6cf321f7f5bb0c4f
 S
 #repo-nexus-deploy/Nexus远程仓库,a\0\a01b8fecbf94c23d45a199aa8ee6f1cca5edb037
 K
@@ -129,3 +115,7 @@ U
 %Apache Maven Basic/Maven Dependencies,8\f\8fd1b05890f6f5dd45c348287a22ee71974ae86d
 W
 'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
+R
+"Apache Maven Basic/Packaging Types,f\0\f07e37c212d390303acef0446e41fe100c8812a5
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

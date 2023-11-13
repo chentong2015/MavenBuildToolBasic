@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/pom-testing/testing-import/pom.xml" />
         <option value="$PROJECT_DIR$/pom-architect/child/pom.xml" />
         <option value="$PROJECT_DIR$/pom-architect/test-import/pom.xml" />
+        <option value="$PROJECT_DIR$/pom-architect/parent-spring-boot/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
