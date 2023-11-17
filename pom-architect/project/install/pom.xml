@@ -32,7 +32,8 @@
                             <mainClass>org.sample.MainAppClass</mainClass>
                         </manifest>
                     </archive>
-                    <!-- 生成jar的名称描述，后缀 -->
+                    <!-- 生成jar的名称描述，后缀
+                    TODO. 必须添加，否则会抛出异常 Error reading assemblies: No assembly descriptors found. -->
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>

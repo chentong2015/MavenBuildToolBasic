@@ -67,18 +67,10 @@ E
 pom-architect/pom.xml,5\d\5ddd517b8803bd175e3381a11a89d809691bae5e
 M
 pom-architect/project/pom.xml,a\0\a04b93c994dd1c21b314e4e587669b3286caa385
-_
-/base/maven-plugin-base/plugins/maven jar plugin,4\8\48f3b457d915b25950d04bc6b56532fd4833ece3
 K
 base/maven-profiles/pom.xml,e\3\e3d6267d0e51d09bbf821b1602dce263b86deb76
-Q
-!pom-testing/maven failsafe plugin,1\0\10822ef9645fd35f20dd234c265a269313b1d696
 J
 pom-testing/maven test jar,a\0\a02f5bce8893cb2223d8ddc37307e7b9dcc718f1
-K
-pom-testing/测试自动化,d\c\dcb6d9b0d967d343f04bd0705f4fc9b7dadd3f3b
-Q
-!pom-testing/maven surefire plugin,a\8\a8c1fcb037eac1cd78cecbb1286fa60659949704
 y
 Ipom-testing/testing-automation/src/test/java/test/SystemPropertyTest.java,1\4\14add1f5beb0d5f408408ad823ee0a1f22a582b6
 Z
@@ -95,8 +87,6 @@ T
 $pom-architect/项目模块升级.txt,b\d\bdaca63152fccd4be0cd6513f018a8169b858a0e
 R
 "pom-architect/project/core/pom.xml,e\7\e77b76ede53a0ebbfa76b2ec7f4f625d10ff68b5
-U
-%pom-architect/project/install/pom.xml,7\b\7b79b888413b11756214326bd4433737ef2b0ca0
 Q
 !pom-architect/project/bom/pom.xml,1\2\1253a0afa6edc7c0dd73df441b1ed40003d9e8a0
 S
@@ -117,5 +107,15 @@ W
 'Apache Maven Basic/Maven LifecycleGoals,b\9\b9f6988c62e31b5de70a9671981d678955f75510
 R
 "Apache Maven Basic/Packaging Types,f\0\f07e37c212d390303acef0446e41fe100c8812a5
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+O
+base/hello-maven-plugin/pom.xml,8\a\8af564b4a995ca79490aa60d76be70db40829a77
+X
+(pom-architect/project/deployment/pom.xml,3\f\3fa4172d9d066f10cb59a8a74dfcb978c77cd047
+Y
+)pom-architect/project/application/pom.xml,e\3\e3f79d079866ea87598bd66eac7f8c0cbe6bcec4
+Q
+!pom-architect/test-import/pom.xml,6\f\6ffbe14c0f986e2b43dfe7f4a0a8e97861269418
+X
+(pom-architect/parent-spring-boot/pom.xml,5\b\5b9098d7e2079a3883de6f31f8beb322709fa4d8
+L
+pom-architect/parent/pom.xml,b\8\b83295df9e285ed718a66a9c6cf321f7f5bb0c4f
