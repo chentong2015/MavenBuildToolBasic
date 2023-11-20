@@ -1,5 +1,8 @@
-usage: mvn [options] [<goal(s)>] [<phase(s)>]
+Maven Window 环境变量配置
+1. 新建变量MAVEN_HOME=Maven/apache-maven-3.8.8
+2. PATH中添加环境变量 %MAVEN_HOME%\bin
 
+usage: mvn [options] [<goal(s)>] [<phase(s)>]
 Maven配置参数Options:
  -h,--help                              Display help information
  -v,--version                           Display version information 在CMD查看maven详细信息

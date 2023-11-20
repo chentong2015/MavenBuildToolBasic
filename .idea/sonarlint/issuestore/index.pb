@@ -119,3 +119,17 @@ X
 (pom-architect/parent-spring-boot/pom.xml,5\b\5b9098d7e2079a3883de6f31f8beb322709fa4d8
 L
 pom-architect/parent/pom.xml,b\8\b83295df9e285ed718a66a9c6cf321f7f5bb0c4f
+Q
+!pom-testing/maven failsafe plugin,1\0\10822ef9645fd35f20dd234c265a269313b1d696
+K
+pom-testing/测试自动化,d\c\dcb6d9b0d967d343f04bd0705f4fc9b7dadd3f3b
+_
+/base/maven-plugin-base/plugins/maven jar plugin,4\8\48f3b457d915b25950d04bc6b56532fd4833ece3
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+U
+%pom-architect/project/install/pom.xml,7\b\7b79b888413b11756214326bd4433737ef2b0ca0
+Q
+!pom-testing/maven surefire plugin,a\8\a8c1fcb037eac1cd78cecbb1286fa60659949704
+`
+0Apache Maven Master/Apache Wrapper/Maven Wrapper,2\3\238f1c38c18c13759e2763feb7f5d20c1da73a71
