@@ -1,29 +1,31 @@
-TODO. 模块的更新发布问题
+TODO. 模块的更新发布问题，无法获取最新依赖
 1. 父子结构关系中的父模块更新
+2. 普通依赖模块之间的更新(module B找不到自定义的模块A)
+   A必须要build构建之后才能被引用(找到)，如果修改A的依赖则需要构建，然后才能被B获取更新
 2. 被import使用的模块更新
-被依赖的模块在更新之后，都需要重新构建到Repository，才能被其它模块所使用
-其它的模块需要在清理项目之后，reload项目之后在进行构建，从而获取最新的版本
+   被依赖的模块在更新之后，都需要重新构建到Repository，才能被其它模块所使用
+   其它的模块需要在清理项目之后，reload项目之后在进行构建，从而获取最新的版本
 
 pom.xml 总外层项目模块
- - module 1 子模块
-   > 设置父级<parent>关联，确定一致性<artifactId><groupId> !! 引用父级统一管理的依赖
-   > 设置打包的类型<packaging>pom</packaging>
-   > 自定义子模块的<artifactId>，覆盖父级<artifactId>的名称 !!
+- module 1 子模块
+  > 设置父级<parent>关联，确定一致性<artifactId><groupId> !! 引用父级统一管理的依赖
+  > 设置打包的类型<packaging>pom</packaging>
+  > 自定义子模块的<artifactId>，覆盖父级<artifactId>的名称 !!
 
-   - child 1
-     > 设置父级<parent>关联，确定一致性<artifactId><groupId>
-     > 默认打包类型<packaging>jar</packaging>
-   - child 2
-     > 设置父级<parent>关联，确定一致性<artifactId><groupId>
-     > 默认打包类型<packaging>jar</packaging>
-   - child 3
-     > 如果引用child 2作为依赖的dependency
-       在构建child 3时需要先将child 2成功构建
+  - child 1
+    > 设置父级<parent>关联，确定一致性<artifactId><groupId>
+    > 默认打包类型<packaging>jar</packaging>
+  - child 2
+    > 设置父级<parent>关联，确定一致性<artifactId><groupId>
+    > 默认打包类型<packaging>jar</packaging>
+  - child 3
+    > 如果引用child 2作为依赖的dependency
+      在构建child 3时需要先将child 2成功构建
 
- - module 2 子模块
-   > 设置<parent>
-   > 设置<packaging>
-   > 设置<artifactId>
+- module 2 子模块
+  > 设置<parent>
+  > 设置<packaging>
+  > 设置<artifactId>
 
 bom / parent模块设计
  - 将项目中所有使用到的依赖提取到独立的pom module中，使用<dependencyManagement>统一管理

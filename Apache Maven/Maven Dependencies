@@ -1,33 +1,27 @@
-Versions: The release number of artifact
-  SNAPSHOT 快照版本，不是面向用户的发布版本
-    MyApp-1.0-SNAPSHOT.jar
-  Release
-    MyApp-1.0-M1.jar
-    MyApp-1.0-RC1.jar
-    MyApp-1.0-RELEASE.jar
-    MyApp-1.0-Final.jar
-
 Maven dependency scopes:
-   compile 在编译阶段提供，测试中可以使用(默认作用域)
-      Available on the classpath of the project in all build tasks.
-      TODO. 该Scope具有传递性依赖，Module B可以使用module a中此scope的依赖
+- compile 在编译阶段提供，测试中可以使用(默认作用域)
+  Available on the classpath of the project in all build tasks.
+  TODO. 该Scope具有传递性依赖，Module B可以使用module a中此scope的依赖
 
-   runtime 在运行阶段提供的依赖
-      The dependencies with this scope are required at runtime. 运行的时候动态加载
-      Don't need them for the compilation of the project code，present in the runtime and test classpath
+- runtime 在运行阶段提供的依赖 => 运行时确保被动态加载到项目的classpath
+  The dependencies with this scope are required at runtime.
+  Don't need them for the compilation of the project code，present in the runtime and test classpath
 
-   test 只在测试阶段提供
-      Not required at standard runtime of the application but is used only for test purposes.
-      it does nothing for compiling; packaging; not included in final artifact
-      TODO: Test dependencies aren't transitive and are only present for test and execution classpath.
+- test 只在测试阶段提供
+  Not required at standard runtime of the application but is used only for test purposes.
+  it does nothing for compiling; packaging; not included in final artifact
+  TODO: Test dependencies aren't transitive and are only present for test and execution classpath.
 
-   provided
-      Dependencies that should be provided at runtime by JDK or a container.
-      For web app deployed in some container where already provides some libraries itself.
+- provided
+  Dependencies that should be provided at runtime by JDK or a container.
+  For web app deployed in some container where already provides some libraries itself.
 
-   Import: 只作用在pom类型的dependency上
+- Import:
+  Import managed dependencies from other projects.
+  引入来自其他项目的依赖，只作用在pom类型的dependency上
 
-   System: deprecated.
-
-TODO. module B找不到自定义的模块A ?
-module A必须要build之后才能被引用(找到)，特别在修改A的依赖之后需要构建，B构建时才能获取更新
+- System: deprecated 已被废弃，不推荐使用
+  TODO. 使用System违背了Maven构建项目项目的设计初衷()
+   1. Maven目标是自动的管理项目所需要的依赖
+   2. Maven需要使用者单独下载依赖jar包，并且通过本地路径来添加到项目classpath中
+   3. 对于使用system添加的依赖，在项目迁移到新的开发环境会导致项目无法构建

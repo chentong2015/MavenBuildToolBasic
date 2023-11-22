@@ -12,7 +12,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="base-maven-archetype" />
         <module name="maven-tasks-download" />
-        <module name="nexus-repo-deploy" />
         <module name="maven-plugin-base" />
         <module name="maven-profiles-master" />
         <module name="repo-nexus-deploy" />
