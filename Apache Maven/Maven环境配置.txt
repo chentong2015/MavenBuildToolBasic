@@ -9,5 +9,16 @@ MacOS环境变量配置：添加系统PATH环境变量
 > mvn -version
 
 MacOS Maven Local Repo 默认本地仓库
-/Users/tongchen/.m2/settings.xml
-/Users/tongchen/.m2/repository
+  /Users/tongchen/.m2/settings.xml
+  /Users/tongchen/.m2/repository
+
+Linux安装并配置:
+> wget 安装包的网页路径
+> upzip apache-maven-3.5.3-bin.zip
+> cd
+> pwd
+> vim /etc/profile (系统全局属性配置文件)
+  export MAVEN_HOME=/root/apache-maven-3.5.3
+  export PATH=$MAVEN_HOME/bin:$PATH
+> source /etc/profile 加载更新后的配置文件
+> mvn -version 检测是否是成功的安装maven到Linux服务器
