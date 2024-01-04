@@ -10,6 +10,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="maven-wrapper" />
         <module name="base-maven-archetype" />
         <module name="maven-tasks-download" />
         <module name="nexus-repo-deploy" />
@@ -59,7 +60,7 @@
       <module name="maven-profiles-example" options="" />
       <module name="maven-profiles-master" options="" />
       <module name="maven-tasks-download" options="" />
-      <module name="parent-spring-boot" options="" />
+      <module name="parent-spring-boot" options="-parameters" />
       <module name="repo-nexus-deploy" options="" />
       <module name="test-import" options="" />
       <module name="testing-automation" options="" />

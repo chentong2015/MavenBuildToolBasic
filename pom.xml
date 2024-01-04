@@ -30,6 +30,7 @@
         <module>pom-architect</module>
         <module>pom-testing</module>
         <module>report-documentation</module>
+        <module>maven-wrapper</module>
     </modules>
    
     <!-- 发布和打包项目的类型 jar war pom ear maven-plugin
