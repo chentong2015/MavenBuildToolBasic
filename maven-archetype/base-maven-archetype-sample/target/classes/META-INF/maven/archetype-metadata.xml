@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+        name="base-maven-archetype-sample"
+        xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0
+        http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+        xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- TODO. 设置要包含的指定的文件Sets集
+          这里设置所有要包含到archetype中的文件 -->
+    <fileSets>
+        <!-- 添加过滤的同时，可以设置要包含的文件<includes> -->
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory/>
+            <includes>
+                <include>README.md</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+
+        <!-- 补充新的需要构建到archetype中的文件 -->
+        <fileSet filtered="true">
+            <directory>src/main/resources</directory>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory>src/main/webapp</directory>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>base-profile</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- 优先考虑低版本的测试 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                    <release>11</release>
+                </configuration>
+            </plugin>
+
+            <!-- Compile编译时自动显示出所有激活的profiles
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-help-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <id>show-profiles</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>active-profiles</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin> -->
+        </plugins>
+    </build>
+
+    <profiles>
+        <!-- TODO. 在指定maven package时排除单元测试直接打包
+              >mvn package -Pskip-tests
+              >mvn clean install -Dmaven.test.skip=true -->
+        <profile>
+            <id>skip-tests</id>
+            <properties>
+                <!-- 设置特定的系统属性 -->
+                <maven.test.skip>true</maven.test.skip>
+            </properties>
+        </profile>
+
+        <!-- TODO. Boolean类型参数的激活方式, 无需设置属性的value -->
+        <profile>
+            <id>boolean-test</id>
+            <activation>
+                <property>
+                    <name>useProfileBool</name>
+                </property>
+            </activation>
+        </profile>
+
+        <!-- TODO. 设置profile被激活的条件, 设置系统参数
+             如果设置默认激活, 则在maven > profiles下不可再选择 -->
+        <profile>
+            <id>integration-tests</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+                <property>
+                    <name>integration</name>
+                    <value>test</value>
+                </property>
+                <jdk>11</jdk>
+                <os>
+                    <name>windows 10</name>
+                    <family>Windows</family>
+                    <arch>amd64</arch>
+                    <version>10.0</version>
+                </os>
+                <file>
+                    <exists>target/test-report.html</exists>
+                    <missing>target/test-done.html</missing>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                    <!-- 使用插件来执行这个profile所要指定的特定操作
+                    <plugin></plugin> -->
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- 自定义profile，能够生成测试覆盖率报告 -->
+        <profile>
+            <id>with-report-coverage</id>
+            <build>
+                <plugins>
+                    <!--
+                    <plugin>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>jacoco-maven-plugin</artifactId>
+                        <version>0.8.12</version>
+                        <configuration>
+                            <append>true</append>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>report-aggregate</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>report-aggregate</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin> -->
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- 同时激活多个Profile: -Prun-testframework,run-positions-int -->
+        <profile>
+            <id>run-testframework</id>
+            <properties>
+                <testframework.skip>false</testframework.skip>
+            </properties>
+        </profile>
+        <profile>
+            <id>run-positions-int</id>
+            <properties>
+                <skipPositionsIntegration>false</skipPositionsIntegration>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>useDevMavenRepo</id>
+            <activation>
+                <property>
+                    <name>useDevMavenRepo</name>
+                </property>
+            </activation>
+            <properties>
+                <skipCompile>false</skipCompile>
+            </properties>
+
+            <!-- 配置Profile激活时所添加使用的dependencies -->
+            <dependencies>
+                <!-- <dependency>
+                    <groupId>org.postgresql</groupId>
+                    <artifactId>postgresql</artifactId>
+                    <version>42.7.3</version>
+                </dependency> -->
+                <dependency>
+                    <groupId>org.checkerframework</groupId>
+                    <artifactId>checker-qual</artifactId>
+                    <version>3.12.0</version>
+                    <scope>test</scope>
+                </dependency>
+            </dependencies>
+
+            <!-- 配置在激活profile时从指定的Repo下载依赖 -->
+            <repositories>
+                <repository>
+                    <id>mx-artifacts</id>
+                    <name>mx-artifacts</name>
+                    <url>http://nexus-dev/nexus/content/groups/mx-artifacts/</url>
+                    <layout>default</layout>
+                    <releases>
+                        <updatePolicy>always</updatePolicy>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>mx-artifacts-plugin</id>
+                    <url>http://nexus-dev/nexus/content/groups/mx-artifacts/</url>
+                    <releases>
+                        <updatePolicy>always</updatePolicy>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+
+        <!-- 指定相应的模块生成Doc文档 -->
+        <profile>
+            <id>withDoc</id>
+            <activation>
+                <property>
+                    <name>!skipDoc</name>
+                </property>
+            </activation>
+            <modules>
+                <module>../maven-profiles-example</module>
+            </modules>
+        </profile>
+    </profiles>
+
+</project>

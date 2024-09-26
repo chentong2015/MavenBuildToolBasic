@@ -18,6 +18,23 @@
         <option value="$PROJECT_DIR$/pom-architect/child/pom.xml" />
         <option value="$PROJECT_DIR$/pom-architect/test-import/pom.xml" />
         <option value="$PROJECT_DIR$/pom-architect/parent-spring-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-tasks-download/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-archetype/base-maven-archetype-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-plugins/hello-maven-plugin/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-plugins/maven-plugin-base/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-plugins/maven-plugin-test/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-profile/maven-profiles/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-profile/maven-profiles-master/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-archetype/base-maven-archetype/pom.xml" />
+        <option value="$PROJECT_DIR$/pom-architect-design/project/pom.xml" />
+        <option value="$PROJECT_DIR$/pom-architect-design/child/pom.xml" />
+        <option value="$PROJECT_DIR$/pom-architect-design/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/pom-architect-design/parent-spring-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-profile/base-profiles/pom.xml" />
+        <option value="$PROJECT_DIR$/pom-architect-design/project/test-import/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-plugins/maven-tasks-download/pom.xml" />
+        <option value="$PROJECT_DIR$/Apache Maven/maven-wrapper/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-profile/base-profile/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -26,14 +43,14 @@
         <option value="$PROJECT_DIR$/base-maven-documentation/pom.xml" />
         <option value="$PROJECT_DIR$/base/base-maven-system-property/pom.xml" />
         <option value="$PROJECT_DIR$/base/base-maven-test/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-profile/base-profiles/pom.xml" />
         <option value="$PROJECT_DIR$/test/pom.xml" />
         <option value="$PROJECT_DIR$/testing-plus/pom.xml" />
         <option value="$PROJECT_DIR$/testing-sample/pom.xml" />
       </set>
     </option>
-    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="15" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="temurin-17" project-jdk-type="JavaSDK" />
   <component name="SwUserDefinedSpecifications">
     <option name="specTypeByUrl">
       <map />
