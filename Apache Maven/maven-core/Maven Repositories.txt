@@ -1,8 +1,9 @@
+TODO. Maven中心仓库
 https://mvnrepository.com/
 https://central.sonatype.com/  Maven Central Repository
-https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html
 
-Local Repository: /m2/repository/<groupId>/artifactId>/<version>
+TODO. Local Repository本地仓库
+/m2/repository/<groupId>/artifactId>/<version>
 Maven会先检查本地仓库是否存储了指定的信息，反之则会从远程仓库下载，在指定的位置安装
 
 TODO: Main Repo主仓库是不允许下载SNAPSHOP，添加新的仓库位置，下载到特殊的一些依赖
