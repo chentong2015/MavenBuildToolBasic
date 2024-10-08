@@ -4,6 +4,3 @@ Linux   > ./mvnw clean package
 Windows > ./mvnw.cmd clean package
 
 https://maven.apache.org/wrapper/maven-wrapper-plugin/wrapper-mojo.html
-
-
-
