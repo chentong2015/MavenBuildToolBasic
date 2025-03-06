@@ -35,6 +35,9 @@
         <option value="$PROJECT_DIR$/maven-plugins/maven-tasks-download/pom.xml" />
         <option value="$PROJECT_DIR$/Apache Maven/maven-wrapper/pom.xml" />
         <option value="$PROJECT_DIR$/maven-profile/base-profile/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-profile/maven-profiles-example/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-testing/testing-automation/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-testing/auto-testing/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

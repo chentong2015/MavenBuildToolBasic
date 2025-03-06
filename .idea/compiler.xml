@@ -2,46 +2,51 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <excludeFromCompile>
-      <directory url="file://$PROJECT_DIR$/maven-archetype/base-maven-archetype/src/main/resources/archetype-resources" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/maven-archetype/base-maven-archetype-sample/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/maven-archetype/base-archetype/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/maven-archetype/base-archetype-sample/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="maven-wrapper" />
-        <module name="base-maven-archetype" />
         <module name="maven-tasks-download" />
-        <module name="pom-architect-design" />
         <module name="maven-plugin-base" />
-        <module name="app-core" />
         <module name="maven-profiles-master" />
-        <module name="repo-nexus-deploy" />
         <module name="Testing" />
-        <module name="deployment" />
-        <module name="base-asciidoctor-documentation" />
-        <module name="parent-spring-boot" />
-        <module name="base-antora-playbook" />
-        <module name="base-freemarker-template" />
+        <module name="auto-testing" />
+        <module name="base-profile" />
         <module name="maven-plugin-test" />
         <module name="hello-maven-plugin" />
-        <module name="testing-automation" />
-        <module name="application" />
         <module name="maven-documentation" />
-        <module name="base-maven-archetype-sample" />
-        <module name="install" />
         <module name="testing-sample" />
         <module name="maven-profiles-example" />
-        <module name="test-import" />
-        <module name="child" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="app-core" target="11" />
+      <module name="application" target="11" />
       <module name="archetype-resources" target="1.5" />
+      <module name="base-antora-playbook" target="15" />
+      <module name="base-archetype" target="11" />
+      <module name="base-archetype-sample" target="1.5" />
+      <module name="base-asciidoctor-documentation" target="15" />
+      <module name="base-freemarker-template" target="15" />
       <module name="base-maven-plugin-simple" target="15" />
       <module name="base-profiles" target="11" />
+      <module name="bom" target="11" />
+      <module name="child" target="15" />
+      <module name="deployment" target="11" />
+      <module name="install" target="11" />
+      <module name="maven-wrapper" target="17" />
       <module name="MavenProject" target="1.5" />
+      <module name="parent" target="15" />
+      <module name="parent-spring-boot" target="17" />
+      <module name="pom-architect-design" target="15" />
+      <module name="project" target="11" />
+      <module name="repo-nexus-deploy" target="17" />
+      <module name="report-documentation" target="15" />
+      <module name="test-import" target="11" />
       <module name="test-new" target="15" />
       <module name="testing-plus" target="1.5" />
       <module name="testing-sample" target="15" />
@@ -50,10 +55,11 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auto-testing" options="" />
       <module name="base-antora-playbook" options="" />
+      <module name="base-archetype" options="" />
       <module name="base-asciidoctor-documentation" options="" />
       <module name="base-freemarker-template" options="" />
-      <module name="base-maven-archetype" options="" />
       <module name="base-profiles" options="" />
       <module name="maven-plugin-base" options="" />
       <module name="maven-plugin-test" options="" />
@@ -64,7 +70,6 @@
       <module name="parent-spring-boot" options="-parameters" />
       <module name="repo-nexus-deploy" options="" />
       <module name="test-import" options="" />
-      <module name="testing-automation" options="" />
       <module name="testing-plus" options="" />
       <module name="testing-sample" options="" />
     </option>

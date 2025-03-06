@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/maven-profile/base-profile">
       <sourceFolder url="file://$MODULE_DIR$/maven-profile/base-profile/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/maven-profile/base-profile/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/maven-profile/base-profile/src/test/java" isTestSource="true" />
     </content>
   </component>

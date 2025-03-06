@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <!-- project标签报错的解决办法：去掉不存在的地址 http://maven.apache.org/POM/4.0.0-->
+    <!-- project标签报错的解决办法:去掉不存在的地址 -->
 
     <modelVersion>4.0.0</modelVersion>   <!-- Version of POM -->
     <artifactId>MavenBuildToolBasic</artifactId>  <!-- 项目名或module的名称: 名称需要保存一致 -->
@@ -28,12 +28,10 @@
     <!-- 包含当前项目/模块下所有child module
          TODO. 在修改指定的module名称之后，需要手动设置这里的名称-->
     <modules>
-        <module>report-documentation</module>
         <module>maven-archetype</module>
         <module>maven-plugins</module>
         <module>maven-profile</module>
-        <module>pom-architect-design</module>
-        <module>pom-testing</module>
+        <module>maven-testing</module>
     </modules>
 
     <!-- TODO. <dependency> 对应到本地唯一的位置地址
@@ -101,64 +99,5 @@
       <!-- 设置打包构建出来的jar包的名称 => 统一名称
       Define the final artifact file name, MavenBasicProject.jar -->
       <finalName>MavenBasicProject</finalName>
-         
-      <plugins>
-          <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-source-plugin</artifactId>
-              <version>3.2.1</version>
-              <executions>
-                  <execution>
-                      <goals>
-                          <goal>jar</goal>
-                      </goals>
-                      <phase>install</phase>
-                  </execution>
-              </executions>
-          </plugin>
-         
-          <!-- 配置指定的Goal -->
-          <plugin>
-              <artifactId>maven-clean-plugin</artifactId>
-              <version>3.4.0</version>
-              <executions>
-                  <execution>
-                      <id>clean</id>
-                      <!-- Goal都会绑定到一个phase -->
-                      <phase>clean</phase>
-                      <goals>
-                          <goal>clean</goal>
-                      </goals>
-                  </execution>
-              </executions>
-          </plugin>
-          
-          <!-- 自动打包生成JavaDoc Web API; 项目参考文档 -->
-         <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-javadoc-plugin</artifactId>
-              <version>3.1.1</version>
-              <configuration>
-                  <encoding>UTF-8</encoding>
-              </configuration>
-              <executions>
-                    <execution>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                        <phase>install</phase>
-                    </execution>
-                </executions>
-           </plugin>
-
-          <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-wrapper-plugin</artifactId>
-              <version>3.1.0</version>
-              <configuration>
-                  <distributionType>script</distributionType>
-              </configuration>
-          </plugin>
-      </plugins> 
    </build>
 </project>

@@ -14,6 +14,7 @@
             <artifactId>maven-plugin-api</artifactId>
             <version>3.8.5</version>
         </dependency>
+
         <!-- Java annotations to use in Mojos -->
         <dependency>
             <groupId>org.apache.maven.plugin-tools</groupId>
@@ -25,6 +26,36 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <phase>install</phase>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- 配置指定的Goal -->
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.4.0</version>
+                <executions>
+                    <execution>
+                        <id>clean</id>
+                        <!-- Goal都会绑定到一个phase -->
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
             <!-- TODO. 使用自定义的插件，必须使用自定义的groupId
             <plugin>
                 <groupId>maven.sample.plugin</groupId>
