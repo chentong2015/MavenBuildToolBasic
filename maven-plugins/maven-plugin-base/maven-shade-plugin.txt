@@ -1,0 +1,40 @@
+Apache Maven Shade Plugin
+This plugin provides the capability to package the artifact in an uber-jar
+and to shade - i.e. rename - the packages of some dependencies.
+
+Maven Shade Plugin 用户打包额外的Jar包
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-shade-plugin</artifactId>
+    <executions>
+        <execution>
+            // TODO. 在package阶段执行定义的shade Goal目标
+            <phase>package</phase>
+            <goals>
+                <goal>shade</goal>
+            </goals>
+            <configuration>
+                // TODO. 将基准测试打包到独立的.jar包，使用mvn自动化基准测试
+                <finalName>${uberjar.name}</finalName>
+                <transformers>
+                    <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                        <mainClass>org.openjdk.jmh.Main</mainClass>
+                    </transformer>
+                </transformers>
+
+                // TODO. Shading signed JARs will fail without this.
+                // http://stackoverflow.com/questions/999489/invalid-signature-file-when-attempting-to-run-a-jar -->
+                <filters>
+                    <filter>
+                        <artifact>*:*</artifact>
+                        <excludes>
+                            <exclude>META-INF/*.SF</exclude>
+                            <exclude>META-INF/*.DSA</exclude>
+                            <exclude>META-INF/*.RSA</exclude>
+                        </excludes>
+                    </filter>
+                </filters>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
