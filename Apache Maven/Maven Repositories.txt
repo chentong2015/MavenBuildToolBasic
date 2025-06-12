@@ -1,37 +1,9 @@
 TODO. Maven中心仓库
+https://repo.maven.apache.org/maven2/
 https://mvnrepository.com/
-https://central.sonatype.com/  Maven Central Repository
+https://central.sonatype.com/
 
-TODO. Local Repository本地仓库
+TODO. Local 本地仓库: 优先检测本地依赖，反之从远程中心下载
 /m2/repository/<groupId>/artifactId>/<version>
-Maven会先检查本地仓库是否存储了指定的信息，反之则会从远程仓库下载，在指定的位置安装
 
-TODO: Main Repo主仓库是不允许下载SNAPSHOP，添加新的仓库位置，下载到特殊的一些依赖
-<repositories>
-  <repository>
-    <id>spring-snapshot</id>
-    <name>Spring Maven SNAPSHOT Repository</name>
-    <url>https://repo.spring.io/ui/native/libs-snapshot</url>
-    <snapshots>
-      <enabled>true</enabled>  只针对SNAPSHOT快照版本
-    </snapshots>
-    <releases>
-      <enabled>false</enabled> 不作为发布版本的使用
-    </releases>
-  </repository>
-</repositories>
-
-Plugin Repository
-<repositories>
-  <repository>
-    <id>acme corp</id>
-    <name>Acme Internal Corporate Repository</name>
-    <url>https://acmecrop.com/plugins</url>
-    <snapshots>
-      <enabled>true</enabled>
-    </snapshots>
-    <releases>
-      <enabled>false</enabled>
-    </releases>
- </repository>
-</repositories>
+Main主仓库是不允许下载SNAPSHOP，可自定义添加快照依赖的仓库

@@ -18,4 +18,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!-- 提供插件来源的Repo仓库 -->
+    <repositories>
+        <repository>
+            <id>Plugin Repo</id>
+            <name>Internal Plugin Repository</name>
+            <url>https://example.com/plugins</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
 </project>

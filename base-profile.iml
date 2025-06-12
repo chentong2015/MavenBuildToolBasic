@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
-  <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/maven-profile/base-profile">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$/maven-profile/base-profile" dumb="true">
       <sourceFolder url="file://$MODULE_DIR$/maven-profile/base-profile/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/maven-profile/base-profile/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/maven-profile/base-profile/src/test/java" isTestSource="true" />

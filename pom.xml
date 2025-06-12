@@ -89,7 +89,7 @@
           <enabled>true</enabled>
         </snapshots>
         <releases>
-          <enabled>false</enabled>
+          <enabled>false</enabled> <!-- 不作为发布版本的使用 -->
         </releases>
       </repository>
    </repositories>
