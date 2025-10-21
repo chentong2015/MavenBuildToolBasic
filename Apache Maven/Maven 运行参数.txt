@@ -1,8 +1,12 @@
+TODO. mvn clean install 项目构建周期
+> mvn clean install -e  显示构建时错误的详细信息
+> mvn clean install -rf :module-name 显示项目构建过程中错误(测试错误)
+
 usage: mvn [options] [<goal(s)>] [<phase(s)>]
 Maven Options:
  -h,--help                              Display help information
  -v,--version                           Display version information 在CMD查看maven详细信息
- -e,--errors                            Produce execution error messages 把构建时错误的详细信息显示出来
+ -e,--errors                            Produce execution error messages
  -D,--define <arg>                      Define a system property 定义一个系统属性, 并且设置它的值
  -o,--offline                           Work offline 设置离线工作
  -P,--activate-profiles <arg>           Comma-delimited list of profiles to activate 开启指定的Profile
@@ -10,7 +14,6 @@ Maven Options:
  -f,--file <arg>                        Force the use of an alternate POM file (or directory with pom.xml) 使用额外的POM
  -T,--threads <arg>                     Thread count, for instance 2.0C 设置构建时的线程数
                                         where C is core multiplied remote repositories
-
  -V,--show-version                      Display version information WITHOUT stopping build
  -am,--also-make                        If project list is specified, also build projects required by the list
  -amd,--also-make-dependents            If project list is specified, also
