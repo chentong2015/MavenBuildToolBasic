@@ -6,7 +6,7 @@
 
     <groupId>com.example.main</groupId>
     <version>1.0-SNAPSHOT</version>
-    <artifactId>maven-plugin-base</artifactId>
+    <artifactId>base-plugins</artifactId>
 
     <dependencies>
         <dependency>

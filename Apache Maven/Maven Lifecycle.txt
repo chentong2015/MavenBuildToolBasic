@@ -1,12 +1,5 @@
-TODO. Each Goal represents a capability of that plugin
-每个Goal代表插件某个能力, 通过在执行某个Goal时，它会运行所有它前面的Goal !!
-1. validate: validate the project is correct and info is available
-2. compile: compile the source code
-3. test: test the compiled source code using unit testing framework
-4. package: package code in distributable format (jar, war)
-5. verify: run any checks on the results of integration tests to ensure quality criteria are met
-6. install: install the package to local repository for use in other projects locally 需要编译好Compile Goal
-7. deploy: copy package to remote repository for sharing
+TODO. mvn clean install 项目构建周期
+> mvn clean install -rf :module-name 显示项目构建过程中的错误(测试错误)
 
 mvn compile:
    compile source code to .class files
@@ -41,4 +34,3 @@ mvn install:
 
 mvn deploy:
    Deploys it to a corporate or remote repository
-

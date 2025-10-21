@@ -10,17 +10,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="maven-tasks-download" />
-        <module name="maven-plugin-base" />
-        <module name="maven-profiles-master" />
-        <module name="Testing" />
-        <module name="auto-testing" />
-        <module name="base-profile" />
-        <module name="maven-plugin-test" />
-        <module name="hello-maven-plugin" />
         <module name="maven-documentation" />
+        <module name="auto-testing" />
+        <module name="base-plugins" />
+        <module name="base-profile" />
         <module name="testing-sample" />
         <module name="maven-profiles-example" />
+        <module name="maven-profiles-master" />
+        <module name="maven-plugin-test" />
+        <module name="hello-maven-plugin" />
+        <module name="Testing" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -38,6 +37,7 @@
       <module name="child" target="15" />
       <module name="deployment" target="11" />
       <module name="install" target="11" />
+      <module name="maven-tasks-download" target="1.8" />
       <module name="maven-wrapper" target="17" />
       <module name="MavenProject" target="1.5" />
       <module name="parent" target="15" />
@@ -60,8 +60,8 @@
       <module name="base-archetype" options="" />
       <module name="base-asciidoctor-documentation" options="" />
       <module name="base-freemarker-template" options="" />
+      <module name="base-plugins" options="" />
       <module name="base-profiles" options="" />
-      <module name="maven-plugin-base" options="" />
       <module name="maven-plugin-test" options="" />
       <module name="maven-profile" options="" />
       <module name="maven-profiles-example" options="" />

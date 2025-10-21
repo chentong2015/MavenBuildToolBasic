@@ -1,0 +1,15 @@
+TODO: 设置特定打包格式，使用自定义的插件来完成文件的下载 => 默认没有这种格式
+<packaging>download</packaging>
+
+<!-- <build>
+    <plugins>
+        <plugin>
+            <groupId>ctong.maven.plugins</groupId>
+            <artifactId>download-generator-maven-plugin</artifactId>
+            <configuration>
+                <anchorName>JARS</anchorName>
+                <downloadFileName>ctong.download.assembly-tasks</downloadFileName>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
