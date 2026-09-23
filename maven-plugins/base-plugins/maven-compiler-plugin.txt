@@ -17,6 +17,11 @@ Compiler Plugin
    <artifactId>maven-compiler-plugin</artifactId>
    <version>3.8.0</version>
    <configuration>
+       <!-- 使用<properties>标签中自动生成或者自定义的版本号 -->
+       <release>${maven.compiler.target}</release>
+       <target>${maven.compiler.target}</target>
+       <source>${maven.compiler.source}</source>
+
        <!-- The encoding argument for the Java compiler. -->
        <encoding>UTF-8</encoding>
 
@@ -24,11 +29,13 @@ Compiler Plugin
        <compilerArgs>
            <arg>-proc:none</arg>
            <arg>-parameters</arg>
+
+           <!-- Java附件选项修改编译时模块的依赖关系 -->
+           <arg>--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED</arg>
+
+           <!-- enable preview language features like switch expressions -->
+           <arg>--enable-preview</arg>
        </compilerArgs>
 
-       <!-- 使用<properties>标签中自动生成或者自定义的版本号 -->
-       <release>${maven.compiler.target}</release>
-       <target>${maven.compiler.target}</target>
-       <source>${maven.compiler.source}</source>
    </configuration>
 </plugin>
